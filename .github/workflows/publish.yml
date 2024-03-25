@@ -90,7 +90,7 @@ jobs:
       - name: 'Login to npmjs npm repo .npmrc'
         shell: bash
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_AUTH_TOKEN}}" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_ACCESS_TOKEN}}" >> .npmrc
           echo "_auth = ${{ secrets.NPM_CONFIG__AUTH }}" >> .npmrc
           echo "always-auth = true" >> .npmrc
       # Publishes current version of packages that are not already present in the registry.
@@ -104,19 +104,30 @@ jobs:
         id: create_tag
         run: node scripts/create-release-tag.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
 
       # Convert the newly created tag into a release with changelog information
       - name: Create release on GitHub
         run: node scripts/create-github-release.js ${{ steps.create_tag.outputs.tag_name }} 1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
 
-      # Notify everyone about this on Discord
-      - name: Discord notification
-        uses: Ilshidur/action-discord@0.2.0
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
-          TAG_NAME: ${{ steps.create_tag.outputs.tag_name }}
-        with:
-          args: 'A new release has been published! https://github.com/kozmoai/glent-backstage-plugins/releases/tag/{{TAG_NAME}}'
+
+#    steps:
+#      - uses: actions/checkout@v4
+#      - uses: kozmoai/actions-release-ui-components@main
+#        with:
+#          NPM_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+#          GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+#          NEBULA_UI_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+#          NEBULA_OSS_ACTIONS_RW_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
+
+
+#      # Notify everyone about this on Discord
+#      - name: Discord notification
+#        uses: Ilshidur/action-discord@0.2.0
+#        env:
+#          DISCORD_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
+#          TAG_NAME: ${{ steps.create_tag.outputs.tag_name }}
+#        with:
+#          args: 'A new release has been published! https://github.com/kozmoai/glent-backstage-plugins/releases/tag/{{TAG_NAME}}'

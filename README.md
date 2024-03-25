@@ -20,9 +20,9 @@ Amongst others, the following plugins can be found within this repo:
 
 - [Bugsnag](https://www.npmjs.com/package/@kozmoai/backstage-plugin-bugsnag)
 
-- [Argo CD](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd) (created in collaboration with [American Airlines](https://github.com/AmericanAirlines))
+- [Argo CD](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd) 
 
-- [Argo CD Backend](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd-backend) (contributed by [American Airlines](https://github.com/AmericanAirlines))
+- [Argo CD Backend](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd-backend) 
 
 - [Cloudsmith](https://www.npmjs.com/package/@kozmoai/backstage-plugin-cloudsmith)
 
@@ -116,15 +116,3 @@ Plugin folders consist of separate unit tests for each plugin, while general E2E
 ```bash
 cd glent-backstage-plugin/packages/app/cypress/integration
 ```
-
-folder.
-
-## Community
-
-- [Discord chatroom](https://discord.gg/d9SJrQR5uH) - Get support
-- [Contributing](https://github.com/kozmoai/glent-backstage-plugins/blob/master/CONTRIBUTING.md) - Start here if you want to contribute
-- Give us a star ⭐️ - If you are using Backstage or think it is an interesting project, we would love a star ❤️
-
-## License
-
-Copyright 2022 Larder Software Limited. Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
