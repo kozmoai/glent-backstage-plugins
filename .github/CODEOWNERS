@@ -1,0 +1,5 @@
+* @kozmoai/engineering
+
+# Argo CD Backend:
+
+/plugins/backend/backstage-plugin-argo-cd-backend @kozmoai/engineering @karlhaworth
