@@ -1,0 +1,46 @@
+{
+  "name": "@kozmoai/plugin-azure-sites-common",
+  "version": "0.1.3-next.1",
+  "description": "Common functionalities for the azure plugin",
+  "glint": {
+    "role": "common-library"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "keywords": [
+    "glint"
+  ],
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/azure-sites-common"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "test": "glint-cli package test"
+  },
+  "dependencies": {
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/plugin-catalog-common": "workspace:^",
+    "@kozmoai/plugin-permission-common": "workspace:^"
+  },
+  "devDependencies": {
+    "@kozmoai/cli": "workspace:^"
+  }
+}

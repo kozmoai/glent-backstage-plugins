@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-home
+  title: '@kozmoai/plugin-home'
+  description: A Glint plugin that helps you build a home page
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: discoverability-maintainers

@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-github-deployments
+  title: '@kozmoai/plugin-github-deployments'
+  description: A Glint plugin that integrates towards GitHub Deployments
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

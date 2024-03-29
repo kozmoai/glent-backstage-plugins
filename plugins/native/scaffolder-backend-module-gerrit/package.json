@@ -1,0 +1,57 @@
+{
+  "name": "@kozmoai/plugin-scaffolder-backend-module-gerrit",
+  "description": "The gerrit module for @kozmoai/plugin-scaffolder-backend",
+  "version": "0.1.6-next.1",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/scaffolder-backend-module-gerrit"
+  },
+  "glint": {
+    "role": "backend-plugin-module"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "package.json": [
+        "package.json"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "glint-cli package start",
+    "build": "glint-cli package build",
+    "lint": "glint-cli package lint",
+    "test": "glint-cli package test",
+    "clean": "glint-cli package clean",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack"
+  },
+  "dependencies": {
+    "@kozmoai/backend-plugin-api": "workspace:^",
+    "@kozmoai/config": "workspace:^",
+    "@kozmoai/errors": "workspace:^",
+    "@kozmoai/integration": "workspace:^",
+    "@kozmoai/plugin-scaffolder-node": "workspace:^",
+    "node-fetch": "^2.6.7",
+    "yaml": "^2.0.0"
+  },
+  "devDependencies": {
+    "@kozmoai/backend-test-utils": "workspace:^",
+    "@kozmoai/cli": "workspace:^",
+    "@kozmoai/plugin-scaffolder-node-test-utils": "workspace:^",
+    "msw": "^1.0.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

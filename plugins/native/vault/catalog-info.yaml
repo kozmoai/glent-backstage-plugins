@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-vault
+  title: '@kozmoai/plugin-vault'
+  description: A Glint plugin that integrates towards Vault
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

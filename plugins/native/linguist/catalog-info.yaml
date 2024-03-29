@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-linguist
+  title: '@kozmoai/plugin-linguist'
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: awanlin

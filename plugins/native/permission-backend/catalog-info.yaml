@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-permission-backend
+  title: '@kozmoai/plugin-permission-backend'
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: permission-maintainers

@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-search-backend-module-elasticsearch
+  title: '@kozmoai/plugin-search-backend-module-elasticsearch'
+  description: A module for the search backend that implements search using ElasticSearch
+spec:
+  lifecycle: production
+  type: glint-backend-plugin-module
+  owner: discoverability-maintainers

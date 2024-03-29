@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-analytics-module-ga4
+  title: '@kozmoai/plugin-analytics-module-ga4'
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin-module
+  owner: maintainers

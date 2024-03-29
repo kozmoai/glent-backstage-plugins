@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-azure-sites
+  title: '@kozmoai/plugin-azure-sites'
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

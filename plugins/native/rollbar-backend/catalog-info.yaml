@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-rollbar-backend
+  title: '@kozmoai/plugin-rollbar-backend'
+  description: A Glint backend plugin that integrates towards Rollbar
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: andrewthauer

@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-api-docs
+  title: '@kozmoai/plugin-api-docs'
+  description: A Glint plugin that helps represent API entities in the frontend
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: sda-se-reviewers

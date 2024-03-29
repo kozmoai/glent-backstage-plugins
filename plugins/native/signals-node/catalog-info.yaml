@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-signals-node
+  title: '@kozmoai/plugin-signals-node'
+  description: Node.js library for the signals plugin
+spec:
+  lifecycle: experimental
+  type: glint-node-library
+  owner: maintainers

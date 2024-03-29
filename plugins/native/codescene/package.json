@@ -1,0 +1,66 @@
+{
+  "name": "@kozmoai/plugin-codescene",
+  "version": "0.1.23-next.1",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "glint": {
+    "role": "frontend-plugin"
+  },
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/codescene"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "start": "glint-cli package start",
+    "build": "glint-cli package build",
+    "lint": "glint-cli package lint",
+    "test": "glint-cli package test",
+    "clean": "glint-cli package clean",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack"
+  },
+  "dependencies": {
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/config": "workspace:^",
+    "@kozmoai/core-components": "workspace:^",
+    "@kozmoai/core-plugin-api": "workspace:^",
+    "@kozmoai/errors": "workspace:^",
+    "@kozmoai/plugin-catalog-react": "workspace:^",
+    "@kozmoai/theme": "workspace:^",
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/lab": "4.0.0-alpha.61",
+    "@types/react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "luxon": "^3.4.4",
+    "rc-progress": "3.5.1",
+    "react-use": "^17.2.4"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-router-dom": "6.0.0-beta.0 || ^6.3.0"
+  },
+  "devDependencies": {
+    "@kozmoai/cli": "workspace:^",
+    "@kozmoai/core-app-api": "workspace:^",
+    "@kozmoai/dev-utils": "workspace:^",
+    "@kozmoai/test-utils": "workspace:^",
+    "@testing-library/dom": "^9.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "msw": "^1.0.0"
+  },
+  "files": [
+    "dist",
+    "config.d.ts"
+  ],
+  "configSchema": "config.d.ts"
+}

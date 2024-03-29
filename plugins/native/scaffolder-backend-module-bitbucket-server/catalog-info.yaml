@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-scaffolder-backend-module-bitbucket-server
+  title: '@kozmoai/plugin-scaffolder-backend-module-bitbucket-server'
+  description: The Bitbucket Server module for @kozmoai/plugin-scaffolder-backend
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin-module
+  owner: maintainers

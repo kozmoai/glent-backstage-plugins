@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-code-coverage-backend
+  title: '@kozmoai/plugin-code-coverage-backend'
+  description: A Glint backend plugin that helps you keep track of your code coverage
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: alde

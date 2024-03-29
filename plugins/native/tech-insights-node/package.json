@@ -1,0 +1,50 @@
+{
+  "name": "@kozmoai/plugin-tech-insights-node",
+  "version": "0.5.0-next.1",
+  "glint": {
+    "role": "node-library"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "types": "dist/index.d.ts"
+  },
+  "keywords": [
+    "glint",
+    "tech-insights"
+  ],
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/tech-insights-node"
+  },
+  "license": "Apache-2.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "start": "glint-cli package start",
+    "test": "glint-cli package test"
+  },
+  "dependencies": {
+    "@kozmoai/backend-common": "workspace:^",
+    "@kozmoai/backend-plugin-api": "workspace:^",
+    "@kozmoai/config": "workspace:^",
+    "@kozmoai/plugin-tech-insights-common": "workspace:^",
+    "@kozmoai/types": "workspace:^",
+    "@types/luxon": "^3.0.0",
+    "luxon": "^3.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@kozmoai/cli": "workspace:^"
+  }
+}

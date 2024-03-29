@@ -1,0 +1,49 @@
+{
+  "name": "@kozmoai/plugin-bitbucket-cloud-common",
+  "version": "0.2.17-next.1",
+  "description": "Common functionalities for bitbucket-cloud plugins",
+  "glint": {
+    "role": "common-library"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/bitbucket-cloud-common"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "generate-models": "scripts/generate-models.sh",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "reduce-models": "scripts/reduce-models.js",
+    "refresh-schema": "scripts/prepare-schema.js && yarn run -T prettier --check bitbucket-cloud.oas.json -w",
+    "test": "glint-cli package test",
+    "update-models": "yarn refresh-schema && yarn generate-models && yarn reduce-models"
+  },
+  "dependencies": {
+    "@kozmoai/integration": "workspace:^",
+    "cross-fetch": "^4.0.0"
+  },
+  "devDependencies": {
+    "@kozmoai/cli": "workspace:^",
+    "@openapitools/openapi-generator-cli": "^2.4.26",
+    "msw": "^1.0.0",
+    "ts-morph": "^21.0.0"
+  }
+}

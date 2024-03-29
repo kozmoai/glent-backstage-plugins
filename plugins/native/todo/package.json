@@ -1,0 +1,58 @@
+{
+  "name": "@kozmoai/plugin-todo",
+  "version": "0.2.35-next.1",
+  "description": "A Glint plugin that lets you browse TODO comments in your source code",
+  "glint": {
+    "role": "frontend-plugin"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/todo"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "alpha"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "start": "glint-cli package start",
+    "test": "glint-cli package test"
+  },
+  "dependencies": {
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/core-components": "workspace:^",
+    "@kozmoai/core-plugin-api": "workspace:^",
+    "@kozmoai/errors": "workspace:^",
+    "@kozmoai/plugin-catalog-react": "workspace:^",
+    "@material-ui/icons": "^4.9.1",
+    "@types/react": "^16.13.1 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@kozmoai/cli": "workspace:^",
+    "@kozmoai/dev-utils": "workspace:^",
+    "@kozmoai/test-utils": "workspace:^",
+    "@testing-library/dom": "^9.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-router-dom": "6.0.0-beta.0 || ^6.3.0"
+  }
+}

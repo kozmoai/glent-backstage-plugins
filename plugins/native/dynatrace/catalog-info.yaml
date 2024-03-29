@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-dynatrace
+  title: '@kozmoai/plugin-dynatrace'
+spec:
+  lifecycle: production
+  type: glint-frontend-plugin
+  owner: maintainers

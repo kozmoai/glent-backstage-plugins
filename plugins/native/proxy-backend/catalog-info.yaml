@@ -1,0 +1,12 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-proxy-backend
+  title: '@kozmoai/plugin-proxy-backend'
+  description: >-
+    A Glint backend plugin that helps you set up proxy endpoints in the
+    backend
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: maintainers

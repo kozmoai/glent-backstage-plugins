@@ -1,0 +1,58 @@
+{
+  "name": "@kozmoai/plugin-kubernetes-common",
+  "version": "0.7.5-next.1",
+  "description": "Common functionalities for kubernetes, to be shared between kubernetes and kubernetes-backend plugin",
+  "glint": {
+    "role": "common-library"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts"
+  },
+  "keywords": [
+    "kubernetes"
+  ],
+  "homepage": "https://glint.io",
+  "bugs": {
+    "url": "https://github.com/kozmoai/glint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/kubernetes-common"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "test": "glint-cli package test"
+  },
+  "jest": {
+    "roots": [
+      ".."
+    ]
+  },
+  "dependencies": {
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/plugin-permission-common": "workspace:^",
+    "@kozmoai/types": "workspace:^",
+    "@kubernetes/client-node": "0.20.0",
+    "kubernetes-models": "^4.3.1",
+    "lodash": "^4.17.21",
+    "luxon": "^3.0.0"
+  },
+  "devDependencies": {
+    "@kozmoai/cli": "workspace:^"
+  }
+}

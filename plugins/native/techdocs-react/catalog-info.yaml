@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-techdocs-react
+  title: '@kozmoai/plugin-techdocs-react'
+  description: Shared frontend utilities for TechDocs and Addons
+spec:
+  lifecycle: production
+  type: glint-web-library
+  owner: techdocs-maintainers

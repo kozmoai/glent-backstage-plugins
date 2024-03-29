@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-techdocs-module-addons-contrib
+  title: '@kozmoai/plugin-techdocs-module-addons-contrib'
+  description: Plugin module for contributed TechDocs Addons
+spec:
+  lifecycle: production
+  type: glint-frontend-plugin-module
+  owner: techdocs-maintainers

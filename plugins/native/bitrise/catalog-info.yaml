@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-bitrise
+  title: '@kozmoai/plugin-bitrise'
+  description: A Glint plugin that integrates towards Bitrise
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: sda-se-reviewers

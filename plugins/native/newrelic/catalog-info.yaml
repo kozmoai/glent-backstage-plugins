@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-newrelic
+  title: '@kozmoai/plugin-newrelic'
+  description: A Glint plugin that integrates towards New Relic
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-signals-react
+  title: '@kozmoai/plugin-signals-react'
+  description: Web library for the signals plugin
+spec:
+  lifecycle: experimental
+  type: glint-web-library
+  owner: maintainers

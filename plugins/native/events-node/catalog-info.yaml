@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-events-node
+  title: '@kozmoai/plugin-events-node'
+  description: The plugin-events-node module for @kozmoai/plugin-events-backend
+spec:
+  lifecycle: experimental
+  type: glint-node-library
+  owner: pjungermann

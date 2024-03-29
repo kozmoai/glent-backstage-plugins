@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-ilert
+  title: '@kozmoai/plugin-ilert'
+  description: A Glint plugin that integrates towards iLert
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

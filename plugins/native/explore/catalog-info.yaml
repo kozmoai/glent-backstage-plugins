@@ -1,0 +1,12 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-explore
+  title: '@kozmoai/plugin-explore'
+  description: >-
+    A Glint plugin for building an exploration page of your software
+    ecosystem
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: sda-se-reviewers

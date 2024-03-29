@@ -1,0 +1,83 @@
+{
+  "name": "@kozmoai/plugin-catalog-backend-module-aws",
+  "version": "0.3.8-next.1",
+  "description": "A Glint catalog backend module that helps integrate towards AWS",
+  "glint": {
+    "role": "backend-plugin-module"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "glint"
+  ],
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/catalog-backend-module-aws"
+  },
+  "license": "Apache-2.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./alpha": "./src/alpha.ts",
+    "./package.json": "./package.json"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "typesVersions": {
+    "*": {
+      "alpha": [
+        "src/alpha.ts"
+      ],
+      "package.json": [
+        "package.json"
+      ]
+    }
+  },
+  "files": [
+    "config.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "start": "glint-cli package start",
+    "test": "glint-cli package test"
+  },
+  "dependencies": {
+    "@aws-sdk/client-eks": "^3.350.0",
+    "@aws-sdk/client-organizations": "^3.350.0",
+    "@aws-sdk/client-s3": "^3.350.0",
+    "@aws-sdk/credential-providers": "^3.350.0",
+    "@aws-sdk/middleware-endpoint": "^3.347.0",
+    "@aws-sdk/types": "^3.347.0",
+    "@kozmoai/backend-common": "workspace:^",
+    "@kozmoai/backend-plugin-api": "workspace:^",
+    "@kozmoai/backend-tasks": "workspace:^",
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/config": "workspace:^",
+    "@kozmoai/errors": "workspace:^",
+    "@kozmoai/integration": "workspace:^",
+    "@kozmoai/integration-aws-node": "workspace:^",
+    "@kozmoai/plugin-catalog-common": "workspace:^",
+    "@kozmoai/plugin-catalog-node": "workspace:^",
+    "@kozmoai/plugin-kubernetes-common": "workspace:^",
+    "p-limit": "^3.0.2",
+    "uuid": "^9.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@aws-sdk/util-stream-node": "^3.350.0",
+    "@kozmoai/backend-test-utils": "workspace:^",
+    "@kozmoai/cli": "workspace:^",
+    "aws-sdk-client-mock": "^3.0.0",
+    "aws-sdk-client-mock-jest": "^3.0.0",
+    "luxon": "^3.0.0",
+    "yaml": "^2.0.0"
+  },
+  "configSchema": "config.d.ts"
+}

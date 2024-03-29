@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-entity-feedback-common
+  title: '@kozmoai/plugin-entity-feedback-common'
+  description: Common functionalities for the entity-feedback plugin
+spec:
+  lifecycle: experimental
+  type: glint-common-library
+  owner: kuangp

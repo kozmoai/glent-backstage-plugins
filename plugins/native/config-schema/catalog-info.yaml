@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-config-schema
+  title: '@kozmoai/plugin-config-schema'
+  description: A Glint plugin that lets you browse the configuration schema of your app
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

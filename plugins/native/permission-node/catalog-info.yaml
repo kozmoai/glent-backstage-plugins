@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-permission-node
+  title: '@kozmoai/plugin-permission-node'
+  description: Common permission and authorization utilities for backend plugins
+spec:
+  lifecycle: experimental
+  type: glint-node-library
+  owner: permission-maintainers

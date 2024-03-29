@@ -1,0 +1,12 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-search-backend-node
+  title: '@kozmoai/plugin-search-backend-node'
+  description: >-
+    A library for Glint backend plugins that want to interact with the
+    search backend plugin
+spec:
+  lifecycle: production
+  type: glint-node-library
+  owner: discoverability-maintainers

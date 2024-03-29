@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-badges
+  title: '@kozmoai/plugin-badges'
+  description: A Glint plugin that generates README badges for your entities
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

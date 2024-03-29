@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-jenkins-backend
+  title: '@kozmoai/plugin-jenkins-backend'
+  description: A Glint backend plugin that integrates towards Jenkins
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: maintainers

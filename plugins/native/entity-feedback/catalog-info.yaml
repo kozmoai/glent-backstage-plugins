@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-entity-feedback
+  title: '@kozmoai/plugin-entity-feedback'
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: kuangp

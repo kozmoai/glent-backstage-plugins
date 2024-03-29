@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-tech-insights-common
+  title: '@kozmoai/plugin-tech-insights-common'
+spec:
+  lifecycle: experimental
+  type: glint-common-library
+  owner: maintainers

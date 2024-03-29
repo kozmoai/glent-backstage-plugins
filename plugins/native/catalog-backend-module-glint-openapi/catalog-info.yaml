@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-catalog-backend-module-glint-openapi
+  title: '@kozmoai/plugin-catalog-backend-module-glint-openapi'
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin-module
+  owner: openapi-tooling-maintainers

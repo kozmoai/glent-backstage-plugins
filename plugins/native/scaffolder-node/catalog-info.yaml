@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-scaffolder-node
+  title: '@kozmoai/plugin-scaffolder-node'
+  description: The plugin-scaffolder-node module for @kozmoai/plugin-scaffolder-backend
+spec:
+  lifecycle: experimental
+  type: glint-node-library
+  owner: maintainers

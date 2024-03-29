@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-catalog-backend
+  title: '@kozmoai/plugin-catalog-backend'
+  description: The Glint backend plugin that provides the Glint catalog
+spec:
+  lifecycle: production
+  type: glint-backend-plugin
+  owner: catalog-maintainers

@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-cloudbuild
+  title: '@kozmoai/plugin-cloudbuild'
+  description: A Glint plugin that integrates towards Google Cloud Build
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

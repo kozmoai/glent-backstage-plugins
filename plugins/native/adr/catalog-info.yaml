@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-adr
+  title: '@kozmoai/plugin-adr'
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: kuangp

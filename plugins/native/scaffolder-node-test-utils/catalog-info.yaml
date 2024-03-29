@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-scaffolder-node-test-utils
+  title: '@kozmoai/plugin-scaffolder-node-test-utils'
+spec:
+  lifecycle: experimental
+  type: glint-node-library
+  owner: maintainers

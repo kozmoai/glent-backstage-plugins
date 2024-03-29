@@ -1,0 +1,12 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-home-react
+  title: '@kozmoai/plugin-home-react'
+  description: >-
+    A Glint plugin that contains react components helps you build a home
+    page
+spec:
+  lifecycle: experimental
+  type: glint-web-library
+  owner: discoverability-maintainers

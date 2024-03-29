@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-tech-insights
+  title: '@kozmoai/plugin-tech-insights'
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

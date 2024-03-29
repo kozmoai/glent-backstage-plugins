@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-kubernetes
+  title: '@kozmoai/plugin-kubernetes'
+  description: A Glint plugin that integrates towards Kubernetes
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: kubernetes-maintainers

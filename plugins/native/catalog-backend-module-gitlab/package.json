@@ -1,0 +1,73 @@
+{
+  "name": "@kozmoai/plugin-catalog-backend-module-gitlab",
+  "description": "A Glint catalog backend module that helps integrate towards GitLab",
+  "version": "0.3.11-next.1",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./alpha": "./src/alpha.ts",
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "alpha": [
+        "src/alpha.ts"
+      ],
+      "package.json": [
+        "package.json"
+      ]
+    }
+  },
+  "glint": {
+    "role": "backend-plugin-module"
+  },
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/catalog-backend-module-gitlab"
+  },
+  "keywords": [
+    "glint"
+  ],
+  "scripts": {
+    "start": "glint-cli package start",
+    "build": "glint-cli package build",
+    "lint": "glint-cli package lint",
+    "test": "glint-cli package test",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "clean": "glint-cli package clean"
+  },
+  "dependencies": {
+    "@kozmoai/backend-common": "workspace:^",
+    "@kozmoai/backend-plugin-api": "workspace:^",
+    "@kozmoai/backend-tasks": "workspace:^",
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/config": "workspace:^",
+    "@kozmoai/integration": "workspace:^",
+    "@kozmoai/plugin-catalog-node": "workspace:^",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7",
+    "uuid": "^9.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@kozmoai/backend-test-utils": "workspace:^",
+    "@kozmoai/cli": "workspace:^",
+    "@types/lodash": "^4.14.151",
+    "@types/uuid": "^9.0.0",
+    "luxon": "^3.0.0",
+    "msw": "^1.0.0"
+  },
+  "files": [
+    "config.d.ts",
+    "dist"
+  ],
+  "configSchema": "config.d.ts"
+}

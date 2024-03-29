@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-kafka-backend
+  title: '@kozmoai/plugin-kafka-backend'
+  description: A Glint backend plugin that integrates towards Kafka
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: andrewthauer

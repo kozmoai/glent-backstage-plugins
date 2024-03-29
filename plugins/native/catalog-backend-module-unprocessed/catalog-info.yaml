@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-catalog-backend-module-unprocessed
+  title: '@kozmoai/plugin-catalog-backend-module-unprocessed'
+  description: Glint Catalog module to view unprocessed entities
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin-module
+  owner: catalog-maintainers

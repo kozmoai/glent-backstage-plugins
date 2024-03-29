@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-apache-airflow
+  title: '@kozmoai/plugin-apache-airflow'
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

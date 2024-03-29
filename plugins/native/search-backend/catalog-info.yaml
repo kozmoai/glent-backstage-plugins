@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-search-backend
+  title: '@kozmoai/plugin-search-backend'
+  description: The Glint backend plugin that provides your glint app with search
+spec:
+  lifecycle: production
+  type: glint-backend-plugin
+  owner: discoverability-maintainers

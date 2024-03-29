@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-todo
+  title: '@kozmoai/plugin-todo'
+  description: A Glint plugin that lets you browse TODO comments in your source code
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

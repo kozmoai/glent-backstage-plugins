@@ -1,0 +1,11 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-kubernetes-react
+  title: '@kozmoai/plugin-kubernetes-react'
+  description: >-
+    Shared frontend utilities for Kubernetes plugins
+spec:
+  lifecycle: experimental
+  type: glint-web-library
+  owner: kubernetes-maintainers

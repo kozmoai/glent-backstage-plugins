@@ -1,0 +1,73 @@
+{
+  "name": "@kozmoai/plugin-linguist",
+  "version": "0.1.16-next.1",
+  "glint": {
+    "role": "frontend-plugin"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/linguist"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./alpha": "./src/alpha.ts",
+    "./package.json": "./package.json"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "typesVersions": {
+    "*": {
+      "alpha": [
+        "src/alpha.ts"
+      ],
+      "package.json": [
+        "package.json"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "start": "glint-cli package start",
+    "test": "glint-cli package test"
+  },
+  "dependencies": {
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/core-compat-api": "workspace:^",
+    "@kozmoai/core-components": "workspace:^",
+    "@kozmoai/core-plugin-api": "workspace:^",
+    "@kozmoai/errors": "workspace:^",
+    "@kozmoai/frontend-plugin-api": "workspace:^",
+    "@kozmoai/plugin-catalog-react": "workspace:^",
+    "@kozmoai/plugin-linguist-common": "workspace:^",
+    "@material-ui/core": "^4.9.13",
+    "@material-ui/lab": "4.0.0-alpha.61",
+    "@types/react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "luxon": "^3.0.0",
+    "react-use": "^17.2.4",
+    "slugify": "^1.6.4"
+  },
+  "devDependencies": {
+    "@kozmoai/cli": "workspace:^",
+    "@kozmoai/dev-utils": "workspace:^",
+    "@testing-library/jest-dom": "^6.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.13.1 || ^17.0.0 || ^18.0.0",
+    "react-router-dom": "6.0.0-beta.0 || ^6.3.0"
+  }
+}

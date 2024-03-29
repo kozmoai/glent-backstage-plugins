@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-auth-backend
+  title: '@kozmoai/plugin-auth-backend'
+  description: A Glint backend plugin that handles authentication
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: maintainers

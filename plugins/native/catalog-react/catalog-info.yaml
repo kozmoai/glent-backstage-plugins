@@ -1,0 +1,12 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-catalog-react
+  title: '@kozmoai/plugin-catalog-react'
+  description: >-
+    A frontend library that helps other Glint plugins interact with the
+    catalog
+spec:
+  lifecycle: production
+  type: glint-web-library
+  owner: catalog-maintainers

@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-permission-react
+  title: '@kozmoai/plugin-permission-react'
+spec:
+  lifecycle: experimental
+  type: glint-web-library
+  owner: permission-maintainers

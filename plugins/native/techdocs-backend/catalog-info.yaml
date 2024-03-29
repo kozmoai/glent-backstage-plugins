@@ -1,0 +1,12 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-techdocs-backend
+  title: '@kozmoai/plugin-techdocs-backend'
+  description: >-
+    The Glint backend plugin that renders technical documentation for your
+    components
+spec:
+  lifecycle: production
+  type: glint-backend-plugin
+  owner: techdocs-maintainers

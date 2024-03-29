@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-events-backend-module-bitbucket-cloud
+  title: '@kozmoai/plugin-events-backend-module-bitbucket-cloud'
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin-module
+  owner: pjungermann

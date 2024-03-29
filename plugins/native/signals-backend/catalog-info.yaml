@@ -1,0 +1,9 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-signals-backend
+  title: '@kozmoai/plugin-signals-backend'
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: maintainers

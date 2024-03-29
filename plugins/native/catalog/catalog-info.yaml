@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-catalog
+  title: '@kozmoai/plugin-catalog'
+  description: The Glint plugin for browsing the Glint catalog
+spec:
+  lifecycle: production
+  type: glint-frontend-plugin
+  owner: catalog-maintainers

@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-linguist-common
+  title: '@kozmoai/plugin-linguist-common'
+  description: Common functionalities for the linguist plugin
+spec:
+  lifecycle: experimental
+  type: glint-common-library
+  owner: awanlin

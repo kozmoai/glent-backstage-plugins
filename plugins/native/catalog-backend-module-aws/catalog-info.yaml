@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-catalog-backend-module-aws
+  title: '@kozmoai/plugin-catalog-backend-module-aws'
+  description: A Glint catalog backend module that helps integrate towards AWS
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin-module
+  owner: pjungermann

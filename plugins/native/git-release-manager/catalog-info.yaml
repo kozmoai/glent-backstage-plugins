@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-git-release-manager
+  title: '@kozmoai/plugin-git-release-manager'
+  description: A Glint plugin that helps you manage releases in git
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: erikengervall

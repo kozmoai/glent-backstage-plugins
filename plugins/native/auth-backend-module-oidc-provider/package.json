@@ -1,0 +1,56 @@
+{
+  "name": "@kozmoai/plugin-auth-backend-module-oidc-provider",
+  "description": "The oidc-provider backend module for the auth plugin.",
+  "version": "0.1.4-next.1",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "types": "dist/index.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/auth-backend-module-oidc-provider"
+  },
+  "glint": {
+    "role": "backend-plugin-module"
+  },
+  "scripts": {
+    "start": "glint-cli package start",
+    "build": "glint-cli package build",
+    "lint": "glint-cli package lint",
+    "test": "glint-cli package test",
+    "clean": "glint-cli package clean",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack"
+  },
+  "dependencies": {
+    "@kozmoai/backend-common": "workspace:^",
+    "@kozmoai/backend-plugin-api": "workspace:^",
+    "@kozmoai/plugin-auth-backend": "workspace:^",
+    "@kozmoai/plugin-auth-node": "workspace:^",
+    "express": "^4.18.2",
+    "openid-client": "^5.5.0",
+    "passport": "^0.7.0"
+  },
+  "devDependencies": {
+    "@kozmoai/backend-defaults": "workspace:^",
+    "@kozmoai/backend-test-utils": "workspace:^",
+    "@kozmoai/cli": "workspace:^",
+    "@kozmoai/config": "workspace:^",
+    "cookie-parser": "^1.4.6",
+    "express-promise-router": "^4.1.1",
+    "express-session": "^1.17.3",
+    "jose": "^5.0.0",
+    "msw": "^1.3.1",
+    "supertest": "^6.3.3"
+  },
+  "configSchema": "config.d.ts",
+  "files": [
+    "dist",
+    "config.d.ts"
+  ]
+}

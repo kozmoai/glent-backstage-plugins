@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-xcmetrics
+  title: '@kozmoai/plugin-xcmetrics'
+  description: A Glint plugin that shows XCode build metrics for your components
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-user-settings-backend
+  title: '@kozmoai/plugin-user-settings-backend'
+  description: The Glint backend plugin to manage user settings
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin
+  owner: sda-se-reviewers

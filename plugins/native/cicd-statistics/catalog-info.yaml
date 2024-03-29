@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-cicd-statistics
+  title: '@kozmoai/plugin-cicd-statistics'
+  description: A frontend plugin visualizing CI/CD pipeline statistics (build time)
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: sharks

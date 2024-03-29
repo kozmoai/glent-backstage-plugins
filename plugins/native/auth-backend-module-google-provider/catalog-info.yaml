@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-auth-backend-module-google-provider
+  title: '@kozmoai/plugin-auth-backend-module-google-provider'
+  description: A Google auth provider module for the Glint auth backend
+spec:
+  lifecycle: experimental
+  type: glint-backend-plugin-module
+  owner: maintainers

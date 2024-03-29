@@ -1,0 +1,69 @@
+{
+  "name": "@kozmoai/plugin-scaffolder-node",
+  "version": "0.4.0-next.1",
+  "description": "The plugin-scaffolder-node module for @kozmoai/plugin-scaffolder-backend",
+  "glint": {
+    "role": "node-library"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://glint.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kozmoai/glint",
+    "directory": "plugins/scaffolder-node"
+  },
+  "license": "Apache-2.0",
+  "exports": {
+    ".": "./src/index.ts",
+    "./alpha": "./src/alpha.ts",
+    "./package.json": "./package.json"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "typesVersions": {
+    "*": {
+      "alpha": [
+        "src/alpha.ts"
+      ],
+      "package.json": [
+        "package.json"
+      ]
+    }
+  },
+  "files": [
+    "alpha",
+    "dist"
+  ],
+  "scripts": {
+    "build": "glint-cli package build",
+    "clean": "glint-cli package clean",
+    "lint": "glint-cli package lint",
+    "prepack": "glint-cli package prepack",
+    "postpack": "glint-cli package postpack",
+    "start": "glint-cli package start",
+    "test": "glint-cli package test"
+  },
+  "dependencies": {
+    "@kozmoai/backend-common": "workspace:^",
+    "@kozmoai/backend-plugin-api": "workspace:^",
+    "@kozmoai/catalog-model": "workspace:^",
+    "@kozmoai/errors": "workspace:^",
+    "@kozmoai/integration": "workspace:^",
+    "@kozmoai/plugin-scaffolder-common": "workspace:^",
+    "@kozmoai/types": "workspace:^",
+    "fs-extra": "^11.2.0",
+    "globby": "^11.0.0",
+    "jsonschema": "^1.2.6",
+    "p-limit": "^3.1.0",
+    "winston": "^3.2.1",
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.20.4"
+  },
+  "devDependencies": {
+    "@kozmoai/backend-test-utils": "workspace:^",
+    "@kozmoai/cli": "workspace:^",
+    "@kozmoai/config": "workspace:^"
+  }
+}

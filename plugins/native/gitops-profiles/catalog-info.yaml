@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-gitops-profiles
+  title: '@kozmoai/plugin-gitops-profiles'
+  description: A Glint plugin that helps you manage GitOps profiles
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers

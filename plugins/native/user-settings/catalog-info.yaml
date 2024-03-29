@@ -1,0 +1,10 @@
+apiVersion: glint.io/v1alpha1
+kind: Component
+metadata:
+  name: glint-plugin-user-settings
+  title: '@kozmoai/plugin-user-settings'
+  description: A Glint plugin that provides a settings page
+spec:
+  lifecycle: experimental
+  type: glint-frontend-plugin
+  owner: maintainers
