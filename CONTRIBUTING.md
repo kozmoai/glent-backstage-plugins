@@ -1,4 +1,4 @@
-# Contributing to the Glent plugins for Backstage
+# Contributing to the Glint plugins for Backstage
 
 We want to create strong community of contributors -- all working together to create the kind of delightful experience that Backstage deserves.
 
@@ -12,7 +12,7 @@ This repository will gather the plugins we have worked on, so contribution is mo
 
 ### Report bugs
 
-No one likes bugs. Report bugs as an issue [here](https://github.com/kozmoai/glent-backstage-plugins/issues/new?assignees=&labels=bug&template=bug_template.md).
+No one likes bugs. Report bugs as an issue [here](https://github.com/kozmoai/glint-backstage-plugins/issues/new?assignees=&labels=bug&template=bug_template.md).
 
 ### Fix bugs or build new features
 
@@ -20,7 +20,7 @@ Look through the GitHub issues for bugs or problems that other users are having.
 
 ### Submit feedback
 
-The best way to send feedback is to file [an issue](https://github.com/kozmoai/glent-backstage-plugins/issues/new).
+The best way to send feedback is to file [an issue](https://github.com/kozmoai/glint-backstage-plugins/issues/new).
 
 If you are proposing a feature:
 
@@ -37,7 +37,7 @@ E2E tests are integrated under `/packages/app/cypress` folder where you will fin
 
 ### Add your company to ADOPTERS
 
-Have you started using any/some/all of our plugins? Adding your company to [ADOPTERS](https://github.com/kozmoai/glent-backstage-plugins/blob/main/ADOPTERS.md) really helps the project.
+Have you started using any/some/all of our plugins? Adding your company to [ADOPTERS](https://github.com/kozmoai/glint-backstage-plugins/blob/main/ADOPTERS.md) really helps the project.
 
 ## Get Started!
 
@@ -81,8 +81,8 @@ After merging a changeset file to main, a subsequent pull request is created aut
 
 We subscribe to the [Spotify FOSS code of conduct](https://github.com/backstage/backstage/blob/master/CODE_OF_CONDUCT.md) which is used by the Backstage project.
 
-If you experience or witness unacceptable behavior—or have any other concerns—please report it by contacting us via [foss@glent.io](mailto:foss@glent.io).
+If you experience or witness unacceptable behavior—or have any other concerns—please report it by contacting us via [foss@glint.io](mailto:foss@glint.io).
 
 ## Security Issues?
 
-See [SECURITY.md](https://github.com/kozmoai/glent-backstage-plugins/blob/main/SECURITY.md)
+See [SECURITY.md](https://github.com/kozmoai/glint-backstage-plugins/blob/main/SECURITY.md)

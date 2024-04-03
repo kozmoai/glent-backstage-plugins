@@ -4,15 +4,14 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
-  "private": false,
-  "homepage": "https://glent.io/backstage/plugins/aws-lambda/",
+  "homepage": "https://glint.io/backstage/plugins/aws-lambda/",
   "bugs": {
-    "url": "https://github.com/kozmoai/glent-backstage-plugins/issues",
-    "email": "support@glent.io"
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glent-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/frontend/backstage-plugin-aws-lambda"
   },
   "publishConfig": {

@@ -71,4 +71,4 @@ export BUILDKITE_API_TOKEN=xxx-xxx-xxx
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glent.io
+- Get hosted, managed Backstage for your company: https://glint.io

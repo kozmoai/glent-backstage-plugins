@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import React from 'react';
-import { GLENTAppData } from '../../types';
+import { GLINTAppData } from '../../types';
 
 export const AboutField = ({
   label,
@@ -47,10 +47,10 @@ export const AboutField = ({
 export const AppView = ({
   appData,
 }: {
-  appData: GLENTAppData;
+  appData: GLINTAppData;
 }): JSX.Element => {
   Object.keys(appData).forEach(key => {
-    const newkey = key.replace("glent/", "")
+    const newkey = key.replace("glint/", "")
     appData[newkey] = appData[key];
     delete appData[key];
   });
@@ -63,7 +63,7 @@ export const AppView = ({
         <>
           <Card>
             <CardHeader
-              title={<Typography variant="h5">GLENT App</Typography>}
+              title={<Typography variant="h5">GLINT App</Typography>}
             /><Divider />
             <CardContent>
               <Grid container columnSpacing={2}>

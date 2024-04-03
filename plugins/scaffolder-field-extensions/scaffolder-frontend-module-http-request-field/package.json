@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glent-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/scaffolder-field-extensions/scaffolder-frontend-module-http-request-field"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glent-backstage-plugins/issues",
-    "email": "support@glent.io"
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "scripts": {
     "start": "backstage-cli package start",
@@ -33,18 +33,18 @@
   "dependencies": {
     "@backstage/core-components": "^0.14.0",
     "@backstage/core-plugin-api": "^1.9.0",
-    "@backstage/theme": "^0.5.1",
     "@backstage/plugin-scaffolder": "^1.18.0",
     "@backstage/plugin-scaffolder-react": "^1.8.0",
+    "@backstage/theme": "^0.5.1",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.45",
     "@rjsf/core": "5.17.0",
     "@rjsf/utils": "5.17.0",
-    "nunjucks": "^3.2.3",
-    "zod": "^3.19.1",
     "lodash": "^4.17.21",
-    "react-use": "^17.2.4"
+    "nunjucks": "^3.2.3",
+    "react-use": "^17.2.4",
+    "zod": "^3.19.1"
   },
   "peerDependencies": {
     "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
@@ -59,8 +59,8 @@
     "@testing-library/user-event": "^14.0.0",
     "@types/node": "*",
     "@types/nunjucks": "^3.2.3",
-    "msw": "^1.0.1",
-    "cross-fetch": "^3.1.5"
+    "cross-fetch": "^3.1.5",
+    "msw": "^1.0.1"
   },
   "files": [
     "dist"

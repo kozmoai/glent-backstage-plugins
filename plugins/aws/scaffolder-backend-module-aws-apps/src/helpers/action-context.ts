@@ -48,7 +48,7 @@ export async function getEnvironmentProviderConnectInfo(
 export async function getSSMParameterValue(region: string, creds: AwsCredentialIdentity, ssmPath: string, logger?: Logger): Promise<string> {
   const ssmClient = new SSMClient({
     region,
-    customUserAgent: 'glent-plugin',
+    customUserAgent: 'glint-plugin',
     credentials: creds,
   });
 
@@ -77,7 +77,7 @@ export async function getSSMParameterValue(region: string, creds: AwsCredentialI
 export async function getPlatformAccountSSMParameterValue(ssmPath: string, region?: string, logger?: Logger): Promise<string> {
   const ssmClient = new SSMClient({
     region,
-    customUserAgent: 'glent-plugin',
+    customUserAgent: 'glint-plugin',
   });
   const ssmResponse = await ssmClient.send(
     new GetParameterCommand({

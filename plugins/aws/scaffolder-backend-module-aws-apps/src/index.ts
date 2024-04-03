@@ -3,7 +3,7 @@
 
 /***/
 /**
- * The glent module for @backstage/plugin-scaffolder-backend.
+ * The glint module for @backstage/plugin-scaffolder-backend.
  *
  * @packageDocumentation
  */

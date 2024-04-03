@@ -15,4 +15,4 @@
  */
 
 export { DefaultVectorAugmentationIndexer } from './DefaultVectorAugmentationIndexer';
-export type { GlentEmbeddingsConfig, SplitterOptions } from './types';
+export type { GlintEmbeddingsConfig, SplitterOptions } from './types';

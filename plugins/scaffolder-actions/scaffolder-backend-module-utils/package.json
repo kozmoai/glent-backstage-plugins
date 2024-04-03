@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glent-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/scaffolder-actions/scaffolder-backend-module-utils"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glent-backstage-plugins/issues",
-    "email": "support@glent.io"
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "scripts": {
     "start": "backstage-cli package start",

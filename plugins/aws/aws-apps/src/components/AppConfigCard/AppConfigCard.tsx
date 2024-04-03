@@ -6,7 +6,7 @@ import { IconButton, LinearProgress, Tooltip } from '@material-ui/core';
 import { Button, CardContent, Grid, TextField, Typography } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import React, { useEffect, useState } from 'react';
-import { glentApiRef } from '../../api';
+import { glintApiRef } from '../../api';
 import { useAsyncAwsApp } from '../../hooks/useAwsApp';
 import { ContainerDetailsType } from '../../types';
 import { AWSComponent, AWSECSAppDeploymentEnvironment } from '@aws/plugin-aws-apps-common-for-backstage';
@@ -18,7 +18,7 @@ const AppConfigOverview = ({
     awsComponent: AWSComponent;
   };
 }) => {
-  const api = useApi(glentApiRef);
+  const api = useApi(glintApiRef);
 
   // States managed by React useState
   const [savedEnvVariables, setSavedEnvVariables] = useState<ContainerDetailsType[]>([]);

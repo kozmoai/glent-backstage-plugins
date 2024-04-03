@@ -6,7 +6,7 @@ import { EmptyState, InfoCard, } from '@backstage/core-components';
 import { Button, IconButton, LinearProgress, TableBody, TableCell, TableRow, Table, TableHead, CardContent, Grid } from '@material-ui/core';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { useApi } from '@backstage/core-plugin-api';
-import { glentApiRef } from '../../api';
+import { glintApiRef } from '../../api';
 import { Alert, AlertTitle, Typography } from '@mui/material';
 import { useAsyncAwsApp } from '../../hooks/useAwsApp';
 import { AWSComponent, AssociatedResources, BindResourceParams, ResourceBinding, ResourcePolicy } from '@aws/plugin-aws-apps-common-for-backstage';
@@ -40,7 +40,7 @@ const ResourceBindingCard = ({
 }: {
   input: { awsComponent: AWSComponent; entity: Entity; catalog: CatalogApi };
 }) => {
-  const api = useApi(glentApiRef);
+  const api = useApi(glintApiRef);
 
   const [error, setError] = useState<{ isError: boolean; errorMsg: string | null }>({ isError: false, errorMsg: null });
   const [items, setItems] = useState<ResourceBinding[]>([]);
@@ -171,7 +171,7 @@ const ResourceBindingCard = ({
       policies
     };
 
-    return api.bindResource({ params, gitAdminSecret: 'glent-admin-gitlab-secrets' })
+    return api.bindResource({ params, gitAdminSecret: 'glint-admin-gitlab-secrets' })
   }
 
   async function removeResource(item: ResourceBinding): Promise<any> {
@@ -215,7 +215,7 @@ const ResourceBindingCard = ({
       policies
     };
 
-    return api.unBindResource({ params, gitAdminSecret: 'glent-admin-gitlab-secrets' })
+    return api.unBindResource({ params, gitAdminSecret: 'glint-admin-gitlab-secrets' })
   }
 
 

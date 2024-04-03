@@ -70,7 +70,7 @@ describe('PullRequestsTable', () => {
         state: 'open',
         draft: false,
         repositoryUrl:
-          'https://api.github.com/repos/kozmoai/glent-backstage-plugins',
+          'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
         pullRequest: {
           htmlUrl: 'pull_request_url',
         },
@@ -92,7 +92,7 @@ describe('PullRequestsTable', () => {
 
     expect(await screen.findByText('Test PR listed 1')).toBeInTheDocument();
     expect(
-      await screen.findByText('kozmoai/glent-backstage-plugins'),
+      await screen.findByText('kozmoai/glint-backstage-plugins'),
     ).toBeInTheDocument();
     expect(await screen.findByText('#1 opened by')).toBeInTheDocument();
     expect(await screen.findByText('TestUser')).toBeInTheDocument();

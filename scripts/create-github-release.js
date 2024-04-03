@@ -28,10 +28,10 @@ if (!BOOL_CREATE_RELEASE) {
 }
 
 const GH_OWNER = 'kozmoai';
-const GH_REPO = 'glent-backstage-plugins';
+const GH_REPO = 'glint-backstage-plugins';
 const EXPECTED_COMMIT_MESSAGE = /^Merge pull request #(?<prNumber>[0-9]+) from/;
 const CHANGESET_RELEASE_BRANCH =
-  'glent-backstage-plugins/changeset-release/main';
+  'glint-backstage-plugins/changeset-release/main';
 
 // Initialize a GitHub client
 const { GITHUB_TOKEN } = process.env;

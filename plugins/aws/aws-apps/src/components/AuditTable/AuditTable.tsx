@@ -5,13 +5,13 @@ import React, { useEffect, useState } from 'react';
 import { EmptyState, Table, TableColumn } from '@backstage/core-components';
 import { LinearProgress } from '@material-ui/core';
 import { useApi } from '@backstage/core-plugin-api';
-import { glentApiRef } from '../../api';
+import { glintApiRef } from '../../api';
 import { Typography } from '@mui/material';
 import { useAsyncAwsApp } from '../../hooks/useAwsApp';
 import { AuditRecord } from '@aws/plugin-aws-apps-common-for-backstage';
 
 const AuditTable = () => {
-  const api = useApi(glentApiRef);
+  const api = useApi(glintApiRef);
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<{ isError: boolean; errorMsg: string | null }>({ isError: false, errorMsg: null });

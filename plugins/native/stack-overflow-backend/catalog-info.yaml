@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-stack-overflow-backend
-  title: '@kozmoai/plugin-stack-overflow-backend'
-spec:
-  lifecycle: experimental
-  type: glint-backend-plugin
-  owner: discoverability-maintainers

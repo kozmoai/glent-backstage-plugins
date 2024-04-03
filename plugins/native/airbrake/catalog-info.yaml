@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-airbrake
-  title: '@kozmoai/plugin-airbrake'
-spec:
-  lifecycle: experimental
-  type: glint-frontend-plugin
-  owner: maintainers

@@ -15,9 +15,9 @@
  */
 import { ConfigApi, DiscoveryApi, FetchApi } from '@backstage/core-plugin-api';
 import { RagAiApi } from './ragApi';
-import { GlentLlmResponse } from '../types';
+import { GlintLlmResponse } from '../types';
 
-export class GlentRagAiClient implements RagAiApi {
+export class GlintRagAiClient implements RagAiApi {
   private readonly discoveryApi: DiscoveryApi;
   private readonly fetchApi: FetchApi;
   private readonly configApi: ConfigApi;
@@ -56,7 +56,7 @@ export class GlentRagAiClient implements RagAiApi {
     throw new Error(`Failed to retrieved data from path ${path}`);
   }
 
-  async ask(question: string): Promise<GlentLlmResponse> {
+  async ask(question: string): Promise<GlintLlmResponse> {
     const response = await this.fetch(`query/catalog`, {
       body: JSON.stringify({
         query: question,

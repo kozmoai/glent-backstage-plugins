@@ -10,7 +10,7 @@ import { getAWScreds } from '@kozmoai/plugin-aws-apps-backend-for-backstage';
 import { getSSMParameterValue } from '../../helpers/action-context';
 import { EnvironmentProvider } from '../../types';
 
-const ID = 'glent:get-env-providers';
+const ID = 'glint:get-env-providers';
 
 const examples = [
   {
@@ -19,7 +19,7 @@ const examples = [
       steps: [
         {
           action: ID,
-          id: 'glentGetAwsEnvProviders',
+          id: 'glintGetAwsEnvProviders',
           name: 'Get AWS Environment Providers',
           input: {
             environmentRef: 'awsenvironment:Test-Environment',

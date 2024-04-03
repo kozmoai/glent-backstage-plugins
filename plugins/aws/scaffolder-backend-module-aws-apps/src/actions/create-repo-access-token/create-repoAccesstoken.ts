@@ -17,7 +17,7 @@ export function createRepoAccessTokenAction(options: { integrations: ScmIntegrat
     projectId: number;
     region?: string;
   }>({
-    id: 'glent:createRepoAccessToken:gitlab',
+    id: 'glint:createRepoAccessToken:gitlab',
     description: 'Initializes a git repository of the content in the workspace, and publishes it to GitLab.',
     schema: {
       input: {

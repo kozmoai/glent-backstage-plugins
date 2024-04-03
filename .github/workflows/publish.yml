@@ -74,8 +74,8 @@ jobs:
       # Publishes current version of packages that are not already present in the registry.
       - name: Run publish
         run: |
-          git config --global user.email "bot@glent.io"
-          git config --global user.name "glent-bot"
+          git config --global user.email "bot@glint.io"
+          git config --global user.name "glint-bot"
           lerna publish from-package --yes --no-verify-access
       # Creates the next available tag with format "release-<year>-<month>-<day>[.<n>]"
       - name: Create a release tag
@@ -89,12 +89,3 @@ jobs:
         run: node scripts/create-github-release.js ${{ steps.create_tag.outputs.tag_name }} 1
         env:
           GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-
-#      # Notify everyone about this on Discord
-#      - name: Discord notification
-#        uses: Ilshidur/action-discord@0.2.0
-#        env:
-#          DISCORD_WEBHOOK: ${{ secrets.DISCORD_RELEASE_WEBHOOK }}
-#          TAG_NAME: ${{ steps.create_tag.outputs.tag_name }}
-#        with:
-#          args: 'A new release has been published! https://github.com/kozmoai/glent-backstage-plugins/releases/tag/{{TAG_NAME}}'

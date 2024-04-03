@@ -4,14 +4,14 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
-  "homepage": "https://glent.io/backstage/plugins/github-insights/",
+  "homepage": "https://glint.io/backstage/plugins/github-insights/",
   "bugs": {
-    "url": "https://github.com/kozmoai/glent-backstage-plugins/issues",
-    "email": "support@glent.io"
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glent-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/frontend/backstage-plugin-github-insights"
   },
   "publishConfig": {
@@ -48,8 +48,8 @@
     "@octokit/types": "^9.0.0",
     "history": "^5.0.0",
     "immer": "9.0.7",
-    "zustand": "3.6.9",
-    "react-use": "^17.2.4"
+    "react-use": "^17.2.4",
+    "zustand": "3.6.9"
   },
   "peerDependencies": {
     "react": "^16.13.1 || ^17.0.0 || ^18.0.0",
@@ -66,9 +66,9 @@
     "@testing-library/user-event": "^14.0.0",
     "cross-fetch": "^3.1.4",
     "esbuild": "^0.8.56",
+    "jest-environment-jsdom": "^29.2.1",
     "msw": "^1.0.1",
-    "react-test-renderer": "^16.14.0",
-    "jest-environment-jsdom": "^29.2.1"
+    "react-test-renderer": "^16.14.0"
   },
   "files": [
     "dist"

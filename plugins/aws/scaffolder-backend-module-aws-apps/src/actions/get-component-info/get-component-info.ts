@@ -5,7 +5,7 @@ import { createTemplateAction } from '@backstage/plugin-scaffolder-node';
 import { kebabCase } from 'lodash';
 import yaml from 'yaml';
 
-const ID = 'glent:get-component-info';
+const ID = 'glint:get-component-info';
 
 const examples = [
   {

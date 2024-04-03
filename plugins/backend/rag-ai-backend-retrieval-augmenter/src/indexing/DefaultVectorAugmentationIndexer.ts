@@ -25,11 +25,11 @@ import {
   EmbeddingDoc,
   EmbeddingsSource,
   EntityFilterShape,
-  GlentVectorStore,
+  GlintVectorStore,
 } from '@kozmoai/rag-ai-node';
 
 export class DefaultVectorAugmentationIndexer implements AugmentationIndexer {
-  private readonly _vectorStore: GlentVectorStore;
+  private readonly _vectorStore: GlintVectorStore;
   private readonly catalogApi: CatalogApi;
   private readonly logger: Logger;
 
@@ -42,7 +42,7 @@ export class DefaultVectorAugmentationIndexer implements AugmentationIndexer {
     embeddings,
     splitterOptions,
   }: {
-    vectorStore: GlentVectorStore;
+    vectorStore: GlintVectorStore;
     catalogApi: CatalogApi;
     logger: Logger;
     embeddings: Embeddings;

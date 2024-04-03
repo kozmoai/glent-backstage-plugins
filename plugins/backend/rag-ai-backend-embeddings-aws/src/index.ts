@@ -15,20 +15,20 @@
  */
 
 import { Logger } from 'winston';
-import { AugmentationIndexer, GlentVectorStore } from '@kozmoai/rag-ai-node';
+import { AugmentationIndexer, GlintVectorStore } from '@kozmoai/rag-ai-node';
 import {
   BedrockConfig,
-  GlentBedrockAugmenter,
-} from './GlentBedrockAugmenter';
+  GlintBedrockAugmenter,
+} from './GlintBedrockAugmenter';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 import { AwsCredentialIdentity, Provider } from '@aws-sdk/types';
 import { Config } from '@backstage/config';
 import { SplitterOptions } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
-export interface GlentBedrockEmbeddingsConfig {
+export interface GlintBedrockEmbeddingsConfig {
   logger: Logger;
-  vectorStore: GlentVectorStore;
+  vectorStore: GlintVectorStore;
   catalogApi: CatalogApi;
   discovery: PluginEndpointDiscovery;
   config: Config;
@@ -45,8 +45,8 @@ export async function initializeBedrockEmbeddings({
   discovery,
   config,
   options,
-}: GlentBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
-  logger.info('Initializing Glent AWS Bedrock Embeddings');
+}: GlintBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
+  logger.info('Initializing Glint AWS Bedrock Embeddings');
   const bedrockConfig = config.get<BedrockConfig>('ai.embeddings.bedrock');
   const embeddingsOptions = config.getOptionalConfig('ai.embeddings');
   const splitterOptions: SplitterOptions = {};
@@ -56,11 +56,11 @@ export async function initializeBedrockEmbeddings({
     splitterOptions.chunkOverlap =
       embeddingsOptions.getOptionalNumber('chunkOverlap');
   }
-  return new GlentBedrockAugmenter({
+  return new GlintBedrockAugmenter({
     vectorStore,
     catalogApi,
     discovery,
-    logger: logger.child({ label: 'glent-bedrock-embedder' }),
+    logger: logger.child({ label: 'glint-bedrock-embedder' }),
     options,
     bedrockConfig,
     splitterOptions,

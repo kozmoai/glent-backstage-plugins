@@ -6,16 +6,16 @@ import { useApi } from '@backstage/core-plugin-api';
 import { AWSComponent, AWSComponentType, AWSECSAppDeploymentEnvironment, AWSServiceResources, AWSResourceDeploymentEnvironment } from '@aws/plugin-aws-apps-common-for-backstage';
 import { LinearProgress, Typography } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
-import { glentApiRef } from '../../api';
+import { glintApiRef } from '../../api';
 import { ServiceResourcesComponent } from './ServiceComponent';
 import { useAsyncAwsApp } from '../../hooks/useAwsApp';
 import { ProviderType } from '../../helpers/constants';
 
-const GlentAppInfraInfo = ({
+const GlintAppInfraInfo = ({
   input: { resourceGroupArn, awsComponent }
 }: { input: { resourceGroupArn: string, awsComponent: AWSComponent } }) => {
 
-  const api = useApi(glentApiRef);
+  const api = useApi(glintApiRef);
 
   const [rscGroupData, setRscGroupData] = useState<AWSServiceResources>({});
   const [loading, setLoading] = useState(true);
@@ -124,7 +124,7 @@ export const InfrastructureCard = () => {
     else {
       throw new Error("Infrastructure Card Not yet implemented!")
     }
-    return <GlentAppInfraInfo input={input} />
+    return <GlintAppInfraInfo input={input} />
   } else {
     return <EmptyState missing="data" title="No infrastructure data to show" description="Infrastructure data would show here" />
   }

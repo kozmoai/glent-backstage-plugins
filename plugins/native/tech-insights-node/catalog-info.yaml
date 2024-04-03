@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-tech-insights-node
-  title: '@kozmoai/plugin-tech-insights-node'
-spec:
-  lifecycle: experimental
-  type: glint-node-library
-  owner: maintainers

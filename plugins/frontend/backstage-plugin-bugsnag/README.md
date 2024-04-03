@@ -81,4 +81,4 @@ These values can be found in Bugsnag settings dashboard, under organization and 
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glent.io
+- Get hosted, managed Backstage for your company: https://glint.io

@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-techdocs-addons-test-utils
-  title: '@kozmoai/plugin-techdocs-addons-test-utils'
-spec:
-  lifecycle: production
-  type: glint-web-library
-  owner: techdocs-maintainers

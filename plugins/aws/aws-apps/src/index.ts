@@ -6,7 +6,7 @@ export {
   AwsEnvironmentProviderPage,
   AwsComponentPage,
   AwsAppPage,
-  glentPlugin,
+  glintPlugin,
   EntityAnnotationTypeTable,
   EntityAppStateCard,
   EntityK8sAppStateCard,

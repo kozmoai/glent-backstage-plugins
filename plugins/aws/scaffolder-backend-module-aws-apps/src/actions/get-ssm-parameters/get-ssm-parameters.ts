@@ -10,7 +10,7 @@ import {
 } from '../../helpers/action-context';
 import { EnvironmentProvider, EnvironmentProviderConnection } from '../../types';
 
-const ID = 'glent:get-ssm-parameters';
+const ID = 'glint:get-ssm-parameters';
 
 const examples = [
   {
@@ -19,10 +19,10 @@ const examples = [
       steps: [
         {
           action: ID,
-          id: 'glentGetSsmParams',
+          id: 'glintGetSsmParams',
           name: 'Get parameter values',
           input: {
-            envProviders: "${{ steps['glentGetAwsEnvProviders'].output.envProviders }}",
+            envProviders: "${{ steps['glintGetAwsEnvProviders'].output.envProviders }}",
             paramKeys:
               - '/my/ssm/parameter'
           },

@@ -16,7 +16,7 @@
 
 import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
 import { PluginEnvironment } from '../types';
-import { createGlentPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
+import { createGlintPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
 import { CatalogClient } from '@backstage/catalog-client';
 import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 import { initializeBedrockEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-aws';
@@ -33,7 +33,7 @@ export default async function createPlugin({
     discoveryApi: discovery,
   });
 
-  const vectorStore = await createGlentPgVectorStore({
+  const vectorStore = await createGlintPgVectorStore({
     logger,
     database,
     config,

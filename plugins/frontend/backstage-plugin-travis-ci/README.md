@@ -107,4 +107,4 @@ and run `yarn install` in the root backstage directory - it will create a symbol
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glent.io
+- Get hosted, managed Backstage for your company: https://glint.io

@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-search-react
-  title: '@kozmoai/plugin-search-react'
-spec:
-  lifecycle: production
-  type: glint-web-library
-  owner: discoverability-maintainers

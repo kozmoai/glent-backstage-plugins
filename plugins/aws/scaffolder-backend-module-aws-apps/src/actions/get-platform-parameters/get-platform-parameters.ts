@@ -7,16 +7,16 @@ import {
   getPlatformAccountSSMParameterValue
 } from '../../helpers/action-context';
 import { Config } from '@backstage/config'
-const ID = 'glent:get-platform-parameters';
+const ID = 'glint:get-platform-parameters';
 
 const examples = [
   {
-    description: 'Retrieve AWS SSM parameter values for the GLENT on AWS platform so that their values can be used by other template actions',
+    description: 'Retrieve AWS SSM parameter values for the GLINT on AWS platform so that their values can be used by other template actions',
     example: yaml.stringify({
       steps: [
         {
           action: ID,
-          id: 'glentGetPlatformParams',
+          id: 'glintGetPlatformParams',
           name: 'Get parameter values',
           input: {
             paramKeys:

@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-auth-node
-  title: '@kozmoai/plugin-auth-node'
-spec:
-  lifecycle: experimental
-  type: glint-node-library
-  owner: maintainers

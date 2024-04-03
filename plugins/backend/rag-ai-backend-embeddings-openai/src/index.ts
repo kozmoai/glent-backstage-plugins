@@ -1,15 +1,15 @@
 
 import { Logger } from 'winston';
-import { AugmentationIndexer, GlentVectorStore } from '@kozmoai/rag-ai-node';
-import { OpenAiConfig, GlentOpenAiAugmenter } from './GlentOpenAiAugmenter';
+import { AugmentationIndexer, GlintVectorStore } from '@kozmoai/rag-ai-node';
+import { OpenAiConfig, GlintOpenAiAugmenter } from './GlintOpenAiAugmenter';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 import { Config } from '@backstage/config';
 import { SplitterOptions } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
-export interface GlentBedrockEmbeddingsConfig {
+export interface GlintBedrockEmbeddingsConfig {
   logger: Logger;
-  vectorStore: GlentVectorStore;
+  vectorStore: GlintVectorStore;
   catalogApi: CatalogApi;
   discovery: PluginEndpointDiscovery;
   config: Config;
@@ -21,8 +21,8 @@ export async function initializeOpenAiEmbeddings({
   catalogApi,
   discovery,
   config,
-}: GlentBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
-  logger.info('Initializing Glent OpenAI Embeddings');
+}: GlintBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
+  logger.info('Initializing Glint OpenAI Embeddings');
   const openAiConfig = config.get<OpenAiConfig>('ai.embeddings.openai');
 
   const embeddingsOptions = config.getOptionalConfig('ai.embeddings');
@@ -33,12 +33,12 @@ export async function initializeOpenAiEmbeddings({
     splitterOptions.chunkOverlap =
       embeddingsOptions.getOptionalNumber('chunkOverlap');
   }
-  return new GlentOpenAiAugmenter({
+  return new GlintOpenAiAugmenter({
     vectorStore,
     catalogApi,
     discovery,
     splitterOptions,
-    logger: logger.child({ label: 'glent-openai-embeddings' }),
+    logger: logger.child({ label: 'glint-openai-embeddings' }),
     config: openAiConfig,
   });
 }

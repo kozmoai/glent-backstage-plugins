@@ -5,7 +5,7 @@ metadata:
   title: Create a github repository
   description: Creates a github repository with the selected settings
 spec:
-  owner: glent
+  owner: glint
   type: service
 
   parameters:

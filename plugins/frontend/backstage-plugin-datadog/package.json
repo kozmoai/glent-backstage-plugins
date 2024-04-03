@@ -13,12 +13,12 @@
     "role": "frontend-plugin"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glent-backstage-plugins/issues",
-    "email": "support@glent.io"
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glent-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/frontend/backstage-plugin-datadog"
   },
   "scripts": {
@@ -56,14 +56,14 @@
     "@backstage/core-app-api": "^1.12.0",
     "@backstage/dev-utils": "^1.0.27",
     "@backstage/test-utils": "^1.5.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
     "esbuild": "^0.11.13",
     "jest-environment-jsdom": "^29.2.1",
     "msw": "^1.0.1",
     "rollup-plugin-dts": "^5.2.0",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-node-resolve": "^15.0.1",
     "rollup-plugin-esbuild": "^5.0.0"
   },
   "files": [

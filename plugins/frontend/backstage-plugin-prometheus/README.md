@@ -272,4 +272,4 @@ const callbackFunction = (arg: Alerts) => {
 - [Backstage](https://backstage.io)
 - [Prometheus](https://prometheus.io/docs/introduction/overview/)
 - [Prometheus Recording Rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/)
-- Get hosted, managed Backstage for your company: https://glent.io
+- Get hosted, managed Backstage for your company: https://glint.io

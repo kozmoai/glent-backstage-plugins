@@ -10,19 +10,19 @@ import {
 } from '@backstage/core-plugin-api';
 import { Entity } from '@backstage/catalog-model';
 import { rootRouteRef } from './routes';
-import { GLENTApiClient, glentApiRef } from './api';
+import { GLINTApiClient, glintApiRef } from './api';
 
-export const isGLENTAppAvailable = (entity: Entity) => entity?.spec?.type === 'aws-app';
+export const isGLINTAppAvailable = (entity: Entity) => entity?.spec?.type === 'aws-app';
 export const isAnnotationsAvailable = (entity: Entity) => entity?.metadata?.annotations;
 export const isLabelsAvailable = (entity: Entity) => entity?.metadata?.labels;
 
-export const glentPlugin = createPlugin({
+export const glintPlugin = createPlugin({
   id: 'aws-apps',
   apis: [
     createApiFactory({
-      api: glentApiRef,
+      api: glintApiRef,
       deps: { configApi: configApiRef, fetchApi: fetchApiRef },
-      factory: ({ configApi, fetchApi }) => new GLENTApiClient({ configApi, fetchApi }),
+      factory: ({ configApi, fetchApi }) => new GLINTApiClient({ configApi, fetchApi }),
     }),
   ],
   routes: {
@@ -30,7 +30,7 @@ export const glentPlugin = createPlugin({
   },
 });
 
-export const EntityLabelTable = glentPlugin.provide(
+export const EntityLabelTable = glintPlugin.provide(
   createComponentExtension({
     name: 'EntityLabelTable',
     component: {
@@ -39,7 +39,7 @@ export const EntityLabelTable = glentPlugin.provide(
   }),
 );
 
-export const EntityAuditTable = glentPlugin.provide(
+export const EntityAuditTable = glintPlugin.provide(
   createComponentExtension({
     name: 'EntityAuditTable',
     component: {
@@ -48,7 +48,7 @@ export const EntityAuditTable = glentPlugin.provide(
   }),
 );
 
-export const EntityEnvironmentSelector = glentPlugin.provide(
+export const EntityEnvironmentSelector = glintPlugin.provide(
   createComponentExtension({
     name: 'EnvironmentSelector',
     component: {
@@ -57,7 +57,7 @@ export const EntityEnvironmentSelector = glentPlugin.provide(
   }),
 );
 
-export const EntityAnnotationTypeTable = glentPlugin.provide(
+export const EntityAnnotationTypeTable = glintPlugin.provide(
   createComponentExtension({
     name: 'EntityAnnotationTypeTable',
     component: {
@@ -66,7 +66,7 @@ export const EntityAnnotationTypeTable = glentPlugin.provide(
   }),
 );
 
-export const EntityAppStateCard = glentPlugin.provide(
+export const EntityAppStateCard = glintPlugin.provide(
   createComponentExtension({
     name: 'AppStateCard',
     component: {
@@ -75,7 +75,7 @@ export const EntityAppStateCard = glentPlugin.provide(
   }),
 );
 
-export const EntityK8sAppStateCard = glentPlugin.provide(
+export const EntityK8sAppStateCard = glintPlugin.provide(
   createComponentExtension({
     name: 'K8sAppStateCard',
     component: {
@@ -84,7 +84,7 @@ export const EntityK8sAppStateCard = glentPlugin.provide(
   }),
 );
 
-export const EntityAppStateCardCloudFormation = glentPlugin.provide(
+export const EntityAppStateCardCloudFormation = glintPlugin.provide(
   createComponentExtension({
     name: 'AppStateCardCloudFormation',
     component: {
@@ -93,7 +93,7 @@ export const EntityAppStateCardCloudFormation = glentPlugin.provide(
   }),
 );
 
-export const EntityGeneralInfoCard = glentPlugin.provide(
+export const EntityGeneralInfoCard = glintPlugin.provide(
   createComponentExtension({
     name: 'GeneralInfoCard',
     component: {
@@ -102,7 +102,7 @@ export const EntityGeneralInfoCard = glentPlugin.provide(
   }),
 );
 
-export const EntityAppPromoCard = glentPlugin.provide(
+export const EntityAppPromoCard = glintPlugin.provide(
   createComponentExtension({
     name: 'AppPromoCard',
     component: {
@@ -111,7 +111,7 @@ export const EntityAppPromoCard = glentPlugin.provide(
   }),
 );
 
-export const EntityAppLinksCard = glentPlugin.provide(
+export const EntityAppLinksCard = glintPlugin.provide(
   createComponentExtension({
     name: 'AppLinksCard',
     component: {
@@ -120,7 +120,7 @@ export const EntityAppLinksCard = glentPlugin.provide(
   }),
 );
 
-export const AppCatalogPage = glentPlugin.provide(
+export const AppCatalogPage = glintPlugin.provide(
   createComponentExtension({
     name: 'AppCatalogPage',
     component: {
@@ -129,7 +129,7 @@ export const AppCatalogPage = glentPlugin.provide(
   }),
 );
 
-export const EntityCloudwatchLogsTable = glentPlugin.provide(
+export const EntityCloudwatchLogsTable = glintPlugin.provide(
   createComponentExtension({
     name: 'EntityCloudwatchLogsTable',
     component: {
@@ -138,7 +138,7 @@ export const EntityCloudwatchLogsTable = glentPlugin.provide(
   }),
 );
 
-export const EntityInfrastructureInfoCard = glentPlugin.provide(
+export const EntityInfrastructureInfoCard = glintPlugin.provide(
   createComponentExtension({
     name: 'InfrastructureInfoCard',
     component: {
@@ -148,7 +148,7 @@ export const EntityInfrastructureInfoCard = glentPlugin.provide(
 );
 
 
-export const EntityProviderInfoCard = glentPlugin.provide(
+export const EntityProviderInfoCard = glintPlugin.provide(
   createComponentExtension({
     name: 'ProviderInfoCard',
     component: {
@@ -157,7 +157,7 @@ export const EntityProviderInfoCard = glentPlugin.provide(
   }),
 );
 
-export const EntityEnvironmentInfoCard = glentPlugin.provide(
+export const EntityEnvironmentInfoCard = glintPlugin.provide(
   createComponentExtension({
     name: 'EnvironmentInfoCard',
     component: {
@@ -166,7 +166,7 @@ export const EntityEnvironmentInfoCard = glentPlugin.provide(
   }),
 );
 
-export const EntityAppConfigCard = glentPlugin.provide(
+export const EntityAppConfigCard = glintPlugin.provide(
   createComponentExtension({
     name: 'AppConfigCard',
     component: {
@@ -175,7 +175,7 @@ export const EntityAppConfigCard = glentPlugin.provide(
   }),
 );
 
-export const EntityDeleteAppCard = glentPlugin.provide(
+export const EntityDeleteAppCard = glintPlugin.provide(
   createComponentExtension({
     name: 'DeleteAppCard',
     component: {
@@ -184,7 +184,7 @@ export const EntityDeleteAppCard = glentPlugin.provide(
   }),
 );
 
-export const EntityDeleteProviderCard = glentPlugin.provide(
+export const EntityDeleteProviderCard = glintPlugin.provide(
   createComponentExtension({
     name: 'DeleteProviderCard',
     component: {
@@ -193,7 +193,7 @@ export const EntityDeleteProviderCard = glentPlugin.provide(
   }),
 );
 
-export const EntityDeleteEnvironmentCard = glentPlugin.provide(
+export const EntityDeleteEnvironmentCard = glintPlugin.provide(
   createComponentExtension({
     name: 'DeleteEnvironmentCard',
     component: {
@@ -202,7 +202,7 @@ export const EntityDeleteEnvironmentCard = glentPlugin.provide(
   }),
 );
 
-export const EntityResourceBindingCard = glentPlugin.provide(
+export const EntityResourceBindingCard = glintPlugin.provide(
   createComponentExtension({
     name: 'ResourceBindingCard',
     component: {
@@ -211,7 +211,7 @@ export const EntityResourceBindingCard = glentPlugin.provide(
   }),
 );
 
-export const EntityAwsEnvironmentProviderSelectorCard = glentPlugin.provide(
+export const EntityAwsEnvironmentProviderSelectorCard = glintPlugin.provide(
   createComponentExtension({
     name: 'AwsEnvironmentProviderSelectorCard',
     component: {
@@ -220,7 +220,7 @@ export const EntityAwsEnvironmentProviderSelectorCard = glentPlugin.provide(
   }),
 );
 
-export const AwsAppPage = glentPlugin.provide(
+export const AwsAppPage = glintPlugin.provide(
   createComponentExtension({
     name: 'AwsAppPage',
     component: {
@@ -229,7 +229,7 @@ export const AwsAppPage = glentPlugin.provide(
   }),
 );
 
-export const AwsComponentPage = glentPlugin.provide(
+export const AwsComponentPage = glintPlugin.provide(
   createComponentExtension({
     name: 'AwsComponentPage',
     component: {
@@ -238,7 +238,7 @@ export const AwsComponentPage = glentPlugin.provide(
   }),
 );
 
-export const AwsEnvironmentPage = glentPlugin.provide(
+export const AwsEnvironmentPage = glintPlugin.provide(
   createComponentExtension({
     name: 'AwsEnvironmentPage',
     component: {
@@ -247,7 +247,7 @@ export const AwsEnvironmentPage = glentPlugin.provide(
   }),
 );
 
-export const AwsEnvironmentProviderPage = glentPlugin.provide(
+export const AwsEnvironmentProviderPage = glintPlugin.provide(
   createComponentExtension({
     name: 'AwsEnvironmentProviderPage',
     component: {

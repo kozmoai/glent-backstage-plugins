@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glent-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/home/backstage-plugin-home-rss"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glent-backstage-plugins/issues",
-    "email": "support@glent.io"
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "scripts": {
     "start": "backstage-cli package start",
@@ -33,9 +33,9 @@
   "dependencies": {
     "@backstage/backend-common": "^0.21.3",
     "@backstage/config": "^1.1.1",
-    "@backstage/plugin-home-react": "^0.1.8",
     "@backstage/core-components": "^0.14.0",
     "@backstage/core-plugin-api": "^1.9.0",
+    "@backstage/plugin-home-react": "^0.1.8",
     "@material-ui/core": "^4.12.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "cross-fetch": "^3.1.4",
@@ -47,16 +47,16 @@
     "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@types/luxon": "^3.0.0",
     "@backstage/cli": "^0.25.2",
     "@backstage/test-utils": "^1.5.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
+    "@types/luxon": "^3.0.0",
     "msw": "^1.0.1",
-    "rollup-plugin-esbuild": "^5.0.0",
     "rollup-plugin-dts": "^5.2.0",
-    "@rollup/plugin-commonjs": "^24.0.1",
-    "@rollup/plugin-node-resolve": "^15.0.1"
+    "rollup-plugin-esbuild": "^5.0.0"
   },
   "files": [
     "dist"

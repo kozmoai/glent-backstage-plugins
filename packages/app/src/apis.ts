@@ -27,7 +27,7 @@ import {
   fetchApiRef,
 } from '@backstage/core-plugin-api';
 import fetch from 'cross-fetch';
-import { ragAiApiRef, GlentRagAiClient } from '@kozmoai/rag-ai';
+import { ragAiApiRef, GlintRagAiClient } from '@kozmoai/rag-ai';
 
 export const apis: AnyApiFactory[] = [
   createApiFactory({
@@ -51,7 +51,7 @@ export const apis: AnyApiFactory[] = [
       fetchApi: fetchApiRef,
     },
     factory: ({ discoveryApi, fetchApi, configApi }) => {
-      return new GlentRagAiClient({
+      return new GlintRagAiClient({
         discoveryApi,
         fetchApi,
         configApi,

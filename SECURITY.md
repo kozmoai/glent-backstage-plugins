@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-Please report security issues via security@glent.io
+Please report security issues via security@glint.io

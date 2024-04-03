@@ -3,11 +3,11 @@
 
 import { createPermission } from '@backstage/plugin-permission-common';
 
-export const readGlentAppAuditPermission = createPermission({
-  name: 'glent.app.audit.read',
+export const readGlintAppAuditPermission = createPermission({
+  name: 'glint.app.audit.read',
   attributes: {
     action: 'read',
   },
 });
 
-export const glentPermissions = [readGlentAppAuditPermission];
+export const glintPermissions = [readGlintAppAuditPermission];

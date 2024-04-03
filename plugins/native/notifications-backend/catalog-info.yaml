@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-notifications-backend
-  title: '@kozmoai/plugin-notifications-backend'
-spec:
-  lifecycle: experimental
-  type: glint-backend-plugin
-  owner: maintainers

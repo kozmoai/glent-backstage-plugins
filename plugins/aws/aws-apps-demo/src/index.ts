@@ -5,14 +5,14 @@ export {
   awsAppsDemoPlugin,
   AWSLogoFull,
   AWSLogoIcon,
-  GLENTLogoFull,
-  GLENTLogoIcon,
+  GLINTLogoFull,
+  GLINTLogoIcon,
   CustomerLogoFullLight,
   CustomerLogoIcon,
   CustomerLogoFullTitleLight,
 } from './plugin';
 export { AWSAppsHomePage } from './components/AWSAppsHomePage/AWSAppsHomePage';
-export { GLENTHomePage } from './components/GLENTHomePage/GLENTHomePage';
+export { GLINTHomePage } from './components/GLINTHomePage/GLINTHomePage';
 export { customerTheme } from './components/theme/customer-theme';
 export { awsTheme } from './components/theme/aws-theme';
-export { glentTheme } from './components/theme/glent-theme';
+export { glintTheme } from './components/theme/glint-theme';

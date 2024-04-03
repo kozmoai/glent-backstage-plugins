@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-org-react
-  title: '@kozmoai/plugin-org-react'
-spec:
-  lifecycle: experimental
-  type: glint-web-library
-  owner: maintainers

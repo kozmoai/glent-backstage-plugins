@@ -17,8 +17,8 @@ import { Logger } from 'winston';
 import { PluginDatabaseManager } from '@backstage/backend-common';
 import { applyDatabaseMigrations } from '../database/migrations';
 
-import { GlentVectorStore } from '@kozmoai/rag-ai-node';
-import { GlentPgVectorStore } from './GlentPgVectorStore';
+import { GlintVectorStore } from '@kozmoai/rag-ai-node';
+import { GlintPgVectorStore } from './GlintPgVectorStore';
 import { Config } from '@backstage/config';
 
 export interface PgVectorStoreInitConfig {
@@ -27,29 +27,29 @@ export interface PgVectorStoreInitConfig {
   config: Config;
 }
 
-export interface GlentPgVectorStoreOptions {
+export interface GlintPgVectorStoreOptions {
   chunkSize?: number;
   amount?: number;
 }
 
-export async function createGlentPgVectorStore({
+export async function createGlintPgVectorStore({
   logger,
   database,
   config,
-}: PgVectorStoreInitConfig): Promise<GlentVectorStore> {
-  logger.info('Starting Glent PgVectorStore');
+}: PgVectorStoreInitConfig): Promise<GlintVectorStore> {
+  logger.info('Starting Glint PgVectorStore');
 
   const dbClient = await database.getClient();
   await applyDatabaseMigrations(dbClient);
 
   const pgVectorConfig = config.getOptionalConfig('ai.storage.pgVector');
-  const options: GlentPgVectorStoreOptions = {};
+  const options: GlintPgVectorStoreOptions = {};
   if (pgVectorConfig) {
     options.amount = pgVectorConfig.getOptionalNumber('amount');
     options.chunkSize = pgVectorConfig.getOptionalNumber('chunkSize');
   }
 
-  return GlentPgVectorStore.initialize({
+  return GlintPgVectorStore.initialize({
     logger,
     db: dbClient,
     chunkSize: options?.chunkSize,

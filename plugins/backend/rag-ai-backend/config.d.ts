@@ -16,7 +16,7 @@
 
 export interface Config {
   /**
-   * Glent RAG AI configuration
+   * Glint RAG AI configuration
    */
   ai?: {
     /**

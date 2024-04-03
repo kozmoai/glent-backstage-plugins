@@ -5,16 +5,16 @@ import { Config } from '@backstage/config';
 import { createTemplateAction } from '@backstage/plugin-scaffolder-node';
 import yaml from 'yaml';
 
-const ID = 'glent:get-platform-metadata';
+const ID = 'glint:get-platform-metadata';
 
 const examples = [
   {
-    description: 'Retrieve data about the GLENT on AWS platform',
+    description: 'Retrieve data about the GLINT on AWS platform',
     example: yaml.stringify({
       steps: [
         {
           action: ID,
-          id: 'glentGetPlatformMetadata',
+          id: 'glintGetPlatformMetadata',
           name: 'Get platform information',
         },
       ],
@@ -27,7 +27,7 @@ export function getPlatformMetadataAction(options: { envConfig: Config }) {
 
   return createTemplateAction({
     id: ID,
-    description: 'Retrieve data about the GLENT on AWS platform',
+    description: 'Retrieve data about the GLINT on AWS platform',
     examples,
     schema: {
       output: {
@@ -37,7 +37,7 @@ export function getPlatformMetadataAction(options: { envConfig: Config }) {
         ],
         properties: {
           platformRegion: {
-            title: 'The AWS region where the GLENT on AWS solution is deployed',
+            title: 'The AWS region where the GLINT on AWS solution is deployed',
             type: 'string'
           }
         }

@@ -5,7 +5,7 @@ import { AWSEnvironmentEntityV1, AWSEnvironmentProviderEntityV1 } from "@kozmoai
 import { DeployStackStatus } from "@kozmoai/plugin-aws-apps-for-backstage/src/helpers/constants";
 
 /** 
- * A type for interacting with GLENT Backend environments
+ * A type for interacting with GLINT Backend environments
  * @public
 */
 export type BackendParams = {

@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-azure-devops-common
-  title: '@kozmoai/plugin-azure-devops-common'
-spec:
-  lifecycle: experimental
-  type: glint-common-library
-  owner: awanlin

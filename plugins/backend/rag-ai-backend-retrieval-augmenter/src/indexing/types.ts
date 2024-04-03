@@ -16,16 +16,16 @@
 import { Logger } from 'winston';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
-import { GlentVectorStore } from '@kozmoai/rag-ai-node';
+import { GlintVectorStore } from '@kozmoai/rag-ai-node';
 
 export type SplitterOptions = {
   chunkSize?: number;
   chunkOverlap?: number;
 };
 
-export interface GlentEmbeddingsConfig {
+export interface GlintEmbeddingsConfig {
   logger: Logger;
-  vectorStore: GlentVectorStore;
+  vectorStore: GlintVectorStore;
   catalogApi: CatalogApi;
   discovery: PluginEndpointDiscovery;
   splitterOptions?: SplitterOptions;

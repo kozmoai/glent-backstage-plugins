@@ -11,7 +11,7 @@ import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { glentApiRef } from '../../api';
+import { glintApiRef } from '../../api';
 import { sleep } from "../../helpers/util";
 
 const DeleteProviderPanel = ({
@@ -20,7 +20,7 @@ const DeleteProviderPanel = ({
   const [spinning, setSpinning] = useState(false);
   const [isDeleteSuccessful, setIsDeleteSuccessful] = useState(false);
   const [deleteResultMessage, setDeleteResultMessage] = useState("");
-  const api = useApi(glentApiRef);
+  const api = useApi(glintApiRef);
   const navigate = useNavigate();
   const stackName = entity.metadata['stackName']?.toString() || '';
   const prefix = entity.metadata['prefix']?.toString() || '';
@@ -48,7 +48,7 @@ const DeleteProviderPanel = ({
       gitHost,
       gitProject: gitRepo.split('/')[0],
       gitRepoName: gitRepo.split('/')[1],
-      gitAdminSecret: 'glent-admin-gitlab-secrets'
+      gitAdminSecret: 'glint-admin-gitlab-secrets'
     }).then(results => {
       console.log(results);
       setDeleteResultMessage("Gitlab Repository deleted.")

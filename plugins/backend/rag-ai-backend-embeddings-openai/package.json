@@ -14,12 +14,12 @@
     "role": "backend-plugin-module"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glent-backstage-plugins/issues",
-    "email": "support@glent.io"
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glent-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/backend/rag-ai-backend-embeddings-openai"
   },
   "scripts": {
@@ -35,10 +35,10 @@
     "@backstage/backend-common": "^0.21.3",
     "@backstage/catalog-client": "^1.6.0",
     "@backstage/config": "^1.1.1",
-    "@langchain/core": "^0.1.2",
-    "@langchain/openai": "^0.0.14",
     "@kozmoai/rag-ai-backend-retrieval-augmenter": "^0.1.0",
     "@kozmoai/rag-ai-node": "^0.1.0",
+    "@langchain/core": "^0.1.2",
+    "@langchain/openai": "^0.0.14",
     "langchain": "^0.0.209",
     "winston": "^3.11.0"
   },

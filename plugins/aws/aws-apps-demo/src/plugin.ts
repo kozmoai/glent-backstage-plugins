@@ -26,17 +26,17 @@ export const AWSLogoIcon = awsAppsDemoPlugin.provide(
   }),
 );
 
-export const GLENTLogoFull = awsAppsDemoPlugin.provide(
+export const GLINTLogoFull = awsAppsDemoPlugin.provide(
   createComponentExtension({
-    name: 'GLENTLogoFull',
-    component: { lazy: () => import('./components/GLENTLogoFull').then(m => m.GLENTLogoFull) },
+    name: 'GLINTLogoFull',
+    component: { lazy: () => import('./components/GLINTLogoFull').then(m => m.GLINTLogoFull) },
   }),
 );
 
-export const GLENTLogoIcon = awsAppsDemoPlugin.provide(
+export const GLINTLogoIcon = awsAppsDemoPlugin.provide(
   createComponentExtension({
-    name: 'GLENTLogoIcon',
-    component: { lazy: () => import('./components/GLENTLogoIcon').then(m => m.GLENTLogoIcon) },
+    name: 'GLINTLogoIcon',
+    component: { lazy: () => import('./components/GLINTLogoIcon').then(m => m.GLINTLogoIcon) },
   }),
 );
 
@@ -70,11 +70,11 @@ export const AWSAppsHomePage = awsAppsDemoPlugin.provide(
   }),
 );
 
-export const GLENTHomePage = awsAppsDemoPlugin.provide(
+export const GLINTHomePage = awsAppsDemoPlugin.provide(
   createComponentExtension({
     name: 'AWSAppsHomePage',
     component: {
-      lazy: () => import('./components/GLENTHomePage/GLENTHomePage').then(m => m.GLENTHomePage),
+      lazy: () => import('./components/GLINTHomePage/GLINTHomePage').then(m => m.GLINTHomePage),
     },
   }),
 );

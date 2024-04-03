@@ -3,7 +3,7 @@
 
 import { KeyValuePair } from '@aws-sdk/client-ecs';
 
-export interface GLENTAppData {
+export interface GLINTAppData {
   [key: string]: any;
 }
 

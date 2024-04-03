@@ -60,7 +60,7 @@ async function fetchCreds(
     // const ssmClient = new SSMClient({ region });
     // const ssmResponse = await ssmClient.send(
     //   new GetParameterCommand({
-    //     Name: '/glent/platform/SecurityMappingTable',
+    //     Name: '/glint/platform/SecurityMappingTable',
     //     WithDecryption: true,
     //   }),
     // );

@@ -1,4 +1,4 @@
-# GlentPgVectorStore - PostgreSQL RAG AI Vector Storage
+# GlintPgVectorStore - PostgreSQL RAG AI Vector Storage
 
 A module enabling usage of PostgreSQL as a storage solution for RAG AI Backstage backend plugin.
 
@@ -8,7 +8,7 @@ This module construct a database and needed database tables to support storing e
 
 ## How to initialize
 
-You can use the exported `createGlentPgVectorStore` function to initialize the GlentPGVectorStore. This initialization function expects an instance of logger and a Knex DB connection.
+You can use the exported `createGlintPgVectorStore` function to initialize the GlintPGVectorStore. This initialization function expects an instance of logger and a Knex DB connection.
 
 Here is a TypeScript example:
 
@@ -22,7 +22,7 @@ const config = {
   },
 };
 
-const vectorStore = await createGlentPgVectorStore({
+const vectorStore = await createGlintPgVectorStore({
   logger,
   database,
   options: { chunkSize, tableName },

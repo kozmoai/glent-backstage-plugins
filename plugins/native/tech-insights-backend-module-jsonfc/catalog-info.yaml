@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-tech-insights-backend-module-jsonfc
-  title: '@kozmoai/plugin-tech-insights-backend-module-jsonfc'
-spec:
-  lifecycle: experimental
-  type: glint-backend-plugin-module
-  owner: xantier

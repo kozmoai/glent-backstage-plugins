@@ -11,7 +11,7 @@ export function createS3BucketAction() {
     envProviders: EnvironmentProvider[];
     tags?: { Key: string, Value: string | number | boolean }[];
   }>({
-    id: 'glent:create-s3-bucket',
+    id: 'glint:create-s3-bucket',
     description: 'Creates an S3 bucket',
     schema: {
       input: {

@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-catalog-unprocessed-entities
-  title: '@kozmoai/plugin-catalog-unprocessed-entities'
-spec:
-  lifecycle: experimental
-  type: glint-frontend-plugin
-  owner: catalog-maintainers

@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-github-issues
-  title: '@kozmoai/plugin-github-issues'
-spec:
-  lifecycle: experimental
-  type: glint-frontend-plugin
-  owner: maintainers

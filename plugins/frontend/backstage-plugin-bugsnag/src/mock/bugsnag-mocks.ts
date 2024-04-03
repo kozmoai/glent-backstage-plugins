@@ -64,13 +64,13 @@ export const ErrorsMock = [
 export const OrganisationsMock = [
   {
     id: '129876sdfgh',
-    name: 'Glent test Organization',
-    slug: 'glent-test-organisation',
+    name: 'Glint test Organization',
+    slug: 'glint-test-organisation',
   },
   {
     id: '1119876sdfgh',
-    name: 'Glent test2 Organization',
-    slug: 'glent-test2-organisation',
+    name: 'Glint test2 Organization',
+    slug: 'glint-test2-organisation',
   },
 ];
 

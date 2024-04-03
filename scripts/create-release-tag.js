@@ -21,7 +21,7 @@ const { Octokit } = require('@octokit/rest');
 
 const baseOptions = {
   owner: 'kozmoai',
-  repo: 'glent-backstage-plugins',
+  repo: 'glint-backstage-plugins',
 };
 
 async function main() {

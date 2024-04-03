@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-entity-validation
-  title: '@kozmoai/plugin-entity-validation'
-spec:
-  lifecycle: experimental
-  type: glint-frontend-plugin
-  owner: maintainers

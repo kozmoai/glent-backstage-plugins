@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-playlist-backend
-  title: '@kozmoai/plugin-playlist-backend'
-spec:
-  lifecycle: experimental
-  type: glint-backend-plugin
-  owner: kuangp

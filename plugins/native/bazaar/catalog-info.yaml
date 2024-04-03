@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-bazaar
-  title: '@kozmoai/plugin-bazaar'
-spec:
-  lifecycle: experimental
-  type: glint-frontend-plugin
-  owner: maintainers

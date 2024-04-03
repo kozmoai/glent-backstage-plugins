@@ -11,12 +11,12 @@ import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import { GLENTApi, glentApiRef } from '../../api';
+import { GLINTApi, glintApiRef } from '../../api';
 import { sleep } from "../../helpers/util";
 
 const DeleteEnvironmentPanel = ({
   input: { entity, catalogApi, api }
-}: { input: { entity: Entity; catalogApi: CatalogApi; api: GLENTApi } }) => {
+}: { input: { entity: Entity; catalogApi: CatalogApi; api: GLINTApi } }) => {
   const [spinning, setSpinning] = useState(false);
   const [isDeleteSuccessful, setIsDeleteSuccessful] = useState(false);
   const [deleteResultMessage, setDeleteResultMessage] = useState("");
@@ -36,7 +36,7 @@ const DeleteEnvironmentPanel = ({
       gitHost,
       gitProject: 'aws-environments',
       gitRepoName,
-      gitAdminSecret: 'glent-admin-gitlab-secrets'
+      gitAdminSecret: 'glint-admin-gitlab-secrets'
     }).then(results => {
       console.log(results);
       setDeleteResultMessage("Gitlab Repository deleted.")
@@ -148,7 +148,7 @@ const DeleteEnvironmentPanel = ({
 export const DeleteEnvironmentCard = () => {
   const { entity } = useEntity();
   const catalogApi = useApi(catalogApiRef);
-  const api = useApi(glentApiRef);
+  const api = useApi(glintApiRef);
   const input = { entity, catalogApi, api }
   return <DeleteEnvironmentPanel input={input} />
 };

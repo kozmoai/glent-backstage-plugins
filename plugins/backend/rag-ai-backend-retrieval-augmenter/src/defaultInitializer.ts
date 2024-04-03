@@ -20,12 +20,12 @@ import {
   SourceBasedRetrievalRouter,
   VectorEmbeddingsRetriever,
 } from './retrieval';
-import { GlentVectorStore } from '@kozmoai/rag-ai-node';
+import { GlintVectorStore } from '@kozmoai/rag-ai-node';
 import { Logger } from 'winston';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 
 export type DefaultRetrievalPipelineOptions = {
-  vectorStore: GlentVectorStore;
+  vectorStore: GlintVectorStore;
   logger: Logger;
   discovery: PluginEndpointDiscovery;
 };

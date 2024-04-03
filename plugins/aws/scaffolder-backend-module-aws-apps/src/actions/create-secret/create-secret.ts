@@ -13,7 +13,7 @@ export function createSecretAction(options: { envConfig: Config }) {
     region?: string;
     tags?: { Key: string, Value: string | number | boolean }[];
   }>({
-    id: 'glent:create-secret',
+    id: 'glint:create-secret',
     description: 'Creates secret in Secret Manager',
     schema: {
       input: {

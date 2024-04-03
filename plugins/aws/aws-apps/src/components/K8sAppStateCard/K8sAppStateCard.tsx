@@ -15,7 +15,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import { Button, CardContent, Divider, Grid, Typography } from '@mui/material';
 import { styled } from '@mui/system';
 import React, { useEffect, useRef, useState } from 'react';
-import { glentApiRef } from '../../api';
+import { glintApiRef } from '../../api';
 import { base64PayloadConvert } from '../../helpers/util';
 import { useAsyncAwsApp } from '../../hooks/useAwsApp';
 import { useCancellablePromise } from '../../hooks/useCancellablePromise';
@@ -128,7 +128,7 @@ const StyledButton = styled('button')(
 `,
 );
 
-const GlentAppStateOverview = ({
+const GlintAppStateOverview = ({
   input: { env, entity, awsComponent }
 }: {
   input: {
@@ -138,7 +138,7 @@ const GlentAppStateOverview = ({
   }
 }) => {
 
-  const api = useApi(glentApiRef);
+  const api = useApi(glintApiRef);
   const [appStateData, setAppStateData] = useState<AppState[]>([]);
   const [variablesJson, setVariablesJson] = useState<any>({});
   const [appStarted, setAppStarted] = useState(false);
@@ -426,7 +426,7 @@ const GlentAppStateOverview = ({
           cluster: clusterNameState,
           kubectlLambda: env.entities.envProviderEntity?.metadata["kubectlLambdaArn"]?.toString() || "",
           lambdaRoleArn: appAdminRoleArn,
-          gitAdminSecret: 'glent-admin-gitlab-secrets',
+          gitAdminSecret: 'glint-admin-gitlab-secrets',
           updateKey: 'spec.replicas',
           updateValue: appState.desiredCount || 1,
           platformSCMConfig: {
@@ -516,7 +516,7 @@ const GlentAppStateOverview = ({
           cluster: clusterNameState,
           kubectlLambda: env.entities.envProviderEntity?.metadata["kubectlLambdaArn"]?.toString() || "",
           lambdaRoleArn: appAdminRoleArn,
-          gitAdminSecret: 'glent-admin-gitlab-secrets',
+          gitAdminSecret: 'glint-admin-gitlab-secrets',
           updateKey: 'spec.replicas',
           updateValue: 0,
           platformSCMConfig: {
@@ -794,7 +794,7 @@ export const K8sAppStateCard = () => {
         entity,
         awsComponent: awsAppLoadingStatus.component
       };
-      return <GlentAppStateOverview input={input} />
+      return <GlintAppStateOverview input={input} />
     } else {
       return <EmptyState missing="data" title="Can't render EKS app state card" description="Missing supported spec.subType" />
     }

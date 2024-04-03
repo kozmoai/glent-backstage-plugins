@@ -1,4 +1,4 @@
-# Glent RAG AI Frontend plugin for Backstage
+# Glint RAG AI Frontend plugin for Backstage
 
 This plugin is the frontend for RAG AI Backstage plugin. You can see the corresponding backend plugin in [here](/plugins/backend/rag-ai-backend/README.md).
 
@@ -39,7 +39,7 @@ import {
   fetchApiRef,
 } from '@backstage/core-plugin-api';
 import fetch from 'cross-fetch';
-import { ragAiApiRef, GlentRagAiClient } from '@kozmoai/rag-ai';
+import { ragAiApiRef, GlintRagAiClient } from '@kozmoai/rag-ai';
 
 export const apis: AnyApiFactory[] = [
   // ... Other APIs
@@ -51,7 +51,7 @@ export const apis: AnyApiFactory[] = [
       fetchApi: fetchApiRef,
     },
     factory: ({ discoveryApi, fetchApi, configApi }) => {
-      return new GlentRagAiClient({
+      return new GlintRagAiClient({
         discoveryApi,
         fetchApi,
         configApi,

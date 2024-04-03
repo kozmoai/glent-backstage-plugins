@@ -7,7 +7,7 @@ metadata:
   title: scaffolder-backend-module-utils test template
   description: An example template to test most of the scaffolder-backend-module-utils actions
 spec:
-  owner: glent
+  owner: glint
   type: service
 
   parameters:

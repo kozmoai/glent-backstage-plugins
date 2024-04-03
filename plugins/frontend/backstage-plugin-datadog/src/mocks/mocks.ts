@@ -18,7 +18,7 @@ export const getEntityStub = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@glent.io',
+    owner: 'david@glint.io',
     lifecycle: 'experimental',
   },
 };

@@ -42,14 +42,14 @@ export const handlers = [
         return res(ctx.json(yourOpenDraftPullRequests));
       case 'state:closed in:title type:pr repo:kozmoai/backstage-plugin-argo-cd':
         return res(ctx.json(closedPullsRequestMock));
-      case 'is:open is:pr team-review-requested:rglent-backstage-admin archived:false':
+      case 'is:open is:pr team-review-requested:rglint-backstage-admin archived:false':
         return res(ctx.json(groupAssignedReviewsMock));
       default:
         return res(ctx.json(openPullsRequestMock));
     }
   }),
   rest.get(
-    'https://api.github.com/repos/kozmoai/glent-backstage-plugins',
+    'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
     (_, res, ctx) => {
       return res(ctx.json(repoMock));
     },

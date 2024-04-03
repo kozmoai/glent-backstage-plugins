@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-jenkins-common
-  title: '@kozmoai/plugin-jenkins-common'
-spec:
-  lifecycle: experimental
-  type: glint-common-library
-  owner: maintainers

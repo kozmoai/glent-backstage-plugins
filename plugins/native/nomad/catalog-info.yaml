@@ -1,9 +1,0 @@
-apiVersion: glint.io/v1alpha1
-kind: Component
-metadata:
-  name: glint-plugin-nomad
-  title: '@kozmoai/plugin-nomad'
-spec:
-  lifecycle: experimental
-  type: glint-frontend-plugin
-  owner: maintainers
