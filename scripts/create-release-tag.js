@@ -20,8 +20,8 @@
 const { Octokit } = require('@octokit/rest');
 
 const baseOptions = {
-  owner: 'kozmoai',
-  repo: 'glint-backstage-plugins',
+  owner: 'RoadieHQ',
+  repo: 'roadie-backstage-plugins',
 };
 
 async function main() {

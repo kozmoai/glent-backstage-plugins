@@ -13,14 +13,14 @@
 
 ```bash
 cd packages/app
-yarn add @kozmoai/backstage-plugin-github-insights
+yarn add @roadiehq/backstage-plugin-github-insights
 ```
 
 2. Add plugin API to your Backstage instance:
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubInsightsContent } from '@kozmoai/backstage-plugin-github-insights';
+import { EntityGithubInsightsContent } from '@roadiehq/backstage-plugin-github-insights';
 
 ...
 
@@ -53,7 +53,7 @@ import {
   EntityGithubInsightsReadmeCard,
   EntityGithubInsightsReleasesCard,
   isGithubInsightsAvailable,
-} from '@kozmoai/backstage-plugin-github-insights';
+} from '@roadiehq/backstage-plugin-github-insights';
 
 ...
 
@@ -85,7 +85,7 @@ By default the plugin will use the annotation `github.com/project-slug` and get 
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubInsightsComplianceCard } from '@kozmoai/backstage-plugin-github-insights';
+import { EntityGithubInsightsComplianceCard } from '@roadiehq/backstage-plugin-github-insights';
 ```
 
 ![a preview of the compliance widget](docs/compliance-report-widget.png)
@@ -94,7 +94,7 @@ import { EntityGithubInsightsComplianceCard } from '@kozmoai/backstage-plugin-gi
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubInsightsContributorsCard } from '@kozmoai/backstage-plugin-github-insights';
+import { EntityGithubInsightsContributorsCard } from '@roadiehq/backstage-plugin-github-insights';
 ```
 
 ![a preview of the contributors widget](docs/contributors-widget.png)
@@ -103,7 +103,7 @@ import { EntityGithubInsightsContributorsCard } from '@kozmoai/backstage-plugin-
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubInsightsLanguagesCard } from '@kozmoai/backstage-plugin-github-insights';
+import { EntityGithubInsightsLanguagesCard } from '@roadiehq/backstage-plugin-github-insights';
 ```
 
 ![a preview of the languages widget](docs/languages-widget.png)
@@ -112,7 +112,7 @@ import { EntityGithubInsightsLanguagesCard } from '@kozmoai/backstage-plugin-git
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubInsightsReadmeCard } from '@kozmoai/backstage-plugin-github-insights';
+import { EntityGithubInsightsReadmeCard } from '@roadiehq/backstage-plugin-github-insights';
 ```
 
 ![a preview of the compliance widget](docs/readme-widget.png)
@@ -123,7 +123,7 @@ Please note that the [workflow status badge](https://docs.github.com/en/actions/
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubInsightsReleasesCard } from '@kozmoai/backstage-plugin-github-insights';
+import { EntityGithubInsightsReleasesCard } from '@roadiehq/backstage-plugin-github-insights';
 ```
 
 ![a preview of the releases widget](docs/releases-widget.png)
@@ -132,7 +132,7 @@ import { EntityGithubInsightsReleasesCard } from '@kozmoai/backstage-plugin-gith
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubInsightsEnvironmentsCard } from '@kozmoai/backstage-plugin-github-insights';
+import { EntityGithubInsightsEnvironmentsCard } from '@roadiehq/backstage-plugin-github-insights';
 ```
 
 ![a preview of the releases widget](docs/environments-widget.png)
@@ -140,4 +140,4 @@ import { EntityGithubInsightsEnvironmentsCard } from '@kozmoai/backstage-plugin-
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

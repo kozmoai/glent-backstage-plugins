@@ -19,7 +19,7 @@ You need to configure the action in your backend:
 
 ```
 cd packages/backend
-yarn add @kozmoai/scaffolder-backend-module-http-request
+yarn add @roadiehq/scaffolder-backend-module-http-request
 ```
 
 Configure the action:
@@ -70,7 +70,7 @@ metadata:
   title: Http testing for post/get
   description: Testing get functionality with get
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:

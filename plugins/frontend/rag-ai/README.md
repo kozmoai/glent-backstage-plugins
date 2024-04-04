@@ -1,4 +1,4 @@
-# Glint RAG AI Frontend plugin for Backstage
+# Roadie RAG AI Frontend plugin for Backstage
 
 This plugin is the frontend for RAG AI Backstage plugin. You can see the corresponding backend plugin in [here](/plugins/backend/rag-ai-backend/README.md).
 
@@ -37,9 +37,10 @@ import {
   createApiFactory,
   discoveryApiRef,
   fetchApiRef,
+  identityApiRef,
 } from '@backstage/core-plugin-api';
 import fetch from 'cross-fetch';
-import { ragAiApiRef, GlintRagAiClient } from '@kozmoai/rag-ai';
+import { ragAiApiRef, RoadieRagAiClient } from '@roadiehq/rag-ai';
 
 export const apis: AnyApiFactory[] = [
   // ... Other APIs
@@ -49,12 +50,14 @@ export const apis: AnyApiFactory[] = [
       configApi: configApiRef,
       discoveryApi: discoveryApiRef,
       fetchApi: fetchApiRef,
+      identityApi: identityApiRef,
     },
-    factory: ({ discoveryApi, fetchApi, configApi }) => {
-      return new GlintRagAiClient({
+    factory: ({ discoveryApi, fetchApi, configApi, identityApi }) => {
+      return new RoadieRagAiClient({
         discoveryApi,
         fetchApi,
         configApi,
+        identityApi,
       });
     },
   }),
@@ -70,7 +73,7 @@ App.tsx
 ```tsx
 
 // packages/app/src/App.tsx
-import { RagModal } from '@kozmoai/rag-ai';
+import { RagModal } from '@roadiehq/rag-ai';
 
 ...
 const App = () => (

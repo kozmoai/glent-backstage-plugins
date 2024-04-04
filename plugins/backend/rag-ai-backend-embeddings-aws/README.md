@@ -1,11 +1,11 @@
 # RAG AI Backend-embeddings AWS Bedrock submodule
 
-This is a submodule for the `@kozmoai/rag-ai-backend` module, which provides functionality to use AWS Bedrock embeddings to generate a RAG AI Backend plugin for Backstage. It integrates `@backstage/integration-aws-node` package for fetching AWS account credentials.
+This is a submodule for the `@roadiehq/rag-ai-backend` module, which provides functionality to use AWS Bedrock embeddings to generate a RAG AI Backend plugin for Backstage. It integrates `@backstage/integration-aws-node` package for fetching AWS account credentials.
 
 ## Initialization
 
 ```typescript
-const vectorStore = await createGlintPgVectorStore({ logger, database });
+const vectorStore = await createRoadiePgVectorStore({ logger, database });
 const awsCredentialsManager = DefaultAwsCredentialsManager.fromConfig(config);
 const credProvider = await awsCredentialsManager.getCredentialProvider();
 

@@ -19,7 +19,7 @@ import { Knex } from 'knex';
 
 export async function applyDatabaseMigrations(knex: Knex): Promise<void> {
   const migrationsDir = resolvePackagePath(
-    '@kozmoai/rag-ai-storage-pgvector',
+    '@roadiehq/rag-ai-storage-pgvector',
     'migrations',
   );
 

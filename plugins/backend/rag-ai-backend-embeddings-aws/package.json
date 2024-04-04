@@ -1,7 +1,7 @@
 {
-  "name": "@kozmoai/rag-ai-backend-embeddings-aws",
-  "description": "The AWS (Bedrock) backend module for the @kozmoai/rag-ai plugin.",
-  "version": "0.1.0",
+  "name": "@roadiehq/rag-ai-backend-embeddings-aws",
+  "description": "The AWS (Bedrock) backend module for the @roadiehq/rag-ai plugin.",
+  "version": "0.2.1",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
@@ -14,12 +14,12 @@
     "role": "backend-plugin-module"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
-    "email": "support@glint.io"
+    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
+    "email": "support@roadie.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-backstage-plugins",
+    "url": "github:RoadieHQ/roadie-backstage-plugins",
     "directory": "plugins/backend/rag-ai-backend-embeddings-aws"
   },
   "scripts": {
@@ -34,20 +34,20 @@
   "dependencies": {
     "@aws-sdk/client-bedrock-runtime": "^3.474.0",
     "@aws-sdk/types": "^3.468.0",
-    "@backstage/backend-common": "^0.21.3",
-    "@backstage/catalog-client": "^1.6.0",
-    "@backstage/config": "^1.1.1",
-    "@kozmoai/rag-ai-backend": "^0.1.0",
-    "@kozmoai/rag-ai-backend-retrieval-augmenter": "^0.1.0",
-    "@kozmoai/rag-ai-node": "^0.1.0",
+    "@backstage/backend-common": "^0.21.6",
+    "@backstage/catalog-client": "^1.6.3",
+    "@backstage/config": "^1.2.0",
     "@langchain/community": "^0.0.32",
     "@langchain/core": "^0.1.2",
+    "@roadiehq/rag-ai-backend": "^0.2.2",
+    "@roadiehq/rag-ai-backend-retrieval-augmenter": "^0.2.1",
+    "@roadiehq/rag-ai-node": "^0.1.1",
     "langchain": "^0.1.21",
     "winston": "^3.11.0"
   },
   "devDependencies": {
-    "@backstage/backend-test-utils": "^0.3.3",
-    "@backstage/cli": "^0.25.2",
+    "@backstage/backend-test-utils": "^0.3.6",
+    "@backstage/cli": "^0.26.2",
     "esbuild": "^0.19.9",
     "tsx": "^4.6.2"
   },

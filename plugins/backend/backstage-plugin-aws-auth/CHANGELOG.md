@@ -1,4 +1,10 @@
-# @kozmoai/backstage-plugin-aws-auth
+# @roadiehq/backstage-plugin-aws-auth
+
+## 0.4.22
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 0.4.21
 

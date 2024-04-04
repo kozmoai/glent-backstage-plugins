@@ -18,7 +18,7 @@ import {
   AugmentationRetriever,
   EmbeddingsSource,
   RetrievalRouter,
-} from '@kozmoai/rag-ai-node';
+} from '@roadiehq/rag-ai-node';
 import { Logger } from 'winston';
 
 export class SourceBasedRetrievalRouter implements RetrievalRouter {

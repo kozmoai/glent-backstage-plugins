@@ -13,22 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+import { TokenManager } from '@backstage/backend-common';
 import { Logger } from 'winston';
-import { AugmentationIndexer, GlintVectorStore } from '@kozmoai/rag-ai-node';
+import { AugmentationIndexer, RoadieVectorStore } from '@roadiehq/rag-ai-node';
 import {
   BedrockConfig,
-  GlintBedrockAugmenter,
-} from './GlintBedrockAugmenter';
+  RoadieBedrockAugmenter,
+} from './RoadieBedrockAugmenter';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 import { AwsCredentialIdentity, Provider } from '@aws-sdk/types';
 import { Config } from '@backstage/config';
-import { SplitterOptions } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
+import { SplitterOptions } from '@roadiehq/rag-ai-backend-retrieval-augmenter';
 
-export interface GlintBedrockEmbeddingsConfig {
+export interface RoadieBedrockEmbeddingsConfig {
   logger: Logger;
-  vectorStore: GlintVectorStore;
+  tokenManager: TokenManager;
+  vectorStore: RoadieVectorStore;
   catalogApi: CatalogApi;
   discovery: PluginEndpointDiscovery;
   config: Config;
@@ -40,13 +41,14 @@ export interface GlintBedrockEmbeddingsConfig {
 
 export async function initializeBedrockEmbeddings({
   logger,
+  tokenManager,
   vectorStore,
   catalogApi,
   discovery,
   config,
   options,
-}: GlintBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
-  logger.info('Initializing Glint AWS Bedrock Embeddings');
+}: RoadieBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
+  logger.info('Initializing Roadie AWS Bedrock Embeddings');
   const bedrockConfig = config.get<BedrockConfig>('ai.embeddings.bedrock');
   const embeddingsOptions = config.getOptionalConfig('ai.embeddings');
   const splitterOptions: SplitterOptions = {};
@@ -56,11 +58,12 @@ export async function initializeBedrockEmbeddings({
     splitterOptions.chunkOverlap =
       embeddingsOptions.getOptionalNumber('chunkOverlap');
   }
-  return new GlintBedrockAugmenter({
+  return new RoadieBedrockAugmenter({
     vectorStore,
     catalogApi,
     discovery,
-    logger: logger.child({ label: 'glint-bedrock-embedder' }),
+    logger: logger.child({ label: 'roadie-bedrock-embedder' }),
+    tokenManager,
     options,
     bedrockConfig,
     splitterOptions,

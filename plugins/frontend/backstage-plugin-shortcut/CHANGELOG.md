@@ -1,4 +1,10 @@
-# @kozmoai/backstage-plugin-shortcut
+# @roadiehq/backstage-plugin-shortcut
+
+## 1.1.22
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 1.1.21
 
@@ -197,4 +203,4 @@
 
 ### Patch Changes
 
-- 6296821: Adds initial version of '@kozmoai/backstage-plugin-shortcuts' plugin. This plugin is used to display Shortcut stories for a user.
+- 6296821: Adds initial version of '@roadiehq/backstage-plugin-shortcuts' plugin. This plugin is used to display Shortcut stories for a user.

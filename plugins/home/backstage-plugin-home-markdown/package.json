@@ -1,6 +1,6 @@
 {
-  "name": "@kozmoai/backstage-plugin-home-markdown",
-  "version": "2.5.22",
+  "name": "@roadiehq/backstage-plugin-home-markdown",
+  "version": "2.5.23",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-backstage-plugins",
+    "url": "github:RoadieHQ/roadie-backstage-plugins",
     "directory": "plugins/scaffolder-actions/backstage-plugin-home-markdown"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
-    "email": "support@glint.io"
+    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
+    "email": "support@roadie.io"
   },
   "scripts": {
     "start": "backstage-cli package start",
@@ -31,11 +31,11 @@
     "clean": "backstage-cli clean"
   },
   "dependencies": {
-    "@backstage/backend-common": "^0.21.3",
-    "@backstage/config": "^1.1.1",
-    "@backstage/core-components": "^0.14.0",
-    "@backstage/core-plugin-api": "^1.9.0",
-    "@backstage/plugin-home": "^0.6.2",
+    "@backstage/backend-common": "^0.21.6",
+    "@backstage/config": "^1.2.0",
+    "@backstage/core-components": "^0.14.3",
+    "@backstage/core-plugin-api": "^1.9.1",
+    "@backstage/plugin-home": "^0.7.2",
     "@material-ui/core": "^4.12.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@octokit/rest": "^19.0.3",
@@ -47,8 +47,8 @@
     "react": "^16.13.1 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
-    "@backstage/cli": "^0.25.2",
-    "@backstage/test-utils": "^1.5.0",
+    "@backstage/cli": "^0.26.2",
+    "@backstage/test-utils": "^1.5.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@testing-library/jest-dom": "^6.0.0",

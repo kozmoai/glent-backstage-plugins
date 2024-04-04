@@ -1,4 +1,10 @@
-# @kozmoai/backstage-plugin-github-pull-requests
+# @roadiehq/backstage-plugin-github-pull-requests
+
+## 2.5.25
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 2.5.24
 
@@ -295,7 +301,7 @@
 
 ### Patch Changes
 
-- 9819e86: Renamed card names in '@kozmoai/backstage-plugin-github-pull-requests', so instead of 'Pull requests plugin' it will show 'Github Pull Requests'. In '@kozmoai/backstage-plugin-github-insights' 'Read me' card is renamed to 'Readme'.
+- 9819e86: Renamed card names in '@roadiehq/backstage-plugin-github-pull-requests', so instead of 'Pull requests plugin' it will show 'Github Pull Requests'. In '@roadiehq/backstage-plugin-github-insights' 'Read me' card is renamed to 'Readme'.
 
 ## 1.4.4
 

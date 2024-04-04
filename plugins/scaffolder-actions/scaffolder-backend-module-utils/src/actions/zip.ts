@@ -22,7 +22,7 @@ import fs from 'fs-extra';
 
 export function createZipAction() {
   return createTemplateAction<{ path: string; outputPath: string }>({
-    id: 'kozmoai:utils:zip',
+    id: 'roadiehq:utils:zip',
     description: 'Zips the content of the path',
     supportsDryRun: true,
     schema: {

@@ -23,7 +23,7 @@ If you have your own backstage application without this plugin, here it's how to
 1. In the `backstage/packages/app` project add the plugin as a `package.json` dependency:
 
 ```bash
-yarn add @kozmoai/backstage-plugin-argo-cd
+yarn add @roadiehq/backstage-plugin-argo-cd
 ```
 
 2. In the `app-config.yaml` file in the root directory, add argo-cd to the proxy object and optionally add the base url for your argoCD web UI:
@@ -52,7 +52,7 @@ argocd:
 
 ```ts
 // packages/app/src/plugins.ts
-export { argocdPlugin } from '@kozmoai/backstage-plugin-argo-cd';
+export { argocdPlugin } from '@roadiehq/backstage-plugin-argo-cd';
 ```
 
 4. Add plugin to the `entityPage.tsx` source file:
@@ -62,7 +62,7 @@ export { argocdPlugin } from '@kozmoai/backstage-plugin-argo-cd';
 import {
   EntityArgoCDHistoryCard,
   isArgocdAvailable,
-} from '@kozmoai/backstage-plugin-argo-cd';
+} from '@roadiehq/backstage-plugin-argo-cd';
 
 const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
@@ -143,7 +143,7 @@ If you want to create multiple components that fetch data from different Argo CD
 
 The Argo plugin will fetch the Argo CD instances an app is deployed to and use the backstage-plugin-argo-cd-backend plugin to reach out to each Argo instance based on the mapping mentioned below.
 
-Please visit the [Argo CD Backend Plugin](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd-backend) for more information
+Please visit the [Argo CD Backend Plugin](https://www.npmjs.com/package/@roadiehq/backstage-plugin-argo-cd-backend) for more information
 
 ## Support for apps in any namespace beta feature
 
@@ -187,6 +187,6 @@ To run the integration tests locally `yarn workspace app cy:dev` (assuming you h
 
 ## Links
 
-- [Argo CD Backend Plugin](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd-backend)
+- [Argo CD Backend Plugin](https://www.npmjs.com/package/@roadiehq/backstage-plugin-argo-cd-backend)
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

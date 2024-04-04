@@ -19,7 +19,7 @@ export const entityMock = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@glint.io',
+    owner: 'david@roadie.io',
     lifecycle: 'experimental',
   },
 };
@@ -274,9 +274,9 @@ export const entityStub: { entity: Entity } = {
     metadata: {
       namespace: 'default',
       annotations: {
-        'github.com/project-slug': 'RoadieHQ/sample-service',
+        'github.com/project-slug': 'roadiehq/sample-service',
         'backstage.io/managed-by-location':
-          'url:http://RoadieHQ/sample-service/blob/master/catalog-info.yaml',
+          'url:http://roadiehq/sample-service/blob/master/catalog-info.yaml',
       },
       name: 'sample-service',
       description: 'Sample service',

@@ -32,8 +32,8 @@ import {
   AWSEC2Provider,
   AWSRDSProvider,
   AWSOrganizationAccountsProvider,
-} from '@kozmoai/catalog-backend-module-aws';
-import { OktaOrgEntityProvider } from '@kozmoai/catalog-backend-module-okta';
+} from '@roadiehq/catalog-backend-module-aws';
+import { OktaOrgEntityProvider } from '@roadiehq/catalog-backend-module-okta';
 import { Duration } from 'luxon';
 
 export default async function createPlugin(

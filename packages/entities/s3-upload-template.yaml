@@ -6,7 +6,7 @@ metadata:
   title: scaffolder-backend-module-aws s3 upload template
   description: An example template to test most of the scaffolder-backend-module-utils actions
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -27,14 +27,14 @@ spec:
   steps:
     - id: createFile
       name: Create File
-      action: kozmoai:utils:fs:write
+      action: roadiehq:utils:fs:write
       input:
         path: ${{ parameters.createPath }}
         content: ${{ parameters.createContent }}
 
     - id: s3Upload
       name: Upload to S3
-      action: kozmoai:aws:s3:cp
+      action: roadiehq:aws:s3:cp
       input:
         bucket: scaffolder-actions-upload-test
         region: eu-west-1

@@ -1,1 +1,0 @@
-export { MergeRequestsTable } from './MergeRequestsTable';

@@ -60,7 +60,7 @@ yarn start
 To add plugin to the backstage app, you have to install it in the `packages/backend` directory:
 
 ```bash
-yarn add @kozmoai/backstage-plugin-aws-auth
+yarn add @roadiehq/backstage-plugin-aws-auth
 ```
 
 And paste following code snippets:
@@ -68,7 +68,7 @@ And paste following code snippets:
 ```js
 // packages/backend/src/plugins/aws.ts
 
-import { createRouter } from '@kozmoai/backstage-plugin-aws-auth';
+import { createRouter } from '@roadiehq/backstage-plugin-aws-auth';
 import type { PluginEnvironment } from '../types';
 
 export default async function createPlugin({ logger }: PluginEnvironment) {

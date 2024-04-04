@@ -17,16 +17,16 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { HomePageToolkit } from '@backstage/plugin-home';
-import { HomePageMarkdown } from '@kozmoai/backstage-plugin-home-markdown';
-import { HomePageRSS } from '@kozmoai/backstage-plugin-home-rss';
-import { CloudsmithStatsCard } from '@kozmoai/backstage-plugin-cloudsmith';
+import { HomePageMarkdown } from '@roadiehq/backstage-plugin-home-markdown';
+import { HomePageRSS } from '@roadiehq/backstage-plugin-home-rss';
+import { CloudsmithStatsCard } from '@roadiehq/backstage-plugin-cloudsmith';
 import {
   HomePageRequestedReviewsCard,
   HomePageYourOpenPullRequestsCard,
-} from '@kozmoai/backstage-plugin-github-pull-requests';
+} from '@roadiehq/backstage-plugin-github-pull-requests';
 import { Content, PageWithHeader } from '@backstage/core-components';
-import { HomepageStoriesCard } from '@kozmoai/backstage-plugin-shortcut';
-import { HomePageIFrameCard } from '@kozmoai/backstage-plugin-iframe';
+import { HomepageStoriesCard } from '@roadiehq/backstage-plugin-shortcut';
+import { HomePageIFrameCard } from '@roadiehq/backstage-plugin-iframe';
 
 export const HomePage = () => {
   return (
@@ -46,7 +46,7 @@ export const HomePage = () => {
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <CloudsmithStatsCard repo="glint-npm" owner="glint" />
+            <CloudsmithStatsCard repo="roadie-npm" owner="roadie" />
           </Grid>
           <Grid item md={6} xs={12}>
             <HomepageStoriesCard />
@@ -60,16 +60,16 @@ export const HomePage = () => {
           <Grid item xs={12} md={6}>
             <HomePageMarkdown
               title="Neeews!"
-              owner="kozmoai"
-              repo="glint-backstage-plugins"
+              owner="RoadieHQ"
+              repo="roadie-backstage-plugins"
               path=".backstage/home-page.md"
             />
           </Grid>
           <Grid item xs={12} md={6}>
             <HomePageMarkdown
               title="History"
-              owner="kozmoai"
-              repo="glint-backstage-plugins"
+              owner="RoadieHQ"
+              repo="roadie-backstage-plugins"
               path=".backstage/home-page-test.md"
               branch="test-two-mdown"
             />

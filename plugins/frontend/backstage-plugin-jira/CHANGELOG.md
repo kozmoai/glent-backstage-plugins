@@ -1,4 +1,16 @@
-# @kozmoai/backstage-plugin-jira
+# @roadiehq/backstage-plugin-jira
+
+## 2.5.6
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
+
+## 2.5.5
+
+### Patch Changes
+
+- ccf6227: capture analytics events for jira plugin
 
 ## 2.5.4
 

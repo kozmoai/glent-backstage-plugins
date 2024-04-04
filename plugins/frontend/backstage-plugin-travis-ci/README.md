@@ -14,7 +14,7 @@ If you have your own backstage application without this plugin, here are instruc
 1. In the `backstage/packages/app` project add the plugin as a `package.json` dependency:
 
 ```bash
-yarn add @kozmoai/backstage-plugin-travis-ci
+yarn add @roadiehq/backstage-plugin-travis-ci
 ```
 
 2. add configuration in `app-config.yaml` file in the root directory:
@@ -49,7 +49,7 @@ import {
   EntityTravisCIContent,
   EntityTravisCIOverviewCard,
   isTravisciAvailable,
-} from '@kozmoai/backstage-plugin-travis-ci';
+} from '@roadiehq/backstage-plugin-travis-ci';
 ```
 
 4. Add plugin to the `EntityPage.tsx` source file:
@@ -99,7 +99,7 @@ travis-ci.com/repo-slug: <owner-name>/<project-name>
 The easiest way is to clone the plugin repo into the `plugins/` directory of your backstage code base:
 
 ```sh
-git clone https://github.com/kozmoai/backstage-plugin-travis-ci.git travis-ci
+git clone https://github.com/RoadieHQ/backstage-plugin-travis-ci.git travis-ci
 ```
 
 and run `yarn install` in the root backstage directory - it will create a symbolic link, so the dependency will be provided from the source code instead of node_modules package.
@@ -107,4 +107,4 @@ and run `yarn install` in the root backstage directory - it will create a symbol
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

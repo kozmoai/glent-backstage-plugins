@@ -1,4 +1,10 @@
-# @kozmoai/backstage-plugin-aws-backend
+# @roadiehq/backstage-plugin-aws-backend
+
+## 1.1.22
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 1.1.21
 
@@ -177,12 +183,12 @@
 
 ### Patch Changes
 
-- e2a86ee: Adds initial versions of @kozmoai/catalog-backend-module-aws, @kozmoai/backstage-plugin-aws and @kozmoai/backstage-plugin-aws-backend.
+- e2a86ee: Adds initial versions of @roadiehq/catalog-backend-module-aws, @roadiehq/backstage-plugin-aws and @roadiehq/backstage-plugin-aws-backend.
 
-  @kozmoai/catalog-backend-module-aws exposes entity provider classes to injest S3 Buckets, Lambda Functions and IAM users into the entity catalog.
+  @roadiehq/catalog-backend-module-aws exposes entity provider classes to injest S3 Buckets, Lambda Functions and IAM users into the entity catalog.
 
-  @kozmoai/backstage-plugin-aws-backend provides a generic API to retrieve AWS resources using the CloudControl API.
+  @roadiehq/backstage-plugin-aws-backend provides a generic API to retrieve AWS resources using the CloudControl API.
 
-  @kozmoai/backstage-plugin-aws provides entity component cards to display details about S3 Buckets, Lambda Functions and IAM users.
+  @roadiehq/backstage-plugin-aws provides entity component cards to display details about S3 Buckets, Lambda Functions and IAM users.
 
 - e1e99d9: Use a consistent version dependency of aws-sdk across the repository.

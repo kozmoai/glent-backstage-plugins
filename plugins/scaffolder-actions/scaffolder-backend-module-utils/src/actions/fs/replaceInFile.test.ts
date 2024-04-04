@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { getVoidLogger } from '@backstage/backend-common';
-import { createWriteFileAction } from './writeFile';
 import { PassThrough } from 'stream';
+import { createWriteFileAction } from './writeFile';
 import mock from 'mock-fs';
 import fs from 'fs-extra';
 import { createReplaceInFileAction } from './replaceInFile';
+import { getVoidLogger } from '@backstage/backend-common';
 
-describe('kozmoai:utils:fs:replace', () => {
+describe('roadiehq:utils:fs:replace', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},
@@ -28,11 +28,13 @@ describe('kozmoai:utils:fs:replace', () => {
   });
   afterEach(() => mock.restore());
   const mockContext = {
-    workspacePath: 'lol',
     logger: getVoidLogger(),
     logStream: new PassThrough(),
     output: jest.fn(),
     createTemporaryDirectory: jest.fn(),
+    checkpoint: jest.fn(),
+    getInitiatorCredentials: jest.fn(),
+    workspacePath: 'lol',
   };
   const action = createReplaceInFileAction();
   const fileCreationAction = createWriteFileAction();

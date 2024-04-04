@@ -18,7 +18,7 @@ import {
   AugmentationPostProcessor,
   EmbeddingDoc,
   EmbeddingsSource,
-} from '@kozmoai/rag-ai-node';
+} from '@roadiehq/rag-ai-node';
 
 export class CombiningPostProcessor implements AugmentationPostProcessor {
   async process(

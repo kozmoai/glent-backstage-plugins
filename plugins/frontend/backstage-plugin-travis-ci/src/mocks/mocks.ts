@@ -19,14 +19,14 @@ export const entityMock = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@glint.io',
+    owner: 'david@roadie.io',
     lifecycle: 'experimental',
   },
 };
 
 export const buildsResponseMock = {
   '@type': 'builds',
-  '@href': '/repo/kozmoai%2Fsample-service/builds?offset=0&limit=5',
+  '@href': '/repo/RoadieHQ%2Fsample-service/builds?offset=0&limit=5',
   '@representation': 'standard',
   '@pagination': {
     limit: 5,
@@ -35,18 +35,18 @@ export const buildsResponseMock = {
     is_first: true,
     is_last: false,
     next: {
-      '@href': '/repo/kozmoai%2Fsample-service/builds?limit=5&offset=5',
+      '@href': '/repo/RoadieHQ%2Fsample-service/builds?limit=5&offset=5',
       offset: 5,
       limit: 5,
     },
     prev: null,
     first: {
-      '@href': '/repo/kozmoai%2Fsample-service/builds?offset=0&limit=5',
+      '@href': '/repo/RoadieHQ%2Fsample-service/builds?offset=0&limit=5',
       offset: 0,
       limit: 5,
     },
     last: {
-      '@href': '/repo/kozmoai%2Fsample-service/builds?limit=5&offset=195',
+      '@href': '/repo/RoadieHQ%2Fsample-service/builds?limit=5&offset=195',
       offset: 195,
       limit: 5,
     },

@@ -1,6 +1,6 @@
 {
   "@type": "builds",
-  "@href": "/repo/kozmoai%2Fsample-service/builds?offset=0&limit=1",
+  "@href": "/repo/RoadieHQ%2Fsample-service/builds?offset=0&limit=1",
   "@representation": "standard",
   "@pagination": {
     "limit": 1,
@@ -9,18 +9,18 @@
     "is_first": true,
     "is_last": false,
     "next": {
-      "@href": "/repo/kozmoai%2Fsample-service/builds?limit=1&offset=1",
+      "@href": "/repo/RoadieHQ%2Fsample-service/builds?limit=1&offset=1",
       "offset": 1,
       "limit": 1
     },
     "prev": null,
     "first": {
-      "@href": "/repo/kozmoai%2Fsample-service/builds?offset=0&limit=1",
+      "@href": "/repo/RoadieHQ%2Fsample-service/builds?offset=0&limit=1",
       "offset": 0,
       "limit": 1
     },
     "last": {
-      "@href": "/repo/kozmoai%2Fsample-service/builds?limit=1&offset=454",
+      "@href": "/repo/RoadieHQ%2Fsample-service/builds?limit=1&offset=454",
       "offset": 454,
       "limit": 1
     }

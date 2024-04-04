@@ -17,8 +17,8 @@ import { Logger } from 'winston';
 import { PluginDatabaseManager } from '@backstage/backend-common';
 import { applyDatabaseMigrations } from '../database/migrations';
 
-import { GlintVectorStore } from '@kozmoai/rag-ai-node';
-import { GlintPgVectorStore } from './GlintPgVectorStore';
+import { RoadieVectorStore } from '@roadiehq/rag-ai-node';
+import { RoadiePgVectorStore } from './RoadiePgVectorStore';
 import { Config } from '@backstage/config';
 
 export interface PgVectorStoreInitConfig {
@@ -27,29 +27,29 @@ export interface PgVectorStoreInitConfig {
   config: Config;
 }
 
-export interface GlintPgVectorStoreOptions {
+export interface RoadiePgVectorStoreOptions {
   chunkSize?: number;
   amount?: number;
 }
 
-export async function createGlintPgVectorStore({
+export async function createRoadiePgVectorStore({
   logger,
   database,
   config,
-}: PgVectorStoreInitConfig): Promise<GlintVectorStore> {
-  logger.info('Starting Glint PgVectorStore');
+}: PgVectorStoreInitConfig): Promise<RoadieVectorStore> {
+  logger.info('Starting Roadie PgVectorStore');
 
   const dbClient = await database.getClient();
   await applyDatabaseMigrations(dbClient);
 
   const pgVectorConfig = config.getOptionalConfig('ai.storage.pgVector');
-  const options: GlintPgVectorStoreOptions = {};
+  const options: RoadiePgVectorStoreOptions = {};
   if (pgVectorConfig) {
     options.amount = pgVectorConfig.getOptionalNumber('amount');
     options.chunkSize = pgVectorConfig.getOptionalNumber('chunkSize');
   }
 
-  return GlintPgVectorStore.initialize({
+  return RoadiePgVectorStore.initialize({
     logger,
     db: dbClient,
     chunkSize: options?.chunkSize,

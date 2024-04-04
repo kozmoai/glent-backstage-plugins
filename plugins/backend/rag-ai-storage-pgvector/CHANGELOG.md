@@ -1,12 +1,20 @@
-# @kozmoai/rag-ai-storage-pgvector
+# @roadiehq/rag-ai-storage-pgvector
+
+## 0.1.1
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
+- Updated dependencies [7cd4bdf]
+  - @roadiehq/rag-ai-node@0.1.1
 
 ## 0.1.0
 
 ### Minor Changes
 
-- 7b468fa: Open source and release Glint RAG AI Backstage Plugin
+- 7b468fa: Open source and release Roadie RAG AI Backstage Plugin
 
-  This commit introduces the Glint RAG AI plugin to Backstage. It adds constructs, types and interfaces to enable additional enhancement of RAG AI functionality of Backstage entities, tech-docs, API docs and Tech Insights fact data.
+  This commit introduces the Roadie RAG AI plugin to Backstage. It adds constructs, types and interfaces to enable additional enhancement of RAG AI functionality of Backstage entities, tech-docs, API docs and Tech Insights fact data.
 
   - Includes the initial end-to-end configuration
   - Adds frontend modal display to handle query UI
@@ -18,4 +26,4 @@
 ### Patch Changes
 
 - Updated dependencies [7b468fa]
-  - @kozmoai/rag-ai-node@0.1.0
+  - @roadiehq/rag-ai-node@0.1.0

@@ -24,7 +24,7 @@ export function createWriteFileAction() {
     content: string;
     preserveFormatting?: boolean;
   }>({
-    id: 'kozmoai:utils:fs:write',
+    id: 'roadiehq:utils:fs:write',
     description: 'Creates a file with the content on the given path',
     supportsDryRun: true,
     schema: {

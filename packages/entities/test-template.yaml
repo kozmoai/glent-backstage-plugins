@@ -7,7 +7,7 @@ metadata:
   title: scaffolder-backend-module-utils test template
   description: An example template to test most of the scaffolder-backend-module-utils actions
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -132,20 +132,20 @@ spec:
   steps:
     - id: createFile
       name: Create File
-      action: kozmoai:utils:fs:write
+      action: roadiehq:utils:fs:write
       input:
         path: ${{ parameters.createPath }}
         content: ${{ parameters.createContent }}
 
     - id: sleep
       name: Sleep
-      action: kozmoai:utils:sleep
+      action: roadiehq:utils:sleep
       input:
         amount: ${{ parameters.amount }}
 
     - id: appendFile
       name: Append File
-      action: kozmoai:utils:fs:append
+      action: roadiehq:utils:fs:append
       input:
         path: ${{ parameters.appendPath }}
         content: |
@@ -154,7 +154,7 @@ spec:
 
     - id: zip
       name: Zip
-      action: kozmoai:utils:zip
+      action: roadiehq:utils:zip
       input:
         path: ${{ parameters.zipPath }}
         outputPath: ${{ parameters.zipOutputPath }}

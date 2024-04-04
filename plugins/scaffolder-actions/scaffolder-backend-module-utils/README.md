@@ -2,7 +2,7 @@
 
 ## Intro
 
-Welcome to the glint `utils` actions for the `scaffolder-backend`.
+Welcome to the roadie `utils` actions for the `scaffolder-backend`.
 
 This contains a collection of actions to use in scaffolder templates:
 
@@ -31,7 +31,7 @@ You need to configure the action in your backend:
 
 ```
 cd packages/backend
-yarn add @kozmoai/scaffolder-backend-module-utils
+yarn add @roadiehq/scaffolder-backend-module-utils
 ```
 
 Configure the action:
@@ -54,7 +54,7 @@ import {
   createJSONataAction,
   createYamlJSONataTransformAction,
   createJsonJSONataTransformAction,
-} from '@kozmoai/scaffolder-backend-module-utils';
+} from '@roadiehq/scaffolder-backend-module-utils';
 ...
 
 const actions = [
@@ -97,7 +97,7 @@ return await createRouter({
 
 ### Zip
 
-**Action name**: `kozmoai:utils:zip`
+**Action name**: `roadiehq:utils:zip`
 
 Compress files and store them to the temporary workspace in .zip format.
 
@@ -115,7 +115,7 @@ metadata:
   title: My custom zip action
   description: scaffolder action to zip the current context?
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -133,7 +133,7 @@ spec:
   steps:
     - id: zip
       name: Zip
-      action: kozmoai:utils:zip
+      action: roadiehq:utils:zip
       input:
         path: ${{ parameters.path }}
         outputPath: ${{ parameters.outputPath }}
@@ -144,7 +144,7 @@ spec:
 
 ### Sleep
 
-**Action name**: `kozmoai:utils:sleep`
+**Action name**: `roadiehq:utils:sleep`
 
 Waits a number of seconds before continuing to the next scaffolder step.
 
@@ -161,7 +161,7 @@ metadata:
   title: Sleep template
   description: A template with only one sleep example action that will ask for a user input for the amount of seconds it should sleep
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -175,14 +175,14 @@ spec:
   steps:
     - id: sleep
       name: sleep
-      action: kozmoai:utils:sleep
+      action: roadiehq:utils:sleep
       input:
         path: ${{ parameters.amount }}
 ```
 
 ### Deserialise
 
-**Action name**: `kozmoai:utils:fs:parse`
+**Action name**: `roadiehq:utils:fs:parse`
 
 This action deserialises JSON or YAML files in the temporary scaffolder workspace to a JavaScript object in memory that can then be passed to another step.
 
@@ -200,7 +200,7 @@ metadata:
   title: Parse From File
   description: Example template to parse from a file with on the given path with the given content in the workspace.
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -221,7 +221,7 @@ spec:
   steps:
     - id: parsefile
       name: Parse File
-      action: kozmoai:utils:fs:parse
+      action: roadiehq:utils:fs:parse
       input:
         path: ${{ parameters.path }}
         parser: ${{ parameters.parser }}
@@ -231,7 +231,7 @@ spec:
 
 ### Serialise to JSON or YAML
 
-Action: `kozmoai:utils:serialize:[json|yaml]`
+Action: `roadiehq:utils:serialize:[json|yaml]`
 
 This action creates a JSON or YAML formatted string representation of key value pairs written in yaml under the data input field.
 
@@ -246,14 +246,14 @@ metadata:
   title: serialize
   description: Example template to serialize data to the YAML format
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters: []
   steps:
     - id: serialize
       name: serialize
-      action: kozmoai:utils:serialize:yaml
+      action: roadiehq:utils:serialize:yaml
       input:
         data:
           hello: world
@@ -287,14 +287,14 @@ metadata:
   title: Jsonata
   description: Example template to serialize data to the JSON format
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters: []
   steps:
     - id: serialize
       name: serialize
-      action: kozmoai:utils:serialize:json
+      action: roadiehq:utils:serialize:json
       input:
         data:
           hello: world
@@ -314,7 +314,7 @@ spec:
 
 ### Parse and Transform JSON or YAML
 
-**Action name**: `kozmoai:utils:jsonata`
+**Action name**: `roadiehq:utils:jsonata`
 
 This action allows you to use [Jsonata](https://jsonata.org/) to parse and transform JSON or YAML for use in subsequent actions.
 
@@ -331,14 +331,14 @@ metadata:
   title: Jsonata
   description: Example template to perform a jsonata expression on input data
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters: []
   steps:
     - id: jsonata
       name: Parse File
-      action: kozmoai:utils:jsonata
+      action: roadiehq:utils:jsonata
       input:
         data:
           items:
@@ -359,14 +359,14 @@ metadata:
   title: Jsonata
   description: Example template to perform a jsonata expression on input data
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters: []
   steps:
     - id: jsonata
       name: Parse File
-      action: kozmoai:utils:jsonata:json:transform
+      action: roadiehq:utils:jsonata:json:transform
       input:
         path: input-data.jaon
         expression: '$ ~> | $ | { "items": [items, "item2"] }|'
@@ -385,14 +385,14 @@ metadata:
   title: Jsonata
   description: Example template to perform a jsonata expression on input data
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters: []
   steps:
     - id: jsonata
       name: Jsonata
-      action: kozmoai:utils:jsonata:yaml:transform
+      action: roadiehq:utils:jsonata:yaml:transform
       input:
         path: input-data.yaml
         expression: '$ ~> | $ | { "items": [items, "item2"] }|'
@@ -402,7 +402,7 @@ spec:
 
 ### Merge JSON
 
-**Action name**: `kozmoai:utils:json:merge`
+**Action name**: `roadiehq:utils:json:merge`
 
 **Required params:**
 
@@ -425,7 +425,7 @@ metadata:
   title: Add Node Engine constraints to package.json
   description: Merge in some JSON to an existing file and open a pull request for it.
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -459,7 +459,7 @@ spec:
         url: 'https://github.com/${{ parameters.org }}/${{ parameters.repository }}'
     - id: merge
       name: Merge JSON
-      action: kozmoai:utils:json:merge
+      action: roadiehq:utils:json:merge
       input:
         path: ${{ parameters.path }}
         content:
@@ -491,7 +491,7 @@ metadata:
   title: Merge in JSON
   description: Merge in some JSON to an existing file and open a pull request for it.
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -529,7 +529,7 @@ spec:
         url: 'https://github.com/${{ parameters.org }}/${{ parameters.repository }}'
     - id: merge
       name: Merge JSON
-      action: kozmoai:utils:json:merge
+      action: roadiehq:utils:json:merge
       input:
         path: ${{ parameters.path }}
         content: ${{ parameters.content }}
@@ -550,7 +550,7 @@ spec:
 
 ### Append
 
-**Action name**: `kozmoai:utils:fs:append`
+**Action name**: `roadiehq:utils:fs:append`
 
 This action adds content to the end of an existing file or creates a new one if it doesn't already exist.
 
@@ -568,7 +568,7 @@ metadata:
   title: Append To File template
   description: Example template to append to a file with on the given path with the given content in the workspace.
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -599,7 +599,7 @@ spec:
   steps:
     - id: appendFile
       name: Append To File
-      action: kozmoai:utils:fs:append
+      action: roadiehq:utils:fs:append
       input:
         path: ${{ parameters.path }}
         content: ${{ parameters.content }}
@@ -607,7 +607,7 @@ spec:
 
 ### Write to File
 
-**Action name:** `kozmoai:utils:fs:write`
+**Action name:** `roadiehq:utils:fs:write`
 
 This action writes a string to a temporary file in the Scaffolder workspace.
 
@@ -630,7 +630,7 @@ parameters:
 steps:
   - id: writeFile
     name: Create File
-    action: kozmoai:utils:fs:write
+    action: roadiehq:utils:fs:write
     input:
       path: ${{ parameters.path }}
       content: ${{ parameters.content }}
@@ -647,7 +647,7 @@ metadata:
   title: Write content to a file
   description: Write a file with the given content.
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -698,7 +698,7 @@ spec:
         url: https://github.com/${{ parameters.org }}/${{ parameters.repository }}
     - id: write-to-file
       name: Overwrite File Or Create New
-      action: kozmoai:utils:fs:write
+      action: roadiehq:utils:fs:write
       input:
         path: ${{ parameters.path }}
         content: ${{ parameters.content }}
@@ -719,7 +719,7 @@ spec:
 
 ### Replace in files
 
-**Action name:** `kozmoai:utils:fs:replace`
+**Action name:** `roadiehq:utils:fs:replace`
 
 This action replaces found string in files with content defined in input.
 
@@ -740,7 +740,7 @@ parameters:
 steps:
   - id: Replace text in file
     name: Replace
-    action: kozmoai:utils:fs:replace
+    action: roadiehq:utils:fs:replace
     input:
       files:
         - file: './file.1'

@@ -14,17 +14,18 @@
  * limitations under the License.
  */
 
-import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
+import { createApiRoutes as initializeRagAiBackend } from '@roadiehq/rag-ai-backend';
 import { PluginEnvironment } from '../types';
-import { createGlintPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
+import { createRoadiePgVectorStore } from '@roadiehq/rag-ai-storage-pgvector';
 import { CatalogClient } from '@backstage/catalog-client';
-import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
-import { initializeBedrockEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-aws';
+import { createDefaultRetrievalPipeline } from '@roadiehq/rag-ai-backend-retrieval-augmenter';
+import { initializeBedrockEmbeddings } from '@roadiehq/rag-ai-backend-embeddings-aws';
 import { DefaultAwsCredentialsManager } from '@backstage/integration-aws-node';
 import { Bedrock } from '@langchain/community/llms/bedrock';
 
 export default async function createPlugin({
   logger,
+  tokenManager,
   database,
   discovery,
   config,
@@ -33,7 +34,7 @@ export default async function createPlugin({
     discoveryApi: discovery,
   });
 
-  const vectorStore = await createGlintPgVectorStore({
+  const vectorStore = await createRoadiePgVectorStore({
     logger,
     database,
     config,
@@ -43,6 +44,7 @@ export default async function createPlugin({
   const credProvider = await awsCredentialsManager.getCredentialProvider();
   const augmentationIndexer = await initializeBedrockEmbeddings({
     logger,
+    tokenManager,
     catalogApi,
     vectorStore,
     discovery,
@@ -62,6 +64,7 @@ export default async function createPlugin({
 
   const ragAi = await initializeRagAiBackend({
     logger,
+    tokenManager,
     augmentationIndexer,
     retrievalPipeline: createDefaultRetrievalPipeline({
       discovery,

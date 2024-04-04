@@ -1,4 +1,16 @@
-# @kozmoai/backstage-plugin-argo-cd
+# @roadiehq/backstage-plugin-argo-cd
+
+## 2.6.4
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
+
+## 2.6.3
+
+### Patch Changes
+
+- 8868363: Fixes an issue where the ArgoCD details card would error if any of the items returned by ArgoCD are missing the status.operationState field
 
 ## 2.6.2
 
@@ -164,8 +176,8 @@
 
 - 8ae4bbc7: ---
 
-  '@kozmoai/backstage-plugin-argo-cd-backend': patch
-  '@kozmoai/backstage-plugin-argo-cd': patch
+  '@roadiehq/backstage-plugin-argo-cd-backend': patch
+  '@roadiehq/backstage-plugin-argo-cd': patch
 
   ***
 

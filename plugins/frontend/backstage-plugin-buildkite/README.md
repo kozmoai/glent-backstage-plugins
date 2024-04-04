@@ -13,7 +13,7 @@
 1. If you have standalone app (you didn't clone this repo), then do
 
 ```bash
-yarn add @kozmoai/backstage-plugin-buildkite
+yarn add @roadiehq/backstage-plugin-buildkite
 ```
 
 2. Add proxy config:
@@ -34,7 +34,7 @@ proxy:
 import {
   EntityBuildkiteContent,
   isPluginApplicableToEntity as isBuildkiteAvailable,
-} from '@kozmoai/backstage-plugin-buildkite';
+} from '@roadiehq/backstage-plugin-buildkite';
 ```
 
 4. Add plugin API to your Backstage instance:
@@ -71,4 +71,4 @@ export BUILDKITE_API_TOKEN=xxx-xxx-xxx
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

@@ -15,7 +15,7 @@
  */
 import { Config } from '@backstage/config';
 import { createTemplateAction } from '@backstage/plugin-scaffolder-backend';
-import { ArgoService } from '@kozmoai/backstage-plugin-argo-cd-backend';
+import { ArgoService } from '@roadiehq/backstage-plugin-argo-cd-backend';
 import { Logger } from 'winston';
 
 export const createArgoCdResources = (config: Config, logger: Logger) => {

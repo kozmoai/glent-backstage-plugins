@@ -21,7 +21,7 @@ export type ResponseEmbedding = {
   };
 };
 
-export type GlintLlmResponse = {
+export type RoadieLlmResponse = {
   response: string;
   embeddings: ResponseEmbedding[];
 };

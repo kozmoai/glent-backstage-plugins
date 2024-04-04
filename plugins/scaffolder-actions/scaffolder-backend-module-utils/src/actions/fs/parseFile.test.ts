@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { getVoidLogger } from '@backstage/backend-common';
-import { createParseFileAction } from './parseFile';
 import { PassThrough } from 'stream';
+import { createParseFileAction } from './parseFile';
 import mock from 'mock-fs';
+import { getVoidLogger } from '@backstage/backend-common';
 
-describe('kozmoai:utils:fs:parse', () => {
+describe('roadiehq:utils:fs:parse', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},
@@ -26,11 +26,13 @@ describe('kozmoai:utils:fs:parse', () => {
   });
   afterEach(() => mock.restore());
   const mockContext = {
-    workspacePath: 'lol',
     logger: getVoidLogger(),
     logStream: new PassThrough(),
     output: jest.fn(),
     createTemporaryDirectory: jest.fn(),
+    checkpoint: jest.fn(),
+    getInitiatorCredentials: jest.fn(),
+    workspacePath: 'lol',
   };
   const action = createParseFileAction();
 

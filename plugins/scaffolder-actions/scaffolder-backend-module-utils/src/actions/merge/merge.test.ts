@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
+import { PassThrough } from 'stream';
 import { getVoidLogger, resolveSafeChildPath } from '@backstage/backend-common';
 import { createMergeAction, createMergeJSONAction } from './merge';
-import { PassThrough } from 'stream';
 import mock from 'mock-fs';
 import fs from 'fs-extra';
 import YAML from 'yaml';
 import detectIndent from 'detect-indent';
 
-describe('kozmoai:utils:json:merge', () => {
+describe('roadiehq:utils:json:merge', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},
@@ -30,11 +30,13 @@ describe('kozmoai:utils:json:merge', () => {
   });
   afterEach(() => mock.restore());
   const mockContext = {
-    workspacePath: 'lol',
     logger: getVoidLogger(),
     logStream: new PassThrough(),
     output: jest.fn(),
     createTemporaryDirectory: jest.fn(),
+    checkpoint: jest.fn(),
+    getInitiatorCredentials: jest.fn(),
+    workspacePath: 'lol',
   };
 
   const action = createMergeJSONAction({});
@@ -274,7 +276,7 @@ describe('kozmoai:utils:json:merge', () => {
   });
 });
 
-describe('kozmoai:utils:merge', () => {
+describe('roadiehq:utils:merge', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},
@@ -282,11 +284,13 @@ describe('kozmoai:utils:merge', () => {
   });
   afterEach(() => mock.restore());
   const mockContext = {
-    workspacePath: 'lol',
     logger: getVoidLogger(),
     logStream: new PassThrough(),
     output: jest.fn(),
     createTemporaryDirectory: jest.fn(),
+    checkpoint: jest.fn(),
+    getInitiatorCredentials: jest.fn(),
+    workspacePath: 'lol',
   };
 
   const action = createMergeAction();

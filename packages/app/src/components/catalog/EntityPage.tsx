@@ -54,56 +54,56 @@ import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
 import {
   EntityGithubPullRequestsContent,
   EntityGithubPullRequestsOverviewCard,
-} from '@kozmoai/backstage-plugin-github-pull-requests';
+} from '@roadiehq/backstage-plugin-github-pull-requests';
 import {
   isAWSLambdaAvailable,
   EntityAWSLambdaOverviewCard,
-} from '@kozmoai/backstage-plugin-aws-lambda';
+} from '@roadiehq/backstage-plugin-aws-lambda';
 import {
   EntityGithubInsightsContent,
   EntityGithubInsightsLanguagesCard,
   EntityGithubInsightsReadmeCard,
   EntityGithubInsightsReleasesCard,
   isGithubInsightsAvailable,
-} from '@kozmoai/backstage-plugin-github-insights';
+} from '@roadiehq/backstage-plugin-github-insights';
 import {
   EntityJiraOverviewCard,
   isJiraAvailable,
-} from '@kozmoai/backstage-plugin-jira';
+} from '@roadiehq/backstage-plugin-jira';
 import {
   EntityDatadogContent,
   EntityDatadogGraphCard,
   isDatadogGraphAvailable,
-} from '@kozmoai/backstage-plugin-datadog';
+} from '@roadiehq/backstage-plugin-datadog';
 import {
   EntityTravisCIContent,
   EntityTravisCIOverviewCard,
   isTravisciAvailable,
-} from '@kozmoai/backstage-plugin-travis-ci';
+} from '@roadiehq/backstage-plugin-travis-ci';
 import {
   EntityBuildkiteContent,
   isBuildkiteAvailable,
-} from '@kozmoai/backstage-plugin-buildkite';
-import { EntityBugsnagErrorsOverviewTable } from '@kozmoai/backstage-plugin-bugsnag';
+} from '@roadiehq/backstage-plugin-buildkite';
+import { EntityBugsnagErrorsOverviewTable } from '@roadiehq/backstage-plugin-bugsnag';
 import {
   EntitySecurityInsightsContent,
   EntityGithubDependabotContent,
   SecurityInsightsWidget,
   DependabotAlertsWidget,
   isSecurityInsightsAvailable,
-} from '@kozmoai/backstage-plugin-security-insights';
+} from '@roadiehq/backstage-plugin-security-insights';
 import {
   EntityArgoCDHistoryCard,
   EntityArgoCDOverviewCard,
   EntityArgoCDContent,
   isArgocdAvailable,
-} from '@kozmoai/backstage-plugin-argo-cd';
+} from '@roadiehq/backstage-plugin-argo-cd';
 import {
   EntityPrometheusAlertCard,
   EntityPrometheusContent,
   EntityPrometheusGraphCard,
-} from '@kozmoai/backstage-plugin-prometheus';
-import { EntityIFrameCard } from '@kozmoai/backstage-plugin-iframe';
+} from '@roadiehq/backstage-plugin-prometheus';
+import { EntityIFrameCard } from '@roadiehq/backstage-plugin-iframe';
 import {
   S3BucketCard,
   LambdaFunctionCard,
@@ -115,7 +115,7 @@ import {
   isS3BucketAvailable,
   isIamRoleAvailable,
   isLambdaFunctionAvailable,
-} from '@kozmoai/backstage-plugin-aws';
+} from '@roadiehq/backstage-plugin-aws';
 
 const cicdContent = (
   <Grid container spacing={3} alignItems="stretch">

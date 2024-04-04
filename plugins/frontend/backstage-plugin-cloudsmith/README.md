@@ -22,7 +22,7 @@ import {
   CloudsmithQuotaCard,
   CloudsmithRepositoryAuditLogCard,
   CloudsmithRepositorySecurityCard,
-} from '@kozmoai/backstage-plugin-cloudsmith';
+} from '@roadiehq/backstage-plugin-cloudsmith';
 ```
 
 Then add the component to the homepage content component, wherever you prefer.

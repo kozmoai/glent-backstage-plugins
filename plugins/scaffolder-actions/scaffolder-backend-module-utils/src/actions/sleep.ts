@@ -19,7 +19,7 @@ import { InputError } from '@backstage/errors';
 
 export function createSleepAction(options?: { maxSleep?: number }) {
   return createTemplateAction<{ amount: number }>({
-    id: 'kozmoai:utils:sleep',
+    id: 'roadiehq:utils:sleep',
     description: 'Halts the scaffolding for the given amount of seconds',
     supportsDryRun: true,
     schema: {

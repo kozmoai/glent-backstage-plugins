@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { getVoidLogger } from '@backstage/backend-common';
 import { PassThrough } from 'stream';
+import { getVoidLogger } from '@backstage/backend-common';
 import { TemplateAction } from '@backstage/plugin-scaffolder-backend';
 import { ConfigReader } from '@backstage/config';
 import { createArgoCdResources } from './argocd';
 
 const mockCreateArgoResources = jest.fn();
 
-jest.mock('@kozmoai/backstage-plugin-argo-cd-backend', () => {
+jest.mock('@roadiehq/backstage-plugin-argo-cd-backend', () => {
   return {
     ArgoService: jest.fn().mockImplementation(() => {
       return {
@@ -56,8 +56,13 @@ describe('argocd:create-resources', () => {
   ]);
 
   let action: TemplateAction<any>;
-
   const mockContext = {
+    logger: getVoidLogger(),
+    logStream: new PassThrough(),
+    output: jest.fn(),
+    createTemporaryDirectory: jest.fn(),
+    checkpoint: jest.fn(),
+    getInitiatorCredentials: jest.fn(),
     input: {
       argoInstance: 'argoInstance1',
       namespace: 'testNamespace',
@@ -68,10 +73,6 @@ describe('argocd:create-resources', () => {
       labelValue: 'backstage-name=testId',
     },
     workspacePath: 'lol',
-    logger: getVoidLogger(),
-    logStream: new PassThrough(),
-    output: jest.fn(),
-    createTemporaryDirectory: jest.fn(),
   };
 
   beforeEach(() => {

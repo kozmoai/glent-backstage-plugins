@@ -1,8 +1,8 @@
 # GitHub Security Insights Plugin for Backstage
 
-![a list of security alerts](./docs/glint-backstage-security-plugin.jpg)
+![a list of security alerts](./docs/roadie-backstage-security-plugin.jpg)
 
-![a list of dependabot alerts](./docs/glint-backstage-dependabot-alerts.png)
+![a list of dependabot alerts](./docs/roadie-backstage-dependabot-alerts.png)
 
 ## Features
 
@@ -14,7 +14,7 @@
 1. If you have standalone app (you didn't clone this repo), then in the [packages/app](https://github.com/backstage/backstage/blob/master/packages/app/) directory of your backstage instance, add the plugin as a package.json dependency:
 
 ```bash
-yarn add @kozmoai/backstage-plugin-security-insights
+yarn add @roadiehq/backstage-plugin-security-insights
 ```
 
 2. Import the plugin to the [entityPage.tsx](https://github.com/backstage/backstage/blob/master/packages/app/src/components/catalog/EntityPage.tsx) source file:
@@ -23,7 +23,7 @@ yarn add @kozmoai/backstage-plugin-security-insights
 import {
   EntitySecurityInsightsContent,
   isSecurityInsightsAvailable,
-} from '@kozmoai/backstage-plugin-security-insights';
+} from '@roadiehq/backstage-plugin-security-insights';
 
 const serviceEntityPage = (
   <EntityPageLayout>
@@ -47,7 +47,7 @@ const serviceEntityPage = (
 import {
   EntityGithubDependabotContent,
   isSecurityInsightsAvailable,
-} from '@kozmoai/backstage-plugin-security-insights';
+} from '@roadiehq/backstage-plugin-security-insights';
 
 const serviceEntityPage = (
   <EntityPageLayout>
@@ -71,7 +71,7 @@ const serviceEntityPage = (
 
 ![security insights widget](./docs/backstage-plugin-security-widget-1.png)
 
-![dependabot alerts widget](./docs/glint-backstage-dependabot-widget.png)
+![dependabot alerts widget](./docs/roadie-backstage-dependabot-widget.png)
 
 1. You must install plugin by following the steps above to add widgets to your Overview.
 
@@ -82,7 +82,7 @@ const serviceEntityPage = (
 import {
   SecurityInsightsWidget,
   isSecurityInsightsAvailable,
-} from '@kozmoai/backstage-plugin-security-insights';
+} from '@roadiehq/backstage-plugin-security-insights';
 
 ...
 const overviewContent = (
@@ -108,7 +108,7 @@ const overviewContent = (
 import {
   DependabotAlertsWidget,
   isSecurityInsightsAvailable,
-} from '@kozmoai/backstage-plugin-security-insights';
+} from '@roadiehq/backstage-plugin-security-insights';
 
 ...
 const overviewContent = (
@@ -138,4 +138,4 @@ dependabotAlertsConfiguration:
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

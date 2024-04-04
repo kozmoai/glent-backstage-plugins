@@ -1,1 +1,0 @@
-export { GitlabCI } from './GitlabCI';

@@ -19,7 +19,7 @@ This readme will show you how to
 1. In the [packages/app](https://github.com/backstage/backstage/blob/master/packages/app/) directory of your backstage instance, add the plugin as a package.json dependency:
 
 ```shell
-$ yarn add @kozmoai/backstage-plugin-datadog
+$ yarn add @roadiehq/backstage-plugin-datadog
 ```
 
 2. import the plugin to the [entityPage.tsx](https://github.com/backstage/backstage/blob/master/packages/app/src/components/catalog/EntityPage.tsx) source file:
@@ -29,7 +29,7 @@ import {
   EntityDatadogContent,
   EntityDatadogGraphCard,
   isDatadogGraphAvailable,
-} from '@kozmoai/backstage-plugin-datadog';
+} from '@roadiehq/backstage-plugin-datadog';
 ```
 
 4. Add a Datadog card to the overview tab to the [entityPage.tsx](https://github.com/backstage/backstage/blob/master/packages/app/src/components/catalog/EntityPage.tsx) source file:
@@ -199,11 +199,11 @@ If obtained by another actor, it is usable by them.
 
 ## Contributing
 
-Everyone is welcome to contribute to this repository. Feel free to raise [issues](https://github.com/kozmoai/backstage-plugin-datadog/issues) or to submit [Pull Requests](https://github.com/kozmoai/backstage-plugin-datadog/pulls).
+Everyone is welcome to contribute to this repository. Feel free to raise [issues](https://github.com/RoadieHQ/backstage-plugin-datadog/issues) or to submit [Pull Requests](https://github.com/RoadieHQ/backstage-plugin-datadog/pulls).
 
 [Join our Discord server!](https://discord.gg/cjv6H6m8VN)
 
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

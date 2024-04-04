@@ -21,7 +21,7 @@ export function createJSONataAction() {
     data: any;
     expression: string;
   }>({
-    id: 'kozmoai:utils:jsonata',
+    id: 'roadiehq:utils:jsonata',
     description:
       'Allows performing JSONata operations and transformations on input objects and produces the output result as a step output.',
     supportsDryRun: true,

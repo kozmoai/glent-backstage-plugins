@@ -1,4 +1,10 @@
-# @kozmoai/catalog-backend-module-okta
+# @roadiehq/catalog-backend-module-okta
+
+## 0.9.10
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 0.9.9
 

@@ -30,7 +30,7 @@ export function createParseFileAction() {
     path: string;
     parser?: 'yaml' | 'json' | 'multiyaml';
   }>({
-    id: 'kozmoai:utils:fs:parse',
+    id: 'roadiehq:utils:fs:parse',
     description: 'Reads a file from the workspace and optionally parses it',
     supportsDryRun: true,
     schema: {

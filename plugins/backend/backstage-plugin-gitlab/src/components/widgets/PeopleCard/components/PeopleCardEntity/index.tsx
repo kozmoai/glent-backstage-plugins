@@ -1,1 +1,0 @@
-export { PeopleCardEntity } from './PeopleCardEntity';

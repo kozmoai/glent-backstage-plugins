@@ -1,1 +1,0 @@
-export { PeopleCard } from './PeopleCard';

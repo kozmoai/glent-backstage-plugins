@@ -33,7 +33,7 @@ export function createAwsS3CpAction(options?: {
     endpoint?: string;
     s3ForcePathStyle?: boolean;
   }>({
-    id: 'kozmoai:aws:s3:cp',
+    id: 'roadiehq:aws:s3:cp',
     description: 'Copies the path to the given bucket',
     schema: {
       input: {

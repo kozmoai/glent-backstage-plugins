@@ -21,7 +21,7 @@ You need to configure the action in your backend as well as your software templa
 
 ```
 cd packages/backend
-yarn add @kozmoai/scaffolder-backend-argocd
+yarn add @roadiehq/scaffolder-backend-argocd
 ```
 
 Configure the action:

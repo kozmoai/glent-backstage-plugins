@@ -1,34 +1,36 @@
-This repo contains the Backstage plugins created and maintained by [Glint](https://glint.io). Glint is a SaaS Backstage solution.
+This repo contains the Backstage plugins created and maintained by [Roadie](https://roadie.io). Roadie is a SaaS Backstage solution.
 
 Amongst others, the following plugins can be found within this repo:
 
-- [Github Pull Requests](https://www.npmjs.com/package/@kozmoai/backstage-plugin-github-pull-requests)
+- [AI Assistant - RAG AI](https://www.npmjs.com/package/@roadiehq/rag-ai)
 
-- [Github Insights](https://www.npmjs.com/package/@kozmoai/backstage-plugin-github-insights)
+- [Github Pull Requests](https://www.npmjs.com/package/@roadiehq/backstage-plugin-github-pull-requests)
 
-- [AWS Lambda](https://www.npmjs.com/package/@kozmoai/backstage-plugin-aws-lambda)
+- [Github Insights](https://www.npmjs.com/package/@roadiehq/backstage-plugin-github-insights)
 
-- [Jira](https://www.npmjs.com/package/@kozmoai/backstage-plugin-jira)
+- [AWS Lambda](https://www.npmjs.com/package/@roadiehq/backstage-plugin-aws-lambda)
 
-- [Datadog](https://www.npmjs.com/package/@kozmoai/backstage-plugin-datadog)
+- [Jira](https://www.npmjs.com/package/@roadiehq/backstage-plugin-jira)
 
-- [Travis CI](https://www.npmjs.com/package/@kozmoai/backstage-plugin-travis-ci)
+- [Datadog](https://www.npmjs.com/package/@roadiehq/backstage-plugin-datadog)
 
-- [Security Insights](https://www.npmjs.com/package/@kozmoai/backstage-plugin-security-insights)
+- [Travis CI](https://www.npmjs.com/package/@roadiehq/backstage-plugin-travis-ci)
 
-- [Buildkite](https://www.npmjs.com/package/@kozmoai/backstage-plugin-buildkite)
+- [Security Insights](https://www.npmjs.com/package/@roadiehq/backstage-plugin-security-insights)
 
-- [Bugsnag](https://www.npmjs.com/package/@kozmoai/backstage-plugin-bugsnag)
+- [Buildkite](https://www.npmjs.com/package/@roadiehq/backstage-plugin-buildkite)
 
-- [Argo CD](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd) 
+- [Bugsnag](https://www.npmjs.com/package/@roadiehq/backstage-plugin-bugsnag)
 
-- [Argo CD Backend](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd-backend) 
+- [Argo CD](https://www.npmjs.com/package/@roadiehq/backstage-plugin-argo-cd) (created in collaboration with [American Airlines](https://github.com/AmericanAirlines))
 
-- [Cloudsmith](https://www.npmjs.com/package/@kozmoai/backstage-plugin-cloudsmith)
+- [Argo CD Backend](https://www.npmjs.com/package/@roadiehq/backstage-plugin-argo-cd-backend) (contributed by [American Airlines](https://github.com/AmericanAirlines))
+
+- [Cloudsmith](https://www.npmjs.com/package/@roadiehq/backstage-plugin-cloudsmith)
 
 Installation instructions for each plugin can be found in their individual README files.
 
-Backstage is an open platform for creating developer portals. To learn more about the problems it can help solve, please check out our [Ultimate Guide to Backstage by Spotify](https://glint.io/backstage-spotify/).
+Backstage is an open platform for creating developer portals. To learn more about the problems it can help solve, please check out our [Ultimate Guide to Backstage by Spotify](https://roadie.io/backstage-spotify/).
 
 ##
 
@@ -37,8 +39,8 @@ Backstage is an open platform for creating developer portals. To learn more abou
 To get up and running with this repository, you will need to clone it off of GitHub and run an initial build.
 
 ```bash
-git clone https://github.com/kozmoai/glint-backstage-plugins.git
-cd glint-backstage-plugins
+git clone https://github.com/RoadieHQ/roadie-backstage-plugins.git
+cd roadie-backstage-plugins
 ```
 
 ## Fetch dependencies and run an initial build from root directory
@@ -81,14 +83,14 @@ yarn dev
 
 ## Structure of the repository.
 
-This repository is a place where all of the kozmoai plugins we are developed are integrated under `/plugins` folder. Depending on the type of the plugin they are separated in frontend or backend folder. Please note the scaffolder actions are handled separately. Plugins may be used and/or modified by following steps below:
+This repository is a place where all of the RoadieHQ plugins we are developed are integrated under `/plugins` folder. Depending on the type of the plugin they are separated in frontend or backend folder. Please note the scaffolder actions are handled separately. Plugins may be used and/or modified by following steps below:
 
 ### Plugins container
 
 Navigate to
 
 ```bash
-cd glint-backstage-plugin/plugins
+cd roadie-backstage-plugin/plugins
 cd backend/frontend
 cd selected-plugin
 ```
@@ -96,7 +98,7 @@ cd selected-plugin
 Plugin folders consist separate unit tests per every plugin, while general e2e tests are written under
 
 ```bash
-cd glint-backstage-plugin/packages/app/cypress/integration
+cd roadie-backstage-plugin/packages/app/cypress/integration
 ```
 
 folder.
@@ -106,7 +108,7 @@ folder.
 In order to make E2E testing isolated from real entities, we have created `test-entity.yaml` under `packages/entitites`, which will be shown as sample-service entity when you start the app. This is used only for testing purposes and can be modified accordingly.
 
 ```bash
-cd glint-backstage-plugin/plugins
+cd roadie-backstage-plugin/plugins
 cd backend or cd frontend
 cd selected-plugin
 ```
@@ -114,5 +116,17 @@ cd selected-plugin
 Plugin folders consist of separate unit tests for each plugin, while general E2E tests are written under
 
 ```bash
-cd glint-backstage-plugin/packages/app/cypress/integration
+cd roadie-backstage-plugin/packages/app/cypress/integration
 ```
+
+folder.
+
+## Community
+
+- [Discord chatroom](https://discord.gg/d9SJrQR5uH) - Get support
+- [Contributing](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/master/CONTRIBUTING.md) - Start here if you want to contribute
+- Give us a star ⭐️ - If you are using Backstage or think it is an interesting project, we would love a star ❤️
+
+## License
+
+Copyright 2022 Larder Software Limited. Licensed under the Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0

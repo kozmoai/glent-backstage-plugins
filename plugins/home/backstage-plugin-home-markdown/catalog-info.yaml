@@ -6,17 +6,17 @@ metadata:
   description: |
     Homapge markdown renderer plugin
   annotations:
-    github.com/project-slug: kozmoai/glint-backstage-plugins
+    github.com/project-slug: RoadieHQ/roadie-backstage-plugins
     github.com/project-readme-path: home/backstage-plugin-home-markdown/README.md
-    backstage.io/view-url: https://github.com/kozmoai/glint-backstage-plugins/blob/main/plugins/home/backstage-plugin-home-markdown/catalog-info.yaml
-    backstage.io/edit-url: https://github.com/kozmoai/glint-backstage-plugins/edit/main/plugins/home/backstage-plugin-home-markdownr/catalog-info.yaml
-    backstage.io/source-location: url:https://github.com/kozmoai/glint-backstage-plugins/tree/main/plugins/home/backstage-plugin-home-markdown
+    backstage.io/view-url: https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/home/backstage-plugin-home-markdown/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/RoadieHQ/roadie-backstage-plugins/edit/main/plugins/home/backstage-plugin-home-markdownr/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/RoadieHQ/roadie-backstage-plugins/tree/main/plugins/home/backstage-plugin-home-markdown
   tags:
     - plugin
     - oss
     - home
   links:
-    - url: https://www.npmjs.com/package/@kozmoai/backstage-plugin-home-markdown
+    - url: https://www.npmjs.com/package/@roadiehq/backstage-plugin-home-markdown
       title: NPM
 spec:
   type: library

@@ -5,7 +5,7 @@ metadata:
   title: Create ECR Repository
   description: Create ECR repository using scaffolder custom action
 spec:
-  owner: glint
+  owner: roadie
   type: service
 
   parameters:
@@ -51,7 +51,7 @@ spec:
   steps:
     - id: create-ecr
       name: Create ECR Rrepository
-      action: kozmoai:aws:ecr:create
+      action: roadiehq:aws:ecr:create
       input:
         repoName: ${{ parameters.repoName }}
         tags: ${{parameters.tags}}

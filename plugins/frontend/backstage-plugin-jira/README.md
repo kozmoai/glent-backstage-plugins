@@ -15,7 +15,7 @@
 
 ```bash
 cd packages/app
-yarn add @kozmoai/backstage-plugin-jira
+yarn add @roadiehq/backstage-plugin-jira
 ```
 
 2. Add proxy config:
@@ -54,7 +54,7 @@ backend:
       # "'self'" and 'data' are from the backstage default but must be set since img-src is overriden
       - "'self'"
       - 'data:'
-      # Allow your Jira instance for @kozmoai/backstage-plugin-jira
+      # Allow your Jira instance for @roadiehq/backstage-plugin-jira
       - 'JIRA_URL'
 
 ```
@@ -66,7 +66,7 @@ backend:
 import {
   EntityJiraOverviewCard,
   isJiraAvailable,
-} from '@kozmoai/backstage-plugin-jira';
+} from '@roadiehq/backstage-plugin-jira';
 
 const overviewContent = (
   <Grid container spacing={3} alignItems="stretch">
@@ -132,4 +132,4 @@ Even though you can use Bearer token please keep in mind that Activity stream fe
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

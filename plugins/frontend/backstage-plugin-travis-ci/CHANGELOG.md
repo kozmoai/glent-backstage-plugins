@@ -1,4 +1,10 @@
-# @kozmoai/backstage-plugin-travis-ci
+# @roadiehq/backstage-plugin-travis-ci
+
+## 2.1.22
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 2.1.21
 

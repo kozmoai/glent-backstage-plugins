@@ -50,7 +50,7 @@ const mockGithubApi: GithubApi = {
     if (
       owner === 'test' &&
       path === '.backstage/home-page.md' &&
-      repo === 'glint-backstage-plugins' &&
+      repo === 'roadie-backstage-plugins' &&
       branch === undefined
     ) {
       return {
@@ -63,7 +63,7 @@ const mockGithubApi: GithubApi = {
     if (
       owner === 'test' &&
       path === '.backstage/file-with-relative-image.md' &&
-      repo === 'glint-backstage-plugins' &&
+      repo === 'roadie-backstage-plugins' &&
       branch === undefined
     ) {
       return {
@@ -105,7 +105,7 @@ describe('<MarkdownContent>', () => {
         <MarkdownContent
           owner="test"
           path=".backstage/home-page.md"
-          repo="glint-backstage-plugins"
+          repo="roadie-backstage-plugins"
         />
       </TestApiProvider>,
       {},
@@ -123,7 +123,7 @@ describe('<MarkdownContent>', () => {
         <MarkdownContent
           owner="test"
           path=".backstage/home-page.md"
-          repo="glint-backstage-plugins"
+          repo="roadie-backstage-plugins"
         />
       </TestApiProvider>,
       {},

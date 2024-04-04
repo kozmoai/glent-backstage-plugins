@@ -1,4 +1,10 @@
-# @kozmoai/scaffolder-backend-module-aws
+# @roadiehq/scaffolder-backend-module-aws
+
+## 2.4.23
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 2.4.22
 

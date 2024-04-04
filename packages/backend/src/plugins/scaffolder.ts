@@ -24,7 +24,7 @@ import {
   createBuiltinActions,
   TemplateAction,
 } from '@backstage/plugin-scaffolder-backend';
-import { createHttpBackstageAction } from '@kozmoai/scaffolder-backend-module-http-request';
+import { createHttpBackstageAction } from '@roadiehq/scaffolder-backend-module-http-request';
 import {
   createZipAction,
   createWriteFileAction,
@@ -38,11 +38,11 @@ import {
   createJSONataAction,
   createYamlJSONataTransformAction,
   createJsonJSONataTransformAction,
-} from '@kozmoai/scaffolder-backend-module-utils';
+} from '@roadiehq/scaffolder-backend-module-utils';
 import {
   createAwsS3CpAction,
   createEcrAction,
-} from '@kozmoai/scaffolder-backend-module-aws';
+} from '@roadiehq/scaffolder-backend-module-aws';
 import Docker from 'dockerode';
 import { Router } from 'express';
 import type { PluginEnvironment } from '../types';

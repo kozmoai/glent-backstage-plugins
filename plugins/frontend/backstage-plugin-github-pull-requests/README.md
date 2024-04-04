@@ -18,7 +18,7 @@
 
 This plugin relies on the [GitHub Authentication Provider](https://backstage.io/docs/auth/github/provider) for its access to GitHub.
 
-Search filter works the same way it works in GitHub, but `glint-backstage-pull-requests/default-filter` annotation needs to be provided in component configuration. Adding a filter will result in applying that filter per default.
+Search filter works the same way it works in GitHub, but `roadie-backstage-pull-requests/default-filter` annotation needs to be provided in component configuration. Adding a filter will result in applying that filter per default.
 
 If this annotation is left out, no default filter will be applied when running the app.
 
@@ -26,7 +26,7 @@ If this annotation is left out, no default filter will be applied when running t
 
 ```bash
 cd packages/app
-yarn add @kozmoai/backstage-plugin-github-pull-requests
+yarn add @roadiehq/backstage-plugin-github-pull-requests
 ```
 
 ## Add plugin API to your Backstage instance:
@@ -36,7 +36,7 @@ yarn add @kozmoai/backstage-plugin-github-pull-requests
 import {
   EntityGithubPullRequestsContent,
   isGithubPullRequestsAvailable,
-} from '@kozmoai/backstage-plugin-github-pull-requests';
+} from '@roadiehq/backstage-plugin-github-pull-requests';
 ...
 
 const serviceEntityPage = (
@@ -66,7 +66,7 @@ const serviceEntityPage = (
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubPullRequestsOverviewCard, isGithubPullRequestsAvailable } from '@kozmoai/backstage-plugin-github-pull-requests';
+import { EntityGithubPullRequestsOverviewCard, isGithubPullRequestsAvailable } from '@roadiehq/backstage-plugin-github-pull-requests';
 
 ...
 
@@ -98,7 +98,7 @@ const overviewContent = (
 import {
   EntityGithubGroupPullRequestsCard,
   isGithubTeamPullRequestsAvailable,
-} from '@kozmoai/backstage-plugin-github-pull-requests';
+} from '@roadiehq/backstage-plugin-github-pull-requests';
 
 ...
 
@@ -136,7 +136,7 @@ You can build up a query using [Github Advanced Search](https://github.com/searc
 import {
   HomePageRequestedReviewsCard,
   HomePageYourOpenPullRequestsCard,
-} from '@kozmoai/backstage-plugin-github-pull-requests';
+} from '@roadiehq/backstage-plugin-github-pull-requests';
 
 
 export const HomePage = () => {
@@ -148,7 +148,7 @@ export const HomePage = () => {
       </Grid>
 
       <Grid item md={6} xs={12}>
-        <HomePageYourOpenPullRequestsCard query="org:kozmoai is:pr language:CSS" />
+        <HomePageYourOpenPullRequestsCard query="org:RoadieHQ is:pr language:CSS" />
       </Grid>
     ...
   );
@@ -164,4 +164,4 @@ export const HomePage = () => {
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://roadie.io

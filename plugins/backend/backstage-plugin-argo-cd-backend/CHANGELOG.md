@@ -1,4 +1,10 @@
-# @kozmoai/backstage-plugin-argo-cd-backend
+# @roadiehq/backstage-plugin-argo-cd-backend
+
+## 2.14.7
+
+### Patch Changes
+
+- 7cd4bdf: version upgrade to 1.25.0
 
 ## 2.14.6
 
@@ -152,8 +158,8 @@
 
 - 8ae4bbc7: ---
 
-  '@kozmoai/backstage-plugin-argo-cd-backend': patch
-  '@kozmoai/backstage-plugin-argo-cd': patch
+  '@roadiehq/backstage-plugin-argo-cd-backend': patch
+  '@roadiehq/backstage-plugin-argo-cd': patch
 
   ***
 

@@ -17,7 +17,7 @@ import { errorHandler } from '@backstage/backend-common';
 import express, { NextFunction, Request, Response } from 'express';
 import Router from 'express-promise-router';
 import { Logger } from 'winston';
-import { AugmentationIndexer, RetrievalPipeline } from '@kozmoai/rag-ai-node';
+import { AugmentationIndexer, RetrievalPipeline } from '@roadiehq/rag-ai-node';
 import { BaseLLM } from '@langchain/core/language_models/llms';
 import { LlmService } from './LlmService';
 import { RagAiController } from './RagAiController';
