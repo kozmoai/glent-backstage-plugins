@@ -5,7 +5,7 @@
   "types": "src/index.ts",
   "license": "Apache-2.0",
   "private": true,
-  "homepage": "https://roadie.io/backstage/plugins/aws/",
+  "homepage": "https://glint.io/backstage/plugins/aws/",
   "bugs": {
     "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
     "email": "support@glint.io"

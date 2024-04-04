@@ -132,4 +132,4 @@ Even though you can use Bearer token please keep in mind that Activity stream fe
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://roadie.io
+- Get hosted, managed Backstage for your company: https://glint.io

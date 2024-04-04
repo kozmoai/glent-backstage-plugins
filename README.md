@@ -1,4 +1,4 @@
-This repo contains the Backstage plugins created and maintained by [Roadie](https://roadie.io). Roadie is a SaaS Backstage solution.
+This repo contains the Backstage plugins created and maintained by [Roadie](https://glint.io). Roadie is a SaaS Backstage solution.
 
 Amongst others, the following plugins can be found within this repo:
 
@@ -30,7 +30,7 @@ Amongst others, the following plugins can be found within this repo:
 
 Installation instructions for each plugin can be found in their individual README files.
 
-Backstage is an open platform for creating developer portals. To learn more about the problems it can help solve, please check out our [Ultimate Guide to Backstage by Spotify](https://roadie.io/backstage-spotify/).
+Backstage is an open platform for creating developer portals. To learn more about the problems it can help solve, please check out our [Ultimate Guide to Backstage by Spotify](https://glint.io/backstage-spotify/).
 
 ##
 

@@ -4,7 +4,7 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
-  "homepage": "https://roadie.io/backstage/plugins/github-insights/",
+  "homepage": "https://glint.io/backstage/plugins/github-insights/",
   "bugs": {
     "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
     "email": "support@glint.io"
