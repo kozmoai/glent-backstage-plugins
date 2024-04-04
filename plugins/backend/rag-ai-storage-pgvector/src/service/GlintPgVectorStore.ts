@@ -16,13 +16,13 @@
 import {
   EmbeddingDocMetadata,
   EmbeddingDoc,
-  RoadieVectorStore,
+  GlintVectorStore,
 } from '@kozmoai/rag-ai-node';
 import { Embeddings } from '@langchain/core/embeddings';
 import { Knex } from 'knex';
 import { Logger } from 'winston';
 
-export interface RoadiePgVectorStoreConfig {
+export interface GlintPgVectorStoreConfig {
   logger: Logger;
   db: Knex;
   /**
@@ -41,7 +41,7 @@ export interface RoadiePgVectorStoreConfig {
 /**
  * A class representing a vector store that uses PostgreSQL as the backend.
  */
-export class RoadiePgVectorStore implements RoadieVectorStore {
+export class GlintPgVectorStore implements GlintVectorStore {
   private readonly tableName: string = 'embeddings';
   private readonly client: Knex;
   private readonly chunkSize;
@@ -50,27 +50,27 @@ export class RoadiePgVectorStore implements RoadieVectorStore {
   private readonly logger: Logger;
 
   /**
-   * Initializes the RoadiePgVectorStore.
+   * Initializes the GlintPgVectorStore.
    *
-   * @param {RoadiePgVectorStoreConfig} config - The configuration for RoadiePgVectorStore.
+   * @param {GlintPgVectorStoreConfig} config - The configuration for GlintPgVectorStore.
    *
-   * @return {Promise<RoadiePgVectorStore>} A Promise that resolves to an instance of RoadiePgVectorStore.
+   * @return {Promise<GlintPgVectorStore>} A Promise that resolves to an instance of GlintPgVectorStore.
    */
   static async initialize(
-    config: RoadiePgVectorStoreConfig,
-  ): Promise<RoadiePgVectorStore> {
-    return new RoadiePgVectorStore(config);
+    config: GlintPgVectorStoreConfig,
+  ): Promise<GlintPgVectorStore> {
+    return new GlintPgVectorStore(config);
   }
 
   /**
-   * Constructor for RoadiePgVectorStore class.
+   * Constructor for GlintPgVectorStore class.
    *
-   * @param {RoadiePgVectorStoreConfig} config - The configuration object for RoadiePgVectorStore.
+   * @param {GlintPgVectorStoreConfig} config - The configuration object for GlintPgVectorStore.
    * @param {string} config.db - The database client to connect.
    * @param {Object} config.logger - The logger object for logging.
    * @param {number} [config.chunkSize=500] - The size of chunks for processing.
    */
-  private constructor(config: RoadiePgVectorStoreConfig) {
+  private constructor(config: GlintPgVectorStoreConfig) {
     this.client = config.db;
     this.logger = config.logger;
     this.chunkSize = config.chunkSize ?? 500;
@@ -247,7 +247,7 @@ export class RoadiePgVectorStore implements RoadieVectorStore {
    * @param {string} query - The query to perform the similarity search on.
    * @param {EmbeddingDocMetadata} filter - The filter to apply to the search results.
    * @param {number} [amount=4] - The number of results to return.
-   * @return {Promise<EmbeddingDoc[]>} - A promise that resolves to an array of RoadieEmbeddingDoc objects representing the search results.
+   * @return {Promise<EmbeddingDoc[]>} - A promise that resolves to an array of GlintEmbeddingDoc objects representing the search results.
    * @throws {Error} - Throws an error if there are no embeddings configured for the vector store.
    */
   async similaritySearch(

@@ -20,9 +20,9 @@ import {
   IdentityApi,
 } from '@backstage/core-plugin-api';
 import { RagAiApi } from './ragApi';
-import { RoadieLlmResponse } from '../types';
+import { GlintLlmResponse } from '../types';
 
-export class RoadieRagAiClient implements RagAiApi {
+export class GlintRagAiClient implements RagAiApi {
   private readonly discoveryApi: DiscoveryApi;
   private readonly fetchApi: FetchApi;
   private readonly configApi: ConfigApi;
@@ -60,7 +60,7 @@ export class RoadieRagAiClient implements RagAiApi {
     throw new Error(`Failed to retrieved data from path ${path}`);
   }
 
-  async ask(question: string): Promise<RoadieLlmResponse> {
+  async ask(question: string): Promise<GlintLlmResponse> {
     const { token } = await this.identityApi.getCredentials();
 
     const response = await this.fetch(`query/catalog`, {

@@ -28,7 +28,7 @@ import {
   identityApiRef,
 } from '@backstage/core-plugin-api';
 import fetch from 'cross-fetch';
-import { ragAiApiRef, RoadieRagAiClient } from '@kozmoai/rag-ai';
+import { ragAiApiRef, GlintRagAiClient } from '@kozmoai/rag-ai';
 
 export const apis: AnyApiFactory[] = [
   createApiFactory({
@@ -53,7 +53,7 @@ export const apis: AnyApiFactory[] = [
       identityApi: identityApiRef,
     },
     factory: ({ discoveryApi, fetchApi, configApi, identityApi }) => {
-      return new RoadieRagAiClient({
+      return new GlintRagAiClient({
         discoveryApi,
         fetchApi,
         configApi,

@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 export { ragAiPlugin, RagModal } from './plugin';
-export { RoadieRagAiClient, ragAiApiRef } from './api';
+export { GlintRagAiClient, ragAiApiRef } from './api';

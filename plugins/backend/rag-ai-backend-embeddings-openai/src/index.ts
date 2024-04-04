@@ -15,17 +15,17 @@
  */
 import { TokenManager } from '@backstage/backend-common';
 import { Logger } from 'winston';
-import { AugmentationIndexer, RoadieVectorStore } from '@kozmoai/rag-ai-node';
-import { OpenAiConfig, RoadieOpenAiAugmenter } from './RoadieOpenAiAugmenter';
+import { AugmentationIndexer, GlintVectorStore } from '@kozmoai/rag-ai-node';
+import { OpenAiConfig, GlintOpenAiAugmenter } from './GlintOpenAiAugmenter';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 import { Config } from '@backstage/config';
 import { SplitterOptions } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
-export interface RoadieBedrockEmbeddingsConfig {
+export interface GlintBedrockEmbeddingsConfig {
   logger: Logger;
   tokenManager: TokenManager;
-  vectorStore: RoadieVectorStore;
+  vectorStore: GlintVectorStore;
   catalogApi: CatalogApi;
   discovery: PluginEndpointDiscovery;
   config: Config;
@@ -38,7 +38,7 @@ export async function initializeOpenAiEmbeddings({
   catalogApi,
   discovery,
   config,
-}: RoadieBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
+}: GlintBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
   logger.info('Initializing Glint OpenAI Embeddings');
   const openAiConfig = config.get<OpenAiConfig>('ai.embeddings.openai');
 
@@ -50,7 +50,7 @@ export async function initializeOpenAiEmbeddings({
     splitterOptions.chunkOverlap =
       embeddingsOptions.getOptionalNumber('chunkOverlap');
   }
-  return new RoadieOpenAiAugmenter({
+  return new GlintOpenAiAugmenter({
     vectorStore,
     catalogApi,
     discovery,

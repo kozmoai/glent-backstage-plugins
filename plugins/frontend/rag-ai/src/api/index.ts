@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 export { ragAiApiRef } from './ragApi';
-export { RoadieRagAiClient } from './client';
+export { GlintRagAiClient } from './client';

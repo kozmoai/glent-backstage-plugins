@@ -105,7 +105,7 @@ To store embeddings vectors in the same database as the rest of your Backstage a
 
 ### How to initialize
 
-You can use the exported `createRoadiePgVectorStore` function to initialize the RoadiePGVectorStore. This initialization function expects an instance of logger and a Knex DB connection.
+You can use the exported `createGlintPgVectorStore` function to initialize the GlintPGVectorStore. This initialization function expects an instance of logger and a Knex DB connection.
 
 Here is a TypeScript example:
 
@@ -119,7 +119,7 @@ const config = {
   },
 };
 
-const vectorStore = await createRoadiePgVectorStore({
+const vectorStore = await createGlintPgVectorStore({
   logger,
   database,
   options: { chunkSize, tableName },
@@ -175,7 +175,7 @@ See more information from the [module package](/plugins/backend/rag-ai-backend-e
 ```typescript
 import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
 import { PluginEnvironment } from '../types';
-import { createRoadiePgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
+import { createGlintPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
 import { CatalogClient } from '@backstage/catalog-client';
 import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 import { initializeBedrockEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-aws';
@@ -193,7 +193,7 @@ export default async function createPlugin({
     discoveryApi: discovery,
   });
 
-  const vectorStore = await createRoadiePgVectorStore({
+  const vectorStore = await createGlintPgVectorStore({
     logger,
     database,
     config,
@@ -259,7 +259,7 @@ See more information from the [module package](/plugins/backend/rag-ai-backend-e
 
 import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
 import { initializeOpenAiEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-openai';
-import { createRoadiePgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
+import { createGlintPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
 import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 import { OpenAI } from '@langchain/openai';
 import { CatalogClient } from '@backstage/catalog-client';
@@ -275,7 +275,7 @@ export default async function createPlugin({
     discoveryApi: discovery,
   });
 
-  const vectorStore = await createRoadiePgVectorStore({ logger, database });
+  const vectorStore = await createGlintPgVectorStore({ logger, database });
 
   const augmentationIndexer = await initializeOpenAiEmbeddings({
     logger,

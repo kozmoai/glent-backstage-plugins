@@ -13,32 +13,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { OpenAIEmbeddings } from '@langchain/openai';
+import { TokenManager } from '@backstage/backend-common';
+import { BedrockEmbeddings } from '@langchain/community/embeddings/bedrock';
+import { AwsCredentialIdentity, Provider } from '@aws-sdk/types';
 import {
   DefaultVectorAugmentationIndexer,
-  RoadieEmbeddingsConfig,
+  GlintEmbeddingsConfig,
 } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
-export type OpenAiConfig = {
-  modelName?: string;
-  openAiApiKey?: string;
-  batchSize?: number;
-  embeddingsDimensions?: number;
+export type BedrockConfig = {
+  modelName: string;
 };
 
-export class RoadieOpenAiAugmenter extends DefaultVectorAugmentationIndexer {
+export class GlintBedrockAugmenter extends DefaultVectorAugmentationIndexer {
   constructor(
-    config: RoadieEmbeddingsConfig & {
-      config: OpenAiConfig;
+    config: GlintEmbeddingsConfig & {
+      options: {
+        credentials: AwsCredentialIdentity | Provider<AwsCredentialIdentity>;
+        region: string;
+      };
+      bedrockConfig: BedrockConfig;
+      tokenManager: TokenManager;
     },
   ) {
-    const embeddings = new OpenAIEmbeddings({
-      openAIApiKey: config.config.openAiApiKey, // In Node.js defaults to process.env.OPENAI_API_KEY
-      batchSize: config.config.batchSize, // Default value if omitted is 512. Max is 2048
-      modelName: config.config.modelName
-        ? config.config.modelName
-        : 'text-embedding-3-small',
-      dimensions: config.config.embeddingsDimensions,
+    const embeddings = new BedrockEmbeddings({
+      region: config.options.region,
+      credentials: config.options.credentials,
+      model: config.bedrockConfig.modelName,
     });
     super({ ...config, embeddings });
   }

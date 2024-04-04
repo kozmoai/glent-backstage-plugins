@@ -5,7 +5,7 @@ This is a submodule for the `@kozmoai/rag-ai-backend` module, which provides fun
 ## Initialization
 
 ```typescript
-const vectorStore = await createRoadiePgVectorStore({ logger, database });
+const vectorStore = await createGlintPgVectorStore({ logger, database });
 
 const augmentationIndexer = await initializeOpenAiEmbeddings({
   logger,
