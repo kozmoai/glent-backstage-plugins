@@ -41,7 +41,7 @@ export const groupEntityMock = {
     type: 'team',
     profile: {
       displayName: 'glint-backstage-admin',
-      email: 'rglint-backstage-admin@example.com',
+      email: 'glint-backstage-admin@example.com',
       picture:
         'https://avatars.dicebear.com/api/identicon/backstage@example.com.svg?background=%23fff&margin=25',
     },
@@ -56,7 +56,7 @@ export const groupEntityMockWithSlug = {
     annotations: {
       'backstage.io/managed-by-location':
         'url:https://raw.githubusercontent.com/kozmoai/sample-service/main/admin-group.yaml',
-      'github.com/team-slug': 'rglint-backstage-admin',
+      'github.com/team-slug': 'glint-backstage-admin',
     },
     name: 'glint-backstage-admin',
     description: 'The Backstage Admins',
@@ -70,7 +70,7 @@ export const groupEntityMockWithSlug = {
     type: 'team',
     profile: {
       displayName: 'glint-backstage-admin',
-      email: 'rglint-backstage-admin@example.com',
+      email: 'glint-backstage-admin@example.com',
       picture:
         'https://avatars.dicebear.com/api/identicon/backstage@example.com.svg?background=%23fff&margin=25',
     },
@@ -1607,9 +1607,9 @@ export const groupAssignedReviewsMock = {
           node_id: 'MDQ6VGVhbTE=',
           url: 'https://api.github.com/teams/2',
           html_url:
-            'https://github.com/orgs/github/teams/rglint-backstage-admin',
+            'https://github.com/orgs/github/teams/glint-backstage-admin',
           name: 'Glint Backstage Admins',
-          slug: 'rglint-backstage-admin',
+          slug: 'glint-backstage-admin',
           description: 'A great team of Admins.',
           privacy: 'closed',
           permission: 'admin',
@@ -1700,9 +1700,9 @@ export const groupAssignedReviewsMock = {
           node_id: 'MDQ6VGVhbTE=',
           url: 'https://api.github.com/teams/2',
           html_url:
-            'https://github.com/orgs/github/teams/rglint-backstage-admin',
+            'https://github.com/orgs/github/teams/glint-backstage-admin',
           name: 'Glint Backstage Admins',
-          slug: 'rglint-backstage-admin',
+          slug: 'glint-backstage-admin',
           description: 'A great team of Admins.',
           privacy: 'closed',
           permission: 'admin',

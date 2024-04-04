@@ -1,9 +1,5 @@
 # Code of Conduct
 
-We subscribe to the same [Spotify FOSS Code of Conduct](https://github.com/backstage/backstage/blob/master/CODE_OF_CONDUCT.md) that Backstage uses.
-
-## Reporting issues
-
 If you experience or witness unacceptable behavior—or have any other concerns—please report it by contacting us via foss@glint.io. All reports will be handled with discretion. In your report please include:
 
 - Your contact information.
