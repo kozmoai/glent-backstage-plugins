@@ -6,7 +6,7 @@ metadata:
   description: |
     Backstage plugin to authenticate other plugins with AWS IAM.
   annotations:
-    github.com/project-slug: roadiehq/backstage-plugin-aws-auth
+    github.com/project-slug: kozmoai/backstage-plugin-aws-auth
   tags:
     - plugin
     - oss

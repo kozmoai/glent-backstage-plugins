@@ -40,7 +40,7 @@ import {
   identityApiRef,
 } from '@backstage/core-plugin-api';
 import fetch from 'cross-fetch';
-import { ragAiApiRef, RoadieRagAiClient } from '@roadiehq/rag-ai';
+import { ragAiApiRef, RoadieRagAiClient } from '@kozmoai/rag-ai';
 
 export const apis: AnyApiFactory[] = [
   // ... Other APIs
@@ -73,7 +73,7 @@ App.tsx
 ```tsx
 
 // packages/app/src/App.tsx
-import { RagModal } from '@roadiehq/rag-ai';
+import { RagModal } from '@kozmoai/rag-ai';
 
 ...
 const App = () => (

@@ -1,4 +1,4 @@
-# @roadiehq/scaffolder-backend-module-utils
+# @kozmoai/scaffolder-backend-module-utils
 
 ## 1.14.1
 
@@ -129,7 +129,7 @@
 
 ### Minor Changes
 
-- 8d0a7db3: Add new scaffolder action roadiehq:utils:fs:replace to add ability to replace text in files.
+- 8d0a7db3: Add new scaffolder action kozmoai:utils:fs:replace to add ability to replace text in files.
 
 ## 1.8.10
 
@@ -214,7 +214,7 @@
 
 ### Minor Changes
 
-- 67ea499f: Allow `roadiehq:utils:jsonata` action to process any type.
+- 67ea499f: Allow `kozmoai:utils:jsonata` action to process any type.
 
 ## 1.6.1
 
@@ -234,12 +234,12 @@
 
 - 1522d272: Adds a few new action steps to the scaffolder `utils` package:
 
-  - `roadiehq:utils:fs:parse` - reads a file from the workspace and parses it using `yaml` or `json` parsers.
-  - `roadiehq:utils:jsonata` - allows JSONata expressions to be applied to an object to transform or query data.
-  - `roadiehq:utils:jsonata:json:transform` - allows JSONata expressions to be applied to a file content to transform or query data and optionally write the output to a file.
-  - `roadiehq:utils:jsonata:yaml:transform` - allows JSONata expressions to be applied to a file content to transform or query data and optionally write the output to a file.
-  - `roadiehq:utils:serialize:yaml` - allows an object to be serialized into yaml
-  - `roadiehq:utils:serialize:json` - allows an object to be serialized into json
+  - `kozmoai:utils:fs:parse` - reads a file from the workspace and parses it using `yaml` or `json` parsers.
+  - `kozmoai:utils:jsonata` - allows JSONata expressions to be applied to an object to transform or query data.
+  - `kozmoai:utils:jsonata:json:transform` - allows JSONata expressions to be applied to a file content to transform or query data and optionally write the output to a file.
+  - `kozmoai:utils:jsonata:yaml:transform` - allows JSONata expressions to be applied to a file content to transform or query data and optionally write the output to a file.
+  - `kozmoai:utils:serialize:yaml` - allows an object to be serialized into yaml
+  - `kozmoai:utils:serialize:json` - allows an object to be serialized into json
 
 ## 1.5.0
 

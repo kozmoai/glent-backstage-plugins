@@ -20,7 +20,7 @@ import fs from 'fs-extra';
 import { createReplaceInFileAction } from './replaceInFile';
 import { getVoidLogger } from '@backstage/backend-common';
 
-describe('roadiehq:utils:fs:replace', () => {
+describe('kozmoai:utils:fs:replace', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},

@@ -1,5 +1,5 @@
 {
-  "name": "@roadiehq/rag-ai-backend-retrieval-augmenter",
+  "name": "@kozmoai/rag-ai-backend-retrieval-augmenter",
   "version": "0.2.1",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -13,12 +13,12 @@
     "role": "backend-plugin"
   },
   "bugs": {
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
-    "email": "support@roadie.io"
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:RoadieHQ/roadie-backstage-plugins",
+    "url": "github:kozmoai/roadie-backstage-plugins",
     "directory": "plugins/backend/rag-ai-backend-embeddings"
   },
   "scripts": {
@@ -37,7 +37,7 @@
     "@backstage/config": "^1.2.0",
     "@backstage/plugin-search-common": "^1.2.11",
     "@langchain/core": "^0.1.2",
-    "@roadiehq/rag-ai-node": "^0.1.1",
+    "@kozmoai/rag-ai-node": "^0.1.1",
     "langchain": "^0.1.21",
     "node-fetch": "^2.6.7",
     "winston": "^3.11.0",

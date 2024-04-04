@@ -1,4 +1,4 @@
-# @roadiehq/roadie-backstage-entity-validator
+# @kozmoai/roadie-backstage-entity-validator
 
 ## 2.4.9
 

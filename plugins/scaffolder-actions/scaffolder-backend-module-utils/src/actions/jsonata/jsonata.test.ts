@@ -17,7 +17,7 @@ import { PassThrough } from 'stream';
 import { createJSONataAction } from './jsonata';
 import { getVoidLogger } from '@backstage/backend-common';
 
-describe('roadiehq:utils:jsonata', () => {
+describe('kozmoai:utils:jsonata', () => {
   const mockContext = {
     logger: getVoidLogger(),
     logStream: new PassThrough(),

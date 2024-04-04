@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-buildkite
+# @kozmoai/backstage-plugin-buildkite
 
 ## 2.1.22
 

@@ -51,7 +51,7 @@ spec:
   steps:
     - id: create-ecr
       name: Create ECR Rrepository
-      action: roadiehq:aws:ecr:create
+      action: kozmoai:aws:ecr:create
       input:
         repoName: ${{ parameters.repoName }}
         tags: ${{parameters.tags}}

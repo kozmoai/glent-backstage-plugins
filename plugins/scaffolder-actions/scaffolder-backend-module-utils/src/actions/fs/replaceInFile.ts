@@ -27,7 +27,7 @@ export function createReplaceInFileAction() {
       replaceWith: string;
     }>;
   }>({
-    id: 'roadiehq:utils:fs:replace',
+    id: 'kozmoai:utils:fs:replace',
     description: 'Replaces content of a file with given values.',
     supportsDryRun: true,
     schema: {

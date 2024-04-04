@@ -17,7 +17,7 @@ import { PassThrough } from 'stream';
 import { getVoidLogger } from '@backstage/backend-common';
 import { createSleepAction } from './sleep';
 
-describe('roadiehq:utils:sleep', () => {
+describe('kozmoai:utils:sleep', () => {
   const mockContext = {
     logger: getVoidLogger(),
     logStream: new PassThrough(),

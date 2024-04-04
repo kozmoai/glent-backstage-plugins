@@ -14,7 +14,7 @@
 1. If you have standalone app (you didn't clone this repo), then in the [packages/app](https://github.com/backstage/backstage/blob/master/packages/app/) directory of your backstage instance, add the plugin as a package.json dependency:
 
 ```bash
-yarn add @roadiehq/backstage-plugin-security-insights
+yarn add @kozmoai/backstage-plugin-security-insights
 ```
 
 2. Import the plugin to the [entityPage.tsx](https://github.com/backstage/backstage/blob/master/packages/app/src/components/catalog/EntityPage.tsx) source file:
@@ -23,7 +23,7 @@ yarn add @roadiehq/backstage-plugin-security-insights
 import {
   EntitySecurityInsightsContent,
   isSecurityInsightsAvailable,
-} from '@roadiehq/backstage-plugin-security-insights';
+} from '@kozmoai/backstage-plugin-security-insights';
 
 const serviceEntityPage = (
   <EntityPageLayout>
@@ -47,7 +47,7 @@ const serviceEntityPage = (
 import {
   EntityGithubDependabotContent,
   isSecurityInsightsAvailable,
-} from '@roadiehq/backstage-plugin-security-insights';
+} from '@kozmoai/backstage-plugin-security-insights';
 
 const serviceEntityPage = (
   <EntityPageLayout>
@@ -82,7 +82,7 @@ const serviceEntityPage = (
 import {
   SecurityInsightsWidget,
   isSecurityInsightsAvailable,
-} from '@roadiehq/backstage-plugin-security-insights';
+} from '@kozmoai/backstage-plugin-security-insights';
 
 ...
 const overviewContent = (
@@ -108,7 +108,7 @@ const overviewContent = (
 import {
   DependabotAlertsWidget,
   isSecurityInsightsAvailable,
-} from '@roadiehq/backstage-plugin-security-insights';
+} from '@kozmoai/backstage-plugin-security-insights';
 
 ...
 const overviewContent = (

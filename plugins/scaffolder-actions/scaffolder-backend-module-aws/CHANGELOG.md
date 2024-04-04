@@ -1,4 +1,4 @@
-# @roadiehq/scaffolder-backend-module-aws
+# @kozmoai/scaffolder-backend-module-aws
 
 ## 2.4.23
 

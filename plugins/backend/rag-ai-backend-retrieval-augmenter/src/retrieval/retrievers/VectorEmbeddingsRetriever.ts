@@ -20,7 +20,7 @@ import {
   EmbeddingsSource,
   EntityFilterShape,
   RoadieVectorStore,
-} from '@roadiehq/rag-ai-node';
+} from '@kozmoai/rag-ai-node';
 import { Logger } from 'winston';
 
 export class VectorEmbeddingsRetriever implements AugmentationRetriever {

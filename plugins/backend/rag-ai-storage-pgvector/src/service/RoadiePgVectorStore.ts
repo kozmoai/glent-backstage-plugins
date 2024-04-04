@@ -17,7 +17,7 @@ import {
   EmbeddingDocMetadata,
   EmbeddingDoc,
   RoadieVectorStore,
-} from '@roadiehq/rag-ai-node';
+} from '@kozmoai/rag-ai-node';
 import { Embeddings } from '@langchain/core/embeddings';
 import { Knex } from 'knex';
 import { Logger } from 'winston';

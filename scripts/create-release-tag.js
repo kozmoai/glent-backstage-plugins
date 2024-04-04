@@ -20,7 +20,7 @@
 const { Octokit } = require('@octokit/rest');
 
 const baseOptions = {
-  owner: 'RoadieHQ',
+  owner: 'kozmoai',
   repo: 'roadie-backstage-plugins',
 };
 

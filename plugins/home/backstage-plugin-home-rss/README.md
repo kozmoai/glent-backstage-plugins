@@ -9,7 +9,7 @@ If you didn't set up the HomePage plugin you can see the official documentation 
 Add the following componenet to your HomePage.tsx file. The `HomePageRSS` props are the following type.
 
 ```bash
-yarn add @roadiehq/backstage-plugin-home-rss
+yarn add @kozmoai/backstage-plugin-home-rss
 ```
 
 ```ts
@@ -30,7 +30,7 @@ Then you can add a card component to your Home Page.
 
 ```tsx
 // packages/app/src/components/home/HomePage.tsx
-import { HomePageRSS } from '@roadiehq/backstage-plugin-home-rss';
+import { HomePageRSS } from '@kozmoai/backstage-plugin-home-rss';
 
 export const HomePage = () => {
   return (

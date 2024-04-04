@@ -31,7 +31,7 @@ You need to configure the action in your backend:
 
 ```
 cd packages/backend
-yarn add @roadiehq/scaffolder-backend-module-utils
+yarn add @kozmoai/scaffolder-backend-module-utils
 ```
 
 Configure the action:
@@ -54,7 +54,7 @@ import {
   createJSONataAction,
   createYamlJSONataTransformAction,
   createJsonJSONataTransformAction,
-} from '@roadiehq/scaffolder-backend-module-utils';
+} from '@kozmoai/scaffolder-backend-module-utils';
 ...
 
 const actions = [
@@ -97,7 +97,7 @@ return await createRouter({
 
 ### Zip
 
-**Action name**: `roadiehq:utils:zip`
+**Action name**: `kozmoai:utils:zip`
 
 Compress files and store them to the temporary workspace in .zip format.
 
@@ -133,7 +133,7 @@ spec:
   steps:
     - id: zip
       name: Zip
-      action: roadiehq:utils:zip
+      action: kozmoai:utils:zip
       input:
         path: ${{ parameters.path }}
         outputPath: ${{ parameters.outputPath }}
@@ -144,7 +144,7 @@ spec:
 
 ### Sleep
 
-**Action name**: `roadiehq:utils:sleep`
+**Action name**: `kozmoai:utils:sleep`
 
 Waits a number of seconds before continuing to the next scaffolder step.
 
@@ -175,14 +175,14 @@ spec:
   steps:
     - id: sleep
       name: sleep
-      action: roadiehq:utils:sleep
+      action: kozmoai:utils:sleep
       input:
         path: ${{ parameters.amount }}
 ```
 
 ### Deserialise
 
-**Action name**: `roadiehq:utils:fs:parse`
+**Action name**: `kozmoai:utils:fs:parse`
 
 This action deserialises JSON or YAML files in the temporary scaffolder workspace to a JavaScript object in memory that can then be passed to another step.
 
@@ -221,7 +221,7 @@ spec:
   steps:
     - id: parsefile
       name: Parse File
-      action: roadiehq:utils:fs:parse
+      action: kozmoai:utils:fs:parse
       input:
         path: ${{ parameters.path }}
         parser: ${{ parameters.parser }}
@@ -231,7 +231,7 @@ spec:
 
 ### Serialise to JSON or YAML
 
-Action: `roadiehq:utils:serialize:[json|yaml]`
+Action: `kozmoai:utils:serialize:[json|yaml]`
 
 This action creates a JSON or YAML formatted string representation of key value pairs written in yaml under the data input field.
 
@@ -253,7 +253,7 @@ spec:
   steps:
     - id: serialize
       name: serialize
-      action: roadiehq:utils:serialize:yaml
+      action: kozmoai:utils:serialize:yaml
       input:
         data:
           hello: world
@@ -294,7 +294,7 @@ spec:
   steps:
     - id: serialize
       name: serialize
-      action: roadiehq:utils:serialize:json
+      action: kozmoai:utils:serialize:json
       input:
         data:
           hello: world
@@ -314,7 +314,7 @@ spec:
 
 ### Parse and Transform JSON or YAML
 
-**Action name**: `roadiehq:utils:jsonata`
+**Action name**: `kozmoai:utils:jsonata`
 
 This action allows you to use [Jsonata](https://jsonata.org/) to parse and transform JSON or YAML for use in subsequent actions.
 
@@ -338,7 +338,7 @@ spec:
   steps:
     - id: jsonata
       name: Parse File
-      action: roadiehq:utils:jsonata
+      action: kozmoai:utils:jsonata
       input:
         data:
           items:
@@ -366,7 +366,7 @@ spec:
   steps:
     - id: jsonata
       name: Parse File
-      action: roadiehq:utils:jsonata:json:transform
+      action: kozmoai:utils:jsonata:json:transform
       input:
         path: input-data.jaon
         expression: '$ ~> | $ | { "items": [items, "item2"] }|'
@@ -392,7 +392,7 @@ spec:
   steps:
     - id: jsonata
       name: Jsonata
-      action: roadiehq:utils:jsonata:yaml:transform
+      action: kozmoai:utils:jsonata:yaml:transform
       input:
         path: input-data.yaml
         expression: '$ ~> | $ | { "items": [items, "item2"] }|'
@@ -402,7 +402,7 @@ spec:
 
 ### Merge JSON
 
-**Action name**: `roadiehq:utils:json:merge`
+**Action name**: `kozmoai:utils:json:merge`
 
 **Required params:**
 
@@ -459,7 +459,7 @@ spec:
         url: 'https://github.com/${{ parameters.org }}/${{ parameters.repository }}'
     - id: merge
       name: Merge JSON
-      action: roadiehq:utils:json:merge
+      action: kozmoai:utils:json:merge
       input:
         path: ${{ parameters.path }}
         content:
@@ -529,7 +529,7 @@ spec:
         url: 'https://github.com/${{ parameters.org }}/${{ parameters.repository }}'
     - id: merge
       name: Merge JSON
-      action: roadiehq:utils:json:merge
+      action: kozmoai:utils:json:merge
       input:
         path: ${{ parameters.path }}
         content: ${{ parameters.content }}
@@ -550,7 +550,7 @@ spec:
 
 ### Append
 
-**Action name**: `roadiehq:utils:fs:append`
+**Action name**: `kozmoai:utils:fs:append`
 
 This action adds content to the end of an existing file or creates a new one if it doesn't already exist.
 
@@ -599,7 +599,7 @@ spec:
   steps:
     - id: appendFile
       name: Append To File
-      action: roadiehq:utils:fs:append
+      action: kozmoai:utils:fs:append
       input:
         path: ${{ parameters.path }}
         content: ${{ parameters.content }}
@@ -607,7 +607,7 @@ spec:
 
 ### Write to File
 
-**Action name:** `roadiehq:utils:fs:write`
+**Action name:** `kozmoai:utils:fs:write`
 
 This action writes a string to a temporary file in the Scaffolder workspace.
 
@@ -630,7 +630,7 @@ parameters:
 steps:
   - id: writeFile
     name: Create File
-    action: roadiehq:utils:fs:write
+    action: kozmoai:utils:fs:write
     input:
       path: ${{ parameters.path }}
       content: ${{ parameters.content }}
@@ -698,7 +698,7 @@ spec:
         url: https://github.com/${{ parameters.org }}/${{ parameters.repository }}
     - id: write-to-file
       name: Overwrite File Or Create New
-      action: roadiehq:utils:fs:write
+      action: kozmoai:utils:fs:write
       input:
         path: ${{ parameters.path }}
         content: ${{ parameters.content }}
@@ -719,7 +719,7 @@ spec:
 
 ### Replace in files
 
-**Action name:** `roadiehq:utils:fs:replace`
+**Action name:** `kozmoai:utils:fs:replace`
 
 This action replaces found string in files with content defined in input.
 
@@ -740,7 +740,7 @@ parameters:
 steps:
   - id: Replace text in file
     name: Replace
-    action: roadiehq:utils:fs:replace
+    action: kozmoai:utils:fs:replace
     input:
       files:
         - file: './file.1'

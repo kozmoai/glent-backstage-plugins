@@ -73,11 +73,11 @@ describe('LastBuildCard', () => {
     // jest.resetAllMocks();
     worker.use(
       rest.get(
-        'http://exampleapi.com/travisci/api/repo/RoadieHQ%2Fsample-service/builds',
+        'http://exampleapi.com/travisci/api/repo/kozmoai%2Fsample-service/builds',
         (_, res, ctx) => res(ctx.json(buildsResponseMock)),
       ),
       rest.get(
-        'http://exampleapi.com/travisci/api/repo/RoadieHQ%2Fsample-service/builds',
+        'http://exampleapi.com/travisci/api/repo/kozmoai%2Fsample-service/builds',
         (_, res, ctx) => res(ctx.json(buildsResponseMock)),
       ),
     );

@@ -11578,9 +11578,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@roadiehq/backstage-plugin-argo-cd-backend@2.14.7, @roadiehq/backstage-plugin-argo-cd-backend@^2.14.7, @roadiehq/backstage-plugin-argo-cd-backend@workspace:plugins/backend/backstage-plugin-argo-cd-backend":
+"@kozmoai/backstage-plugin-argo-cd-backend@2.14.7, @kozmoai/backstage-plugin-argo-cd-backend@^2.14.7, @kozmoai/backstage-plugin-argo-cd-backend@workspace:plugins/backend/backstage-plugin-argo-cd-backend":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-argo-cd-backend@workspace:plugins/backend/backstage-plugin-argo-cd-backend"
+  resolution: "@kozmoai/backstage-plugin-argo-cd-backend@workspace:plugins/backend/backstage-plugin-argo-cd-backend"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/catalog-client": ^1.6.3
@@ -11600,9 +11600,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-argo-cd@^2.6.4, @roadiehq/backstage-plugin-argo-cd@workspace:plugins/frontend/backstage-plugin-argo-cd":
+"@kozmoai/backstage-plugin-argo-cd@^2.6.4, @kozmoai/backstage-plugin-argo-cd@workspace:plugins/frontend/backstage-plugin-argo-cd":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-argo-cd@workspace:plugins/frontend/backstage-plugin-argo-cd"
+  resolution: "@kozmoai/backstage-plugin-argo-cd@workspace:plugins/frontend/backstage-plugin-argo-cd"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11642,9 +11642,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-aws-auth@^0.4.22, @roadiehq/backstage-plugin-aws-auth@workspace:plugins/backend/backstage-plugin-aws-auth":
+"@kozmoai/backstage-plugin-aws-auth@^0.4.22, @kozmoai/backstage-plugin-aws-auth@workspace:plugins/backend/backstage-plugin-aws-auth":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-aws-auth@workspace:plugins/backend/backstage-plugin-aws-auth"
+  resolution: "@kozmoai/backstage-plugin-aws-auth@workspace:plugins/backend/backstage-plugin-aws-auth"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/cli": ^0.26.2
@@ -11659,9 +11659,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-aws-backend@^1.1.22, @roadiehq/backstage-plugin-aws-backend@workspace:plugins/backend/backstage-aws-backend":
+"@kozmoai/backstage-plugin-aws-backend@^1.1.22, @kozmoai/backstage-plugin-aws-backend@workspace:plugins/backend/backstage-aws-backend":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-aws-backend@workspace:plugins/backend/backstage-aws-backend"
+  resolution: "@kozmoai/backstage-plugin-aws-backend@workspace:plugins/backend/backstage-aws-backend"
   dependencies:
     "@aws-sdk/client-cloudcontrol": ^3.76.0
     "@aws-sdk/credential-providers": ^3.76.0
@@ -11680,9 +11680,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-aws-lambda@^2.2.8, @roadiehq/backstage-plugin-aws-lambda@workspace:plugins/frontend/backstage-plugin-aws-lambda":
+"@kozmoai/backstage-plugin-aws-lambda@^2.2.8, @kozmoai/backstage-plugin-aws-lambda@workspace:plugins/frontend/backstage-plugin-aws-lambda":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-aws-lambda@workspace:plugins/frontend/backstage-plugin-aws-lambda"
+  resolution: "@kozmoai/backstage-plugin-aws-lambda@workspace:plugins/frontend/backstage-plugin-aws-lambda"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11713,9 +11713,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-aws@^1.1.22, @roadiehq/backstage-plugin-aws@workspace:plugins/frontend/backstage-plugin-aws":
+"@kozmoai/backstage-plugin-aws@^1.1.22, @kozmoai/backstage-plugin-aws@workspace:plugins/frontend/backstage-plugin-aws":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-aws@workspace:plugins/frontend/backstage-plugin-aws"
+  resolution: "@kozmoai/backstage-plugin-aws@workspace:plugins/frontend/backstage-plugin-aws"
   dependencies:
     "@aws-sdk/util-arn-parser": ^3.53.0
     "@backstage/catalog-model": ^1.4.5
@@ -11744,9 +11744,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-bugsnag@^2.2.8, @roadiehq/backstage-plugin-bugsnag@workspace:plugins/frontend/backstage-plugin-bugsnag":
+"@kozmoai/backstage-plugin-bugsnag@^2.2.8, @kozmoai/backstage-plugin-bugsnag@workspace:plugins/frontend/backstage-plugin-bugsnag":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-bugsnag@workspace:plugins/frontend/backstage-plugin-bugsnag"
+  resolution: "@kozmoai/backstage-plugin-bugsnag@workspace:plugins/frontend/backstage-plugin-bugsnag"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11780,9 +11780,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-buildkite@^2.1.22, @roadiehq/backstage-plugin-buildkite@workspace:plugins/frontend/backstage-plugin-buildkite":
+"@kozmoai/backstage-plugin-buildkite@^2.1.22, @kozmoai/backstage-plugin-buildkite@workspace:plugins/frontend/backstage-plugin-buildkite":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-buildkite@workspace:plugins/frontend/backstage-plugin-buildkite"
+  resolution: "@kozmoai/backstage-plugin-buildkite@workspace:plugins/frontend/backstage-plugin-buildkite"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11816,9 +11816,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-cloudsmith@^1.0.21, @roadiehq/backstage-plugin-cloudsmith@workspace:plugins/frontend/backstage-plugin-cloudsmith":
+"@kozmoai/backstage-plugin-cloudsmith@^1.0.21, @kozmoai/backstage-plugin-cloudsmith@workspace:plugins/frontend/backstage-plugin-cloudsmith":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-cloudsmith@workspace:plugins/frontend/backstage-plugin-cloudsmith"
+  resolution: "@kozmoai/backstage-plugin-cloudsmith@workspace:plugins/frontend/backstage-plugin-cloudsmith"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11848,9 +11848,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-datadog@^2.2.7, @roadiehq/backstage-plugin-datadog@workspace:plugins/frontend/backstage-plugin-datadog":
+"@kozmoai/backstage-plugin-datadog@^2.2.7, @kozmoai/backstage-plugin-datadog@workspace:plugins/frontend/backstage-plugin-datadog":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-datadog@workspace:plugins/frontend/backstage-plugin-datadog"
+  resolution: "@kozmoai/backstage-plugin-datadog@workspace:plugins/frontend/backstage-plugin-datadog"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11885,9 +11885,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-github-insights@^2.3.28, @roadiehq/backstage-plugin-github-insights@workspace:plugins/frontend/backstage-plugin-github-insights":
+"@kozmoai/backstage-plugin-github-insights@^2.3.28, @kozmoai/backstage-plugin-github-insights@workspace:plugins/frontend/backstage-plugin-github-insights":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-github-insights@workspace:plugins/frontend/backstage-plugin-github-insights"
+  resolution: "@kozmoai/backstage-plugin-github-insights@workspace:plugins/frontend/backstage-plugin-github-insights"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11924,9 +11924,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-github-pull-requests@^2.5.25, @roadiehq/backstage-plugin-github-pull-requests@workspace:plugins/frontend/backstage-plugin-github-pull-requests":
+"@kozmoai/backstage-plugin-github-pull-requests@^2.5.25, @kozmoai/backstage-plugin-github-pull-requests@workspace:plugins/frontend/backstage-plugin-github-pull-requests":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-github-pull-requests@workspace:plugins/frontend/backstage-plugin-github-pull-requests"
+  resolution: "@kozmoai/backstage-plugin-github-pull-requests@workspace:plugins/frontend/backstage-plugin-github-pull-requests"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -11965,9 +11965,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-home-markdown@^2.5.23, @roadiehq/backstage-plugin-home-markdown@workspace:plugins/home/backstage-plugin-home-markdown":
+"@kozmoai/backstage-plugin-home-markdown@^2.5.23, @kozmoai/backstage-plugin-home-markdown@workspace:plugins/home/backstage-plugin-home-markdown":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-home-markdown@workspace:plugins/home/backstage-plugin-home-markdown"
+  resolution: "@kozmoai/backstage-plugin-home-markdown@workspace:plugins/home/backstage-plugin-home-markdown"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/cli": ^0.26.2
@@ -11994,9 +11994,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-home-rss@^1.3.11, @roadiehq/backstage-plugin-home-rss@workspace:plugins/home/backstage-plugin-home-rss":
+"@kozmoai/backstage-plugin-home-rss@^1.3.11, @kozmoai/backstage-plugin-home-rss@workspace:plugins/home/backstage-plugin-home-rss":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-home-rss@workspace:plugins/home/backstage-plugin-home-rss"
+  resolution: "@kozmoai/backstage-plugin-home-rss@workspace:plugins/home/backstage-plugin-home-rss"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/cli": ^0.26.2
@@ -12025,9 +12025,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-iframe@^1.3.16, @roadiehq/backstage-plugin-iframe@workspace:plugins/frontend/backstage-plugin-iframe":
+"@kozmoai/backstage-plugin-iframe@^1.3.16, @kozmoai/backstage-plugin-iframe@workspace:plugins/frontend/backstage-plugin-iframe":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-iframe@workspace:plugins/frontend/backstage-plugin-iframe"
+  resolution: "@kozmoai/backstage-plugin-iframe@workspace:plugins/frontend/backstage-plugin-iframe"
   dependencies:
     "@backstage/cli": ^0.26.2
     "@backstage/core-app-api": ^1.12.3
@@ -12053,9 +12053,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-jira@^2.5.6, @roadiehq/backstage-plugin-jira@workspace:plugins/frontend/backstage-plugin-jira":
+"@kozmoai/backstage-plugin-jira@^2.5.6, @kozmoai/backstage-plugin-jira@workspace:plugins/frontend/backstage-plugin-jira":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-jira@workspace:plugins/frontend/backstage-plugin-jira"
+  resolution: "@kozmoai/backstage-plugin-jira@workspace:plugins/frontend/backstage-plugin-jira"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -12091,9 +12091,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-prometheus@^2.8.7, @roadiehq/backstage-plugin-prometheus@workspace:plugins/frontend/backstage-plugin-prometheus":
+"@kozmoai/backstage-plugin-prometheus@^2.8.7, @kozmoai/backstage-plugin-prometheus@workspace:plugins/frontend/backstage-plugin-prometheus":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-prometheus@workspace:plugins/frontend/backstage-plugin-prometheus"
+  resolution: "@kozmoai/backstage-plugin-prometheus@workspace:plugins/frontend/backstage-plugin-prometheus"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -12130,9 +12130,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-security-insights@^2.3.16, @roadiehq/backstage-plugin-security-insights@workspace:plugins/frontend/backstage-plugin-security-insights":
+"@kozmoai/backstage-plugin-security-insights@^2.3.16, @kozmoai/backstage-plugin-security-insights@workspace:plugins/frontend/backstage-plugin-security-insights":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-security-insights@workspace:plugins/frontend/backstage-plugin-security-insights"
+  resolution: "@kozmoai/backstage-plugin-security-insights@workspace:plugins/frontend/backstage-plugin-security-insights"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -12170,9 +12170,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-shortcut@^1.1.22, @roadiehq/backstage-plugin-shortcut@workspace:plugins/frontend/backstage-plugin-shortcut":
+"@kozmoai/backstage-plugin-shortcut@^1.1.22, @kozmoai/backstage-plugin-shortcut@workspace:plugins/frontend/backstage-plugin-shortcut":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-shortcut@workspace:plugins/frontend/backstage-plugin-shortcut"
+  resolution: "@kozmoai/backstage-plugin-shortcut@workspace:plugins/frontend/backstage-plugin-shortcut"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -12200,9 +12200,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/backstage-plugin-travis-ci@^2.1.22, @roadiehq/backstage-plugin-travis-ci@workspace:plugins/frontend/backstage-plugin-travis-ci":
+"@kozmoai/backstage-plugin-travis-ci@^2.1.22, @kozmoai/backstage-plugin-travis-ci@workspace:plugins/frontend/backstage-plugin-travis-ci":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/backstage-plugin-travis-ci@workspace:plugins/frontend/backstage-plugin-travis-ci"
+  resolution: "@kozmoai/backstage-plugin-travis-ci@workspace:plugins/frontend/backstage-plugin-travis-ci"
   dependencies:
     "@backstage/catalog-model": ^1.4.5
     "@backstage/cli": ^0.26.2
@@ -12238,9 +12238,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/catalog-backend-module-aws@^2.2.1, @roadiehq/catalog-backend-module-aws@workspace:plugins/backend/catalog-backend-module-aws":
+"@kozmoai/catalog-backend-module-aws@^2.2.1, @kozmoai/catalog-backend-module-aws@workspace:plugins/backend/catalog-backend-module-aws":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/catalog-backend-module-aws@workspace:plugins/backend/catalog-backend-module-aws"
+  resolution: "@kozmoai/catalog-backend-module-aws@workspace:plugins/backend/catalog-backend-module-aws"
   dependencies:
     "@aws-sdk/client-cloudcontrol": ^3.76.0
     "@aws-sdk/client-dynamodb": ^3.76.0
@@ -12277,9 +12277,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/catalog-backend-module-okta@^0.9.10, @roadiehq/catalog-backend-module-okta@workspace:plugins/backend/catalog-backend-module-okta":
+"@kozmoai/catalog-backend-module-okta@^0.9.10, @kozmoai/catalog-backend-module-okta@workspace:plugins/backend/catalog-backend-module-okta":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/catalog-backend-module-okta@workspace:plugins/backend/catalog-backend-module-okta"
+  resolution: "@kozmoai/catalog-backend-module-okta@workspace:plugins/backend/catalog-backend-module-okta"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/catalog-client": ^1.6.3
@@ -12301,9 +12301,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/plugin-scaffolder-frontend-module-http-request-field@^1.6.10, @roadiehq/plugin-scaffolder-frontend-module-http-request-field@workspace:plugins/scaffolder-field-extensions/scaffolder-frontend-module-http-request-field":
+"@kozmoai/plugin-scaffolder-frontend-module-http-request-field@^1.6.10, @kozmoai/plugin-scaffolder-frontend-module-http-request-field@workspace:plugins/scaffolder-field-extensions/scaffolder-frontend-module-http-request-field":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/plugin-scaffolder-frontend-module-http-request-field@workspace:plugins/scaffolder-field-extensions/scaffolder-frontend-module-http-request-field"
+  resolution: "@kozmoai/plugin-scaffolder-frontend-module-http-request-field@workspace:plugins/scaffolder-field-extensions/scaffolder-frontend-module-http-request-field"
   dependencies:
     "@backstage/cli": ^0.26.2
     "@backstage/core-app-api": ^1.12.3
@@ -12335,9 +12335,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/rag-ai-backend-embeddings-aws@^0.2.1, @roadiehq/rag-ai-backend-embeddings-aws@workspace:plugins/backend/rag-ai-backend-embeddings-aws":
+"@kozmoai/rag-ai-backend-embeddings-aws@^0.2.1, @kozmoai/rag-ai-backend-embeddings-aws@workspace:plugins/backend/rag-ai-backend-embeddings-aws":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/rag-ai-backend-embeddings-aws@workspace:plugins/backend/rag-ai-backend-embeddings-aws"
+  resolution: "@kozmoai/rag-ai-backend-embeddings-aws@workspace:plugins/backend/rag-ai-backend-embeddings-aws"
   dependencies:
     "@aws-sdk/client-bedrock-runtime": ^3.474.0
     "@aws-sdk/types": ^3.468.0
@@ -12348,9 +12348,9 @@ __metadata:
     "@backstage/config": ^1.2.0
     "@langchain/community": ^0.0.32
     "@langchain/core": ^0.1.2
-    "@roadiehq/rag-ai-backend": ^0.2.2
-    "@roadiehq/rag-ai-backend-retrieval-augmenter": ^0.2.1
-    "@roadiehq/rag-ai-node": ^0.1.1
+    "@kozmoai/rag-ai-backend": ^0.2.2
+    "@kozmoai/rag-ai-backend-retrieval-augmenter": ^0.2.1
+    "@kozmoai/rag-ai-node": ^0.1.1
     esbuild: ^0.19.9
     langchain: ^0.1.21
     tsx: ^4.6.2
@@ -12358,9 +12358,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/rag-ai-backend-embeddings-openai@^0.2.1, @roadiehq/rag-ai-backend-embeddings-openai@workspace:plugins/backend/rag-ai-backend-embeddings-openai":
+"@kozmoai/rag-ai-backend-embeddings-openai@^0.2.1, @kozmoai/rag-ai-backend-embeddings-openai@workspace:plugins/backend/rag-ai-backend-embeddings-openai":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/rag-ai-backend-embeddings-openai@workspace:plugins/backend/rag-ai-backend-embeddings-openai"
+  resolution: "@kozmoai/rag-ai-backend-embeddings-openai@workspace:plugins/backend/rag-ai-backend-embeddings-openai"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/backend-test-utils": ^0.3.6
@@ -12369,8 +12369,8 @@ __metadata:
     "@backstage/config": ^1.2.0
     "@langchain/core": ^0.1.2
     "@langchain/openai": ^0.0.14
-    "@roadiehq/rag-ai-backend-retrieval-augmenter": ^0.2.1
-    "@roadiehq/rag-ai-node": ^0.1.1
+    "@kozmoai/rag-ai-backend-retrieval-augmenter": ^0.2.1
+    "@kozmoai/rag-ai-node": ^0.1.1
     esbuild: ^0.19.9
     langchain: ^0.0.209
     tsx: ^4.6.2
@@ -12378,9 +12378,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/rag-ai-backend-retrieval-augmenter@^0.2.1, @roadiehq/rag-ai-backend-retrieval-augmenter@workspace:plugins/backend/rag-ai-backend-retrieval-augmenter":
+"@kozmoai/rag-ai-backend-retrieval-augmenter@^0.2.1, @kozmoai/rag-ai-backend-retrieval-augmenter@workspace:plugins/backend/rag-ai-backend-retrieval-augmenter":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/rag-ai-backend-retrieval-augmenter@workspace:plugins/backend/rag-ai-backend-retrieval-augmenter"
+  resolution: "@kozmoai/rag-ai-backend-retrieval-augmenter@workspace:plugins/backend/rag-ai-backend-retrieval-augmenter"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/catalog-client": ^1.6.3
@@ -12389,7 +12389,7 @@ __metadata:
     "@backstage/config": ^1.2.0
     "@backstage/plugin-search-common": ^1.2.11
     "@langchain/core": ^0.1.2
-    "@roadiehq/rag-ai-node": ^0.1.1
+    "@kozmoai/rag-ai-node": ^0.1.1
     "@types/supertest": ^2.0.8
     langchain: ^0.1.21
     msw: ^1.0.0
@@ -12400,16 +12400,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/rag-ai-backend@^0.2.2, @roadiehq/rag-ai-backend@workspace:plugins/backend/rag-ai-backend":
+"@kozmoai/rag-ai-backend@^0.2.2, @kozmoai/rag-ai-backend@workspace:plugins/backend/rag-ai-backend":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/rag-ai-backend@workspace:plugins/backend/rag-ai-backend"
+  resolution: "@kozmoai/rag-ai-backend@workspace:plugins/backend/rag-ai-backend"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/backend-plugin-api": ^0.6.16
     "@backstage/cli": ^0.26.2
     "@backstage/config": ^1.2.0
     "@langchain/core": ^0.1.2
-    "@roadiehq/rag-ai-node": ^0.1.1
+    "@kozmoai/rag-ai-node": ^0.1.1
     "@types/express": "*"
     "@types/supertest": ^2.0.8
     express: ^4.17.1
@@ -12423,9 +12423,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/rag-ai-node@^0.1.1, @roadiehq/rag-ai-node@workspace:plugins/backend/rag-ai-node":
+"@kozmoai/rag-ai-node@^0.1.1, @kozmoai/rag-ai-node@workspace:plugins/backend/rag-ai-node":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/rag-ai-node@workspace:plugins/backend/rag-ai-node"
+  resolution: "@kozmoai/rag-ai-node@workspace:plugins/backend/rag-ai-node"
   dependencies:
     "@backstage/backend-plugin-api": ^0.6.16
     "@backstage/cli": ^0.26.2
@@ -12434,15 +12434,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/rag-ai-storage-pgvector@^0.1.1, @roadiehq/rag-ai-storage-pgvector@workspace:plugins/backend/rag-ai-storage-pgvector":
+"@kozmoai/rag-ai-storage-pgvector@^0.1.1, @kozmoai/rag-ai-storage-pgvector@workspace:plugins/backend/rag-ai-storage-pgvector":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/rag-ai-storage-pgvector@workspace:plugins/backend/rag-ai-storage-pgvector"
+  resolution: "@kozmoai/rag-ai-storage-pgvector@workspace:plugins/backend/rag-ai-storage-pgvector"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/cli": ^0.26.2
     "@backstage/config": ^1.2.0
     "@langchain/core": ^0.1.1
-    "@roadiehq/rag-ai-node": ^0.1.1
+    "@kozmoai/rag-ai-node": ^0.1.1
     "@types/supertest": ^2.0.8
     knex: ^3.0.0
     msw: ^1.0.0
@@ -12451,9 +12451,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/rag-ai@^0.2.1, @roadiehq/rag-ai@workspace:plugins/frontend/rag-ai":
+"@kozmoai/rag-ai@^0.2.1, @kozmoai/rag-ai@workspace:plugins/frontend/rag-ai":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/rag-ai@workspace:plugins/frontend/rag-ai"
+  resolution: "@kozmoai/rag-ai@workspace:plugins/frontend/rag-ai"
   dependencies:
     "@backstage/cli": ^0.26.2
     "@backstage/core-app-api": ^1.12.3
@@ -12483,9 +12483,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/roadie-backstage-entity-validator@workspace:utils/roadie-backstage-entity-validator":
+"@kozmoai/roadie-backstage-entity-validator@workspace:utils/roadie-backstage-entity-validator":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/roadie-backstage-entity-validator@workspace:utils/roadie-backstage-entity-validator"
+  resolution: "@kozmoai/roadie-backstage-entity-validator@workspace:utils/roadie-backstage-entity-validator"
   dependencies:
     "@actions/core": ^1.10.0
     "@backstage/catalog-model": ^1.4.5
@@ -12502,23 +12502,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/scaffolder-backend-argocd@workspace:plugins/scaffolder-actions/scaffolder-backend-argocd":
+"@kozmoai/scaffolder-backend-argocd@workspace:plugins/scaffolder-actions/scaffolder-backend-argocd":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/scaffolder-backend-argocd@workspace:plugins/scaffolder-actions/scaffolder-backend-argocd"
+  resolution: "@kozmoai/scaffolder-backend-argocd@workspace:plugins/scaffolder-actions/scaffolder-backend-argocd"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/backend-test-utils": ^0.3.6
     "@backstage/cli": ^0.26.2
     "@backstage/config": ^1.2.0
     "@backstage/plugin-scaffolder-backend": ^1.22.3
-    "@roadiehq/backstage-plugin-argo-cd-backend": ^2.14.7
+    "@kozmoai/backstage-plugin-argo-cd-backend": ^2.14.7
     winston: ^3.2.1
   languageName: unknown
   linkType: soft
 
-"@roadiehq/scaffolder-backend-module-aws@^2.4.23, @roadiehq/scaffolder-backend-module-aws@workspace:plugins/scaffolder-actions/scaffolder-backend-module-aws":
+"@kozmoai/scaffolder-backend-module-aws@^2.4.23, @kozmoai/scaffolder-backend-module-aws@workspace:plugins/scaffolder-actions/scaffolder-backend-module-aws":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/scaffolder-backend-module-aws@workspace:plugins/scaffolder-actions/scaffolder-backend-module-aws"
+  resolution: "@kozmoai/scaffolder-backend-module-aws@workspace:plugins/scaffolder-actions/scaffolder-backend-module-aws"
   dependencies:
     "@aws-sdk/client-ecr": ^3.169.0
     "@aws-sdk/client-s3": ^3.76.0
@@ -12543,9 +12543,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/scaffolder-backend-module-http-request@^4.1.10, @roadiehq/scaffolder-backend-module-http-request@workspace:plugins/scaffolder-actions/scaffolder-backend-module-http-request":
+"@kozmoai/scaffolder-backend-module-http-request@^4.1.10, @kozmoai/scaffolder-backend-module-http-request@workspace:plugins/scaffolder-actions/scaffolder-backend-module-http-request":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/scaffolder-backend-module-http-request@workspace:plugins/scaffolder-actions/scaffolder-backend-module-http-request"
+  resolution: "@kozmoai/scaffolder-backend-module-http-request@workspace:plugins/scaffolder-actions/scaffolder-backend-module-http-request"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/cli": ^0.26.2
@@ -12557,9 +12557,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@roadiehq/scaffolder-backend-module-utils@^1.14.1, @roadiehq/scaffolder-backend-module-utils@workspace:plugins/scaffolder-actions/scaffolder-backend-module-utils":
+"@kozmoai/scaffolder-backend-module-utils@^1.14.1, @kozmoai/scaffolder-backend-module-utils@workspace:plugins/scaffolder-actions/scaffolder-backend-module-utils":
   version: 0.0.0-use.local
-  resolution: "@roadiehq/scaffolder-backend-module-utils@workspace:plugins/scaffolder-actions/scaffolder-backend-module-utils"
+  resolution: "@kozmoai/scaffolder-backend-module-utils@workspace:plugins/scaffolder-actions/scaffolder-backend-module-utils"
   dependencies:
     "@backstage/backend-common": ^0.21.6
     "@backstage/backend-test-utils": ^0.3.6
@@ -17959,25 +17959,25 @@ __metadata:
     "@backstage/theme": ^0.5.2
     "@material-ui/core": ^4.12.2
     "@material-ui/icons": ^4.9.1
-    "@roadiehq/backstage-plugin-argo-cd": ^2.6.4
-    "@roadiehq/backstage-plugin-aws": ^1.1.22
-    "@roadiehq/backstage-plugin-aws-lambda": ^2.2.8
-    "@roadiehq/backstage-plugin-bugsnag": ^2.2.8
-    "@roadiehq/backstage-plugin-buildkite": ^2.1.22
-    "@roadiehq/backstage-plugin-cloudsmith": ^1.0.21
-    "@roadiehq/backstage-plugin-datadog": ^2.2.7
-    "@roadiehq/backstage-plugin-github-insights": ^2.3.28
-    "@roadiehq/backstage-plugin-github-pull-requests": ^2.5.25
-    "@roadiehq/backstage-plugin-home-markdown": ^2.5.23
-    "@roadiehq/backstage-plugin-home-rss": ^1.3.11
-    "@roadiehq/backstage-plugin-iframe": ^1.3.16
-    "@roadiehq/backstage-plugin-jira": ^2.5.6
-    "@roadiehq/backstage-plugin-prometheus": ^2.8.7
-    "@roadiehq/backstage-plugin-security-insights": ^2.3.16
-    "@roadiehq/backstage-plugin-shortcut": ^1.1.22
-    "@roadiehq/backstage-plugin-travis-ci": ^2.1.22
-    "@roadiehq/plugin-scaffolder-frontend-module-http-request-field": ^1.6.10
-    "@roadiehq/rag-ai": ^0.2.1
+    "@kozmoai/backstage-plugin-argo-cd": ^2.6.4
+    "@kozmoai/backstage-plugin-aws": ^1.1.22
+    "@kozmoai/backstage-plugin-aws-lambda": ^2.2.8
+    "@kozmoai/backstage-plugin-bugsnag": ^2.2.8
+    "@kozmoai/backstage-plugin-buildkite": ^2.1.22
+    "@kozmoai/backstage-plugin-cloudsmith": ^1.0.21
+    "@kozmoai/backstage-plugin-datadog": ^2.2.7
+    "@kozmoai/backstage-plugin-github-insights": ^2.3.28
+    "@kozmoai/backstage-plugin-github-pull-requests": ^2.5.25
+    "@kozmoai/backstage-plugin-home-markdown": ^2.5.23
+    "@kozmoai/backstage-plugin-home-rss": ^1.3.11
+    "@kozmoai/backstage-plugin-iframe": ^1.3.16
+    "@kozmoai/backstage-plugin-jira": ^2.5.6
+    "@kozmoai/backstage-plugin-prometheus": ^2.8.7
+    "@kozmoai/backstage-plugin-security-insights": ^2.3.16
+    "@kozmoai/backstage-plugin-shortcut": ^1.1.22
+    "@kozmoai/backstage-plugin-travis-ci": ^2.1.22
+    "@kozmoai/plugin-scaffolder-frontend-module-http-request-field": ^1.6.10
+    "@kozmoai/rag-ai": ^0.2.1
     "@testing-library/jest-dom": ^6.0.0
     "@testing-library/react": ^14.0.0
     "@testing-library/user-event": ^14.0.0
@@ -18830,19 +18830,19 @@ __metadata:
     "@langchain/community": ^0.0.32
     "@langchain/openai": ^0.0.14
     "@octokit/rest": ^19.0.3
-    "@roadiehq/backstage-plugin-argo-cd-backend": 2.14.7
-    "@roadiehq/backstage-plugin-aws-auth": ^0.4.22
-    "@roadiehq/backstage-plugin-aws-backend": ^1.1.22
-    "@roadiehq/catalog-backend-module-aws": ^2.2.1
-    "@roadiehq/catalog-backend-module-okta": ^0.9.10
-    "@roadiehq/rag-ai-backend": ^0.2.2
-    "@roadiehq/rag-ai-backend-embeddings-aws": ^0.2.1
-    "@roadiehq/rag-ai-backend-embeddings-openai": ^0.2.1
-    "@roadiehq/rag-ai-backend-retrieval-augmenter": ^0.2.1
-    "@roadiehq/rag-ai-storage-pgvector": ^0.1.1
-    "@roadiehq/scaffolder-backend-module-aws": ^2.4.23
-    "@roadiehq/scaffolder-backend-module-http-request": ^4.1.10
-    "@roadiehq/scaffolder-backend-module-utils": ^1.14.1
+    "@kozmoai/backstage-plugin-argo-cd-backend": 2.14.7
+    "@kozmoai/backstage-plugin-aws-auth": ^0.4.22
+    "@kozmoai/backstage-plugin-aws-backend": ^1.1.22
+    "@kozmoai/catalog-backend-module-aws": ^2.2.1
+    "@kozmoai/catalog-backend-module-okta": ^0.9.10
+    "@kozmoai/rag-ai-backend": ^0.2.2
+    "@kozmoai/rag-ai-backend-embeddings-aws": ^0.2.1
+    "@kozmoai/rag-ai-backend-embeddings-openai": ^0.2.1
+    "@kozmoai/rag-ai-backend-retrieval-augmenter": ^0.2.1
+    "@kozmoai/rag-ai-storage-pgvector": ^0.1.1
+    "@kozmoai/scaffolder-backend-module-aws": ^2.4.23
+    "@kozmoai/scaffolder-backend-module-http-request": ^4.1.10
+    "@kozmoai/scaffolder-backend-module-utils": ^1.14.1
     "@types/dockerode": ^3.3.0
     "@types/express": ^4.17.6
     "@types/express-serve-static-core": ^4.17.5

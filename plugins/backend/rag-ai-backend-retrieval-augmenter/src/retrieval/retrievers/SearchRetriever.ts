@@ -18,7 +18,7 @@ import {
   AugmentationRetriever,
   EmbeddingDoc,
   EmbeddingsSource,
-} from '@roadiehq/rag-ai-node';
+} from '@kozmoai/rag-ai-node';
 import { Logger } from 'winston';
 import { SearchClient } from './SearchClient';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';

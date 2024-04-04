@@ -19,7 +19,7 @@ import { AwsCredentialIdentity, Provider } from '@aws-sdk/types';
 import {
   DefaultVectorAugmentationIndexer,
   RoadieEmbeddingsConfig,
-} from '@roadiehq/rag-ai-backend-retrieval-augmenter';
+} from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
 export type BedrockConfig = {
   modelName: string;

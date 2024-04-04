@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-iframe
+# @kozmoai/backstage-plugin-iframe
 
 ## 1.3.16
 

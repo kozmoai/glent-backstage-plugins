@@ -27,7 +27,7 @@ import {
   augmentationIndexerExtensionPoint,
   retrievalPipelineExtensionPoint,
   modelExtensionPoint,
-} from '@roadiehq/rag-ai-node';
+} from '@kozmoai/rag-ai-node';
 import { BaseLLM } from '@langchain/core/language_models/llms';
 
 /**

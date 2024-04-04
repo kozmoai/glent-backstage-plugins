@@ -22,7 +22,7 @@ import {
   EntityFilterShape,
   RetrievalPipeline,
   RetrievalRouter,
-} from '@roadiehq/rag-ai-node';
+} from '@kozmoai/rag-ai-node';
 import { CombiningPostProcessor } from './postProcessors/CombiningPostProcessor';
 
 export class DefaultRetrievalPipeline implements RetrievalPipeline {

@@ -17,7 +17,7 @@ import { TokenManager } from '@backstage/backend-common';
 import { Logger } from 'winston';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
-import { RoadieVectorStore } from '@roadiehq/rag-ai-node';
+import { RoadieVectorStore } from '@kozmoai/rag-ai-node';
 
 export type SplitterOptions = {
   chunkSize?: number;

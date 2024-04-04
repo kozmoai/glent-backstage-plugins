@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-datadog
+# @kozmoai/backstage-plugin-datadog
 
 ## 2.2.7
 

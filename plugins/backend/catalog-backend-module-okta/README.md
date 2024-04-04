@@ -87,7 +87,7 @@ export const customGroupNamingStrategy: GroupNamingStrategy = group =>
 ### Example configuration:
 
 ```typescript
-import { OktaOrgEntityProvider } from '@roadiehq/catalog-backend-module-okta';
+import { OktaOrgEntityProvider } from '@kozmoai/catalog-backend-module-okta';
 
 export default async function createPlugin(
   env: PluginEnvironment,
@@ -117,7 +117,7 @@ export default async function createPlugin(
 You can optionally provide the ability to create a hierarchy of groups by providing `hierarchyConfig`.
 
 ```typescript
-import { OktaOrgEntityProvider } from '@roadiehq/catalog-backend-module-okta';
+import { OktaOrgEntityProvider } from '@kozmoai/catalog-backend-module-okta';
 
 export default async function createPlugin(
   env: PluginEnvironment,
@@ -153,7 +153,7 @@ In case you want to customize the emitted entities, the provider allows to pass 
 1. Create a transformer:
 
 ```typescript
-import { GroupNamingStrategy } from '@roadiehq/catalog-backend-module-okta';
+import { GroupNamingStrategy } from '@kozmoai/catalog-backend-module-okta';
 import { GroupEntity } from '@backstage/catalog-model';
 import { Group } from '@okta/okta-sdk-nodejs';
 
@@ -196,7 +196,7 @@ function myGroupTransformer(
 2. Configure the provider with the transformer:
 
 ```typescript
-import { OktaOrgEntityProvider } from '@roadiehq/catalog-backend-module-okta';
+import { OktaOrgEntityProvider } from '@kozmoai/catalog-backend-module-okta';
 import { myGroupTransformer } from './myGroupTransformer';
 
 export default async function createPlugin(
@@ -249,7 +249,7 @@ In case you want to customize the emitted entities, the provider allows to pass 
 ```typescript
 import { UserEntity } from '@backstage/catalog-model';
 import { User } from '@okta/okta-sdk-nodejs';
-import { UserNamingStrategy } from '@roadiehq/catalog-backend-module-okta';
+import { UserNamingStrategy } from '@kozmoai/catalog-backend-module-okta';
 
 function myUserTransformer(
   user: User,
@@ -279,7 +279,7 @@ function myUserTransformer(
 2. Configure the provider with the transformer:
 
 ```typescript
-import { OktaUserEntityProvider } from '@roadiehq/catalog-backend-module-okta';
+import { OktaUserEntityProvider } from '@kozmoai/catalog-backend-module-okta';
 import { myUserTransformer } from './myUserTransformer';
 
 export default async function createPlugin(
@@ -345,7 +345,7 @@ Make sure you use the OktaUserEntityProvider's naming strategy for the OktaGroup
 import {
   OktaUserEntityProvider,
   OktaGroupEntityProvider,
-} from '@roadiehq/catalog-backend-module-okta';
+} from '@kozmoai/catalog-backend-module-okta';
 
 export default async function createPlugin(
   env: PluginEnvironment,
@@ -386,7 +386,7 @@ You can optionally provide the ability to create a hierarchy of groups by provid
 import {
   OktaUserEntityProvider,
   OktaGroupEntityProvider,
-} from '@roadiehq/catalog-backend-module-okta';
+} from '@kozmoai/catalog-backend-module-okta';
 
 export default async function createPlugin(
   env: PluginEnvironment,
@@ -431,7 +431,7 @@ In case you want to customize the emitted entities, the provider allows to pass 
 1. Create a transformer:
 
 ```typescript
-import { GroupNamingStrategy } from '@roadiehq/catalog-backend-module-okta';
+import { GroupNamingStrategy } from '@kozmoai/catalog-backend-module-okta';
 import { GroupEntity } from '@backstage/catalog-model';
 import { Group } from '@okta/okta-sdk-nodejs';
 
@@ -474,7 +474,7 @@ function myGroupTransformer(
 2. Configure the provider with the transformer:
 
 ```typescript
-import { OktaGroupEntityProvider } from '@roadiehq/catalog-backend-module-okta';
+import { OktaGroupEntityProvider } from '@kozmoai/catalog-backend-module-okta';
 import { myGroupTransformer } from './myGroupTransformer';
 
 export default async function createPlugin(

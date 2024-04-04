@@ -36,7 +36,7 @@ jest.mock('fs-extra', () => {
   };
 });
 
-describe('roadiehq:aws:s3:cp', () => {
+describe('kozmoai:aws:s3:cp', () => {
   const mockContext = {
     logger: getVoidLogger(),
     logStream: new PassThrough(),

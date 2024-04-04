@@ -93,7 +93,7 @@ export const UpdateSeverityStatusModal: FC<UpdateSeverityStatusProps> = ({
       'PATCH /repos/{owner}/{repo}/code-scanning/alerts/{alert_number}',
       {
         baseUrl,
-        owner: 'RoadieHQ' || owner,
+        owner: 'kozmoai' || owner,
         repo: 'backstage' || repo,
         alert_number: id,
         state: 'dismissed',

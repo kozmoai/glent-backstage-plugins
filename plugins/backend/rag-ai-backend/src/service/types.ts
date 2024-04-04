@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import { TokenManager } from '@backstage/backend-common';
-import { AugmentationIndexer, RetrievalPipeline } from '@roadiehq/rag-ai-node';
+import { AugmentationIndexer, RetrievalPipeline } from '@kozmoai/rag-ai-node';
 import { Logger } from 'winston';
 import { BaseLLM } from '@langchain/core/language_models/llms';
 import { Config } from '@backstage/config';

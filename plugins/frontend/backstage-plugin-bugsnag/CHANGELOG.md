@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-bugsnag
+# @kozmoai/backstage-plugin-bugsnag
 
 ## 2.2.8
 

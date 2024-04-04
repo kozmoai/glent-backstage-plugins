@@ -70,7 +70,7 @@ describe('PullRequestsTable', () => {
         state: 'open',
         draft: false,
         repositoryUrl:
-          'https://api.github.com/repos/RoadieHQ/roadie-backstage-plugins',
+          'https://api.github.com/repos/kozmoai/roadie-backstage-plugins',
         pullRequest: {
           htmlUrl: 'pull_request_url',
         },
@@ -92,7 +92,7 @@ describe('PullRequestsTable', () => {
 
     expect(await screen.findByText('Test PR listed 1')).toBeInTheDocument();
     expect(
-      await screen.findByText('RoadieHQ/roadie-backstage-plugins'),
+      await screen.findByText('kozmoai/roadie-backstage-plugins'),
     ).toBeInTheDocument();
     expect(await screen.findByText('#1 opened by')).toBeInTheDocument();
     expect(await screen.findByText('TestUser')).toBeInTheDocument();

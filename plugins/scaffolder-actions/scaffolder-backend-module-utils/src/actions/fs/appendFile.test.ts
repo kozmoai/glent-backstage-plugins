@@ -19,7 +19,7 @@ import mock from 'mock-fs';
 import fs from 'fs-extra';
 import { getVoidLogger } from '@backstage/backend-common';
 
-describe('roadiehq:utils:fs:append', () => {
+describe('kozmoai:utils:fs:append', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},

@@ -1,5 +1,5 @@
 {
-  "name": "@roadiehq/rag-ai-backend",
+  "name": "@kozmoai/rag-ai-backend",
   "version": "0.2.2",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -13,12 +13,12 @@
     "role": "backend-plugin"
   },
   "bugs": {
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
-    "email": "support@roadie.io"
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:RoadieHQ/roadie-backstage-plugins",
+    "url": "github:kozmoai/roadie-backstage-plugins",
     "directory": "plugins/backend/rag-ai-backend"
   },
   "scripts": {
@@ -35,7 +35,7 @@
     "@backstage/backend-plugin-api": "^0.6.16",
     "@backstage/config": "^1.2.0",
     "@langchain/core": "^0.1.2",
-    "@roadiehq/rag-ai-node": "^0.1.1",
+    "@kozmoai/rag-ai-node": "^0.1.1",
     "@types/express": "*",
     "express": "^4.17.1",
     "express-promise-router": "^4.1.0",

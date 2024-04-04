@@ -26,7 +26,7 @@
     "@representation": "minimal",
     "id": 15022857,
     "name": "sample-service",
-    "slug": "RoadieHQ/sample-service"
+    "slug": "kozmoai/sample-service"
   },
   "branch": {
     "@type": "branch",
@@ -42,7 +42,7 @@
     "sha": "f8ce054765890e90f0fa6d0c9078029d5276b89c",
     "ref": "refs/heads/main",
     "message": "Cypress test Commit message",
-    "compare_url": "https://github.com/RoadieHQ/sample-service/compare/e617d9db16be...f8ce05476589",
+    "compare_url": "https://github.com/kozmoai/sample-service/compare/e617d9db16be...f8ce05476589",
     "committed_at": "2021-08-07T22:23:47Z"
   },
   "jobs": [

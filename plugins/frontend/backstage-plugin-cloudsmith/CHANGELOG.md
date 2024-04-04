@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-cloudsmith
+# @kozmoai/backstage-plugin-cloudsmith
 
 ## 1.0.21
 

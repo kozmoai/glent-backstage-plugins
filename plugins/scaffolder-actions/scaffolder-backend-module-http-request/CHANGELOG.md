@@ -1,4 +1,4 @@
-# @roadiehq/scaffolder-backend-module-http-request
+# @kozmoai/scaffolder-backend-module-http-request
 
 ## 4.1.10
 

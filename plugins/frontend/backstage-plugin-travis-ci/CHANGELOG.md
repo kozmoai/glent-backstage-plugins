@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-travis-ci
+# @kozmoai/backstage-plugin-travis-ci
 
 ## 2.1.22
 

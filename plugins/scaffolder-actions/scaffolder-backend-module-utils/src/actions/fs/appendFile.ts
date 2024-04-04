@@ -20,7 +20,7 @@ import fs from 'fs-extra';
 
 export function createAppendFileAction() {
   return createTemplateAction<{ path: string; content: string }>({
-    id: 'roadiehq:utils:fs:append',
+    id: 'kozmoai:utils:fs:append',
     description:
       'Append content to the end of the given file, it will create the file if it does not exist.',
     schema: {

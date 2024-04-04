@@ -26,7 +26,7 @@ If this annotation is left out, no default filter will be applied when running t
 
 ```bash
 cd packages/app
-yarn add @roadiehq/backstage-plugin-github-pull-requests
+yarn add @kozmoai/backstage-plugin-github-pull-requests
 ```
 
 ## Add plugin API to your Backstage instance:
@@ -36,7 +36,7 @@ yarn add @roadiehq/backstage-plugin-github-pull-requests
 import {
   EntityGithubPullRequestsContent,
   isGithubPullRequestsAvailable,
-} from '@roadiehq/backstage-plugin-github-pull-requests';
+} from '@kozmoai/backstage-plugin-github-pull-requests';
 ...
 
 const serviceEntityPage = (
@@ -66,7 +66,7 @@ const serviceEntityPage = (
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityGithubPullRequestsOverviewCard, isGithubPullRequestsAvailable } from '@roadiehq/backstage-plugin-github-pull-requests';
+import { EntityGithubPullRequestsOverviewCard, isGithubPullRequestsAvailable } from '@kozmoai/backstage-plugin-github-pull-requests';
 
 ...
 
@@ -98,7 +98,7 @@ const overviewContent = (
 import {
   EntityGithubGroupPullRequestsCard,
   isGithubTeamPullRequestsAvailable,
-} from '@roadiehq/backstage-plugin-github-pull-requests';
+} from '@kozmoai/backstage-plugin-github-pull-requests';
 
 ...
 
@@ -136,7 +136,7 @@ You can build up a query using [Github Advanced Search](https://github.com/searc
 import {
   HomePageRequestedReviewsCard,
   HomePageYourOpenPullRequestsCard,
-} from '@roadiehq/backstage-plugin-github-pull-requests';
+} from '@kozmoai/backstage-plugin-github-pull-requests';
 
 
 export const HomePage = () => {
@@ -148,7 +148,7 @@ export const HomePage = () => {
       </Grid>
 
       <Grid item md={6} xs={12}>
-        <HomePageYourOpenPullRequestsCard query="org:RoadieHQ is:pr language:CSS" />
+        <HomePageYourOpenPullRequestsCard query="org:kozmoai is:pr language:CSS" />
       </Grid>
     ...
   );

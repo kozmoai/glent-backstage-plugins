@@ -1,4 +1,4 @@
-# @roadiehq/plugin-scaffolder-frontend-module-http-request-field
+# @kozmoai/plugin-scaffolder-frontend-module-http-request-field
 
 ## 1.6.10
 

@@ -4,9 +4,9 @@ Welcome to the roadie `aws` actions for the `scaffolder-backend`.
 
 This contains a collection of actions:
 
-- `roadiehq:aws:s3:cp`
-- `roadiehq:aws:ecr:create`
-- `roadiehq:aws:secrets-manager:create`
+- `kozmoai:aws:s3:cp`
+- `kozmoai:aws:ecr:create`
+- `kozmoai:aws:secrets-manager:create`
 
 ## Getting started
 
@@ -21,7 +21,7 @@ You need to configure the action in your backend:
 
 ```
 cd packages/backend
-yarn add @roadiehq/scaffolder-backend-module-aws
+yarn add @kozmoai/scaffolder-backend-module-aws
 ```
 
 Configure the action:
@@ -31,7 +31,7 @@ Import the action that you'd like to register to your backstage instance.
 
 ```typescript
 // packages/backend/src/plugins/scaffolder.ts
-import { createAwsS3CpAction, createEcrAction, createAwsSecretsManagerCreateAction } from '@roadiehq/scaffolder-backend-module-aws';
+import { createAwsS3CpAction, createEcrAction, createAwsSecretsManagerCreateAction } from '@kozmoai/scaffolder-backend-module-aws';
 ...
 
 const actions = [
@@ -66,7 +66,7 @@ Example:
 
 ```typescript
 // packages/backend/src/plugins/scaffolder.ts
-import { createAwsS3CpAction } from '@roadiehq/scaffolder-backend-module-aws';
+import { createAwsS3CpAction } from '@kozmoai/scaffolder-backend-module-aws';
 import { fromIni } from "@aws-sdk/credential-provider";
 ...
 
@@ -122,7 +122,7 @@ spec:
   steps:
     - id: uploadToS3
       name: Upload to S3
-      action: roadiehq:aws:s3:cp
+      action: kozmoai:aws:s3:cp
       input:
         region: eu-west-1
         bucket: ${{ parameters.bucket }}
@@ -185,7 +185,7 @@ spec:
   steps:
     - id: create-ecr
       name: Create ECR Rrepository
-      action: roadiehq:aws:ecr:create
+      action: kozmoai:aws:ecr:create
       input:
         repoName: ${{ parameters.RepoName }}
         tags: ${{parameters.Tags}}
@@ -254,7 +254,7 @@ spec:
   steps:
     - id: createSecret
       name: create secret - prod
-      action: roadiehq:aws:secrets-manager:create
+      action: kozmoai:aws:secrets-manager:create
       input:
         name: ${{ parameters.Name }}
         description: ${{ parameters.Description }}

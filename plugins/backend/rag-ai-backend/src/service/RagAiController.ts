@@ -20,7 +20,7 @@ import {
   AugmentationIndexer,
   EmbeddingsSource,
   RetrievalPipeline,
-} from '@roadiehq/rag-ai-node';
+} from '@kozmoai/rag-ai-node';
 
 export class RagAiController {
   private static instance: RagAiController;

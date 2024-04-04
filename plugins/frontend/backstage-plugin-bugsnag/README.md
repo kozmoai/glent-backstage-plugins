@@ -18,7 +18,7 @@ If you have your own backstage application without this plugin, here it's how to
 
 ```bash
 cd packages/app
-yarn add @roadiehq/backstage-plugin-bugsnag
+yarn add @kozmoai/backstage-plugin-bugsnag
 ```
 
 2. In the `app-config.yaml` file in the root directory, add bugsnag to the proxy object:
@@ -44,7 +44,7 @@ bugsnag:
 
 ```ts
 // packages/app/src/components/catalog/EntityPage.tsx
-import { EntityBugsnagErrorsOverviewTable } from '@roadiehq/backstage-plugin-bugsnag';
+import { EntityBugsnagErrorsOverviewTable } from '@kozmoai/backstage-plugin-bugsnag';
 ...
 
 const serviceEntityPage = (

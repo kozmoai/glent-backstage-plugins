@@ -2,31 +2,31 @@ This repo contains the Backstage plugins created and maintained by [Roadie](http
 
 Amongst others, the following plugins can be found within this repo:
 
-- [AI Assistant - RAG AI](https://www.npmjs.com/package/@roadiehq/rag-ai)
+- [AI Assistant - RAG AI](https://www.npmjs.com/package/@kozmoai/rag-ai)
 
-- [Github Pull Requests](https://www.npmjs.com/package/@roadiehq/backstage-plugin-github-pull-requests)
+- [Github Pull Requests](https://www.npmjs.com/package/@kozmoai/backstage-plugin-github-pull-requests)
 
-- [Github Insights](https://www.npmjs.com/package/@roadiehq/backstage-plugin-github-insights)
+- [Github Insights](https://www.npmjs.com/package/@kozmoai/backstage-plugin-github-insights)
 
-- [AWS Lambda](https://www.npmjs.com/package/@roadiehq/backstage-plugin-aws-lambda)
+- [AWS Lambda](https://www.npmjs.com/package/@kozmoai/backstage-plugin-aws-lambda)
 
-- [Jira](https://www.npmjs.com/package/@roadiehq/backstage-plugin-jira)
+- [Jira](https://www.npmjs.com/package/@kozmoai/backstage-plugin-jira)
 
-- [Datadog](https://www.npmjs.com/package/@roadiehq/backstage-plugin-datadog)
+- [Datadog](https://www.npmjs.com/package/@kozmoai/backstage-plugin-datadog)
 
-- [Travis CI](https://www.npmjs.com/package/@roadiehq/backstage-plugin-travis-ci)
+- [Travis CI](https://www.npmjs.com/package/@kozmoai/backstage-plugin-travis-ci)
 
-- [Security Insights](https://www.npmjs.com/package/@roadiehq/backstage-plugin-security-insights)
+- [Security Insights](https://www.npmjs.com/package/@kozmoai/backstage-plugin-security-insights)
 
-- [Buildkite](https://www.npmjs.com/package/@roadiehq/backstage-plugin-buildkite)
+- [Buildkite](https://www.npmjs.com/package/@kozmoai/backstage-plugin-buildkite)
 
-- [Bugsnag](https://www.npmjs.com/package/@roadiehq/backstage-plugin-bugsnag)
+- [Bugsnag](https://www.npmjs.com/package/@kozmoai/backstage-plugin-bugsnag)
 
-- [Argo CD](https://www.npmjs.com/package/@roadiehq/backstage-plugin-argo-cd) (created in collaboration with [American Airlines](https://github.com/AmericanAirlines))
+- [Argo CD](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd) (created in collaboration with [American Airlines](https://github.com/AmericanAirlines))
 
-- [Argo CD Backend](https://www.npmjs.com/package/@roadiehq/backstage-plugin-argo-cd-backend) (contributed by [American Airlines](https://github.com/AmericanAirlines))
+- [Argo CD Backend](https://www.npmjs.com/package/@kozmoai/backstage-plugin-argo-cd-backend) (contributed by [American Airlines](https://github.com/AmericanAirlines))
 
-- [Cloudsmith](https://www.npmjs.com/package/@roadiehq/backstage-plugin-cloudsmith)
+- [Cloudsmith](https://www.npmjs.com/package/@kozmoai/backstage-plugin-cloudsmith)
 
 Installation instructions for each plugin can be found in their individual README files.
 
@@ -39,7 +39,7 @@ Backstage is an open platform for creating developer portals. To learn more abou
 To get up and running with this repository, you will need to clone it off of GitHub and run an initial build.
 
 ```bash
-git clone https://github.com/RoadieHQ/roadie-backstage-plugins.git
+git clone https://github.com/kozmoai/roadie-backstage-plugins.git
 cd roadie-backstage-plugins
 ```
 
@@ -83,7 +83,7 @@ yarn dev
 
 ## Structure of the repository.
 
-This repository is a place where all of the RoadieHQ plugins we are developed are integrated under `/plugins` folder. Depending on the type of the plugin they are separated in frontend or backend folder. Please note the scaffolder actions are handled separately. Plugins may be used and/or modified by following steps below:
+This repository is a place where all of the kozmoai plugins we are developed are integrated under `/plugins` folder. Depending on the type of the plugin they are separated in frontend or backend folder. Please note the scaffolder actions are handled separately. Plugins may be used and/or modified by following steps below:
 
 ### Plugins container
 
@@ -124,7 +124,7 @@ folder.
 ## Community
 
 - [Discord chatroom](https://discord.gg/d9SJrQR5uH) - Get support
-- [Contributing](https://github.com/RoadieHQ/roadie-backstage-plugins/blob/master/CONTRIBUTING.md) - Start here if you want to contribute
+- [Contributing](https://github.com/kozmoai/roadie-backstage-plugins/blob/master/CONTRIBUTING.md) - Start here if you want to contribute
 - Give us a star ⭐️ - If you are using Backstage or think it is an interesting project, we would love a star ❤️
 
 ## License

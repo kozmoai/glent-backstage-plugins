@@ -9,7 +9,7 @@ import {
   S3BucketCard,
   LambdaFunctionCard,
   IAMUserCard,
-} from '@roadiehq/backstage-plugin-aws';
+} from '@kozmoai/backstage-plugin-aws';
 ```
 
 Then add the following components:

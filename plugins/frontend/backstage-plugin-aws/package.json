@@ -1,5 +1,5 @@
 {
-  "name": "@roadiehq/backstage-plugin-aws",
+  "name": "@kozmoai/backstage-plugin-aws",
   "version": "1.1.22",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -7,12 +7,12 @@
   "private": true,
   "homepage": "https://roadie.io/backstage/plugins/aws/",
   "bugs": {
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
-    "email": "support@roadie.io"
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:RoadieHQ/roadie-backstage-plugins",
+    "url": "github:kozmoai/roadie-backstage-plugins",
     "directory": "plugins/frontend/backstage-plugin-aws"
   },
   "publishConfig": {

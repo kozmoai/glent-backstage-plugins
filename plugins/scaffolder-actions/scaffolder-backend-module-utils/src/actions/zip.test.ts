@@ -22,7 +22,7 @@ import fs from 'fs-extra';
 const mockLogger = getVoidLogger();
 mockLogger.error = jest.fn();
 
-describe('roadiehq:utils:zip', () => {
+describe('kozmoai:utils:zip', () => {
   const mockContext = {
     logger: getVoidLogger(),
     logStream: new PassThrough(),

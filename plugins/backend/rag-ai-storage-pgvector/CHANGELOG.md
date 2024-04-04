@@ -1,4 +1,4 @@
-# @roadiehq/rag-ai-storage-pgvector
+# @kozmoai/rag-ai-storage-pgvector
 
 ## 0.1.1
 
@@ -6,7 +6,7 @@
 
 - 7cd4bdf: version upgrade to 1.25.0
 - Updated dependencies [7cd4bdf]
-  - @roadiehq/rag-ai-node@0.1.1
+  - @kozmoai/rag-ai-node@0.1.1
 
 ## 0.1.0
 
@@ -26,4 +26,4 @@
 ### Patch Changes
 
 - Updated dependencies [7b468fa]
-  - @roadiehq/rag-ai-node@0.1.0
+  - @kozmoai/rag-ai-node@0.1.0

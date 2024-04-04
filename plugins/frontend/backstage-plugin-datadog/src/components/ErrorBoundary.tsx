@@ -30,11 +30,11 @@ export default class ErrorBoundary extends Component<MyProps, MyState> {
           Something went wrong. Please make sure that you installed:
           <strong>
             <a
-              href="https://github.com/RoadieHQ/backstage-plugin-datadog"
+              href="https://github.com/kozmoai/backstage-plugin-datadog"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @roadiehq/backstage-plugin-datadog plugin
+              @kozmoai/backstage-plugin-datadog plugin
             </a>
           </strong>
         </Alert>

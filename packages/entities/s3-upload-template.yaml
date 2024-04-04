@@ -27,14 +27,14 @@ spec:
   steps:
     - id: createFile
       name: Create File
-      action: roadiehq:utils:fs:write
+      action: kozmoai:utils:fs:write
       input:
         path: ${{ parameters.createPath }}
         content: ${{ parameters.createContent }}
 
     - id: s3Upload
       name: Upload to S3
-      action: roadiehq:aws:s3:cp
+      action: kozmoai:aws:s3:cp
       input:
         bucket: scaffolder-actions-upload-test
         region: eu-west-1

@@ -9,7 +9,7 @@
 1. If you have standalone app (you didn't clone this repo), then in the [packages/app](https://github.com/backstage/backstage/blob/master/packages/app/) directory of your backstage instance, add the plugin as a package.json dependency:
 
 ```bash
-yarn add @roadiehq/backstage-plugin-iframe
+yarn add @kozmoai/backstage-plugin-iframe
 ```
 
 2. Import the plugin to the [entityPage.tsx](https://github.com/backstage/backstage/blob/master/packages/app/src/components/catalog/EntityPage.tsx) source file:
@@ -20,7 +20,7 @@ import {
   iframePlugin,
   EntityIFrameCard,
   EntityIFrameContent,
-} from '@roadiehq/backstage-plugin-iframe';
+} from '@kozmoai/backstage-plugin-iframe';
 ...
 
 const contentProps = {
@@ -61,7 +61,7 @@ const overviewContent = (
 
 ```tsx
 // packages/app/src/components/home/HomePage.tsx
-import { HomePageIFrameCard } from '@roadiehq/backstage-plugin-iframe';
+import { HomePageIFrameCard } from '@kozmoai/backstage-plugin-iframe';
 
 export const HomePage = () => {
   return (

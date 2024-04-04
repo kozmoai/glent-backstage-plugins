@@ -17,7 +17,7 @@ import { Logger } from 'winston';
 import { PluginDatabaseManager } from '@backstage/backend-common';
 import { applyDatabaseMigrations } from '../database/migrations';
 
-import { RoadieVectorStore } from '@roadiehq/rag-ai-node';
+import { RoadieVectorStore } from '@kozmoai/rag-ai-node';
 import { RoadiePgVectorStore } from './RoadiePgVectorStore';
 import { Config } from '@backstage/config';
 

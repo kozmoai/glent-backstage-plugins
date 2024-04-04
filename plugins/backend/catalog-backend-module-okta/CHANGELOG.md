@@ -1,4 +1,4 @@
-# @roadiehq/catalog-backend-module-okta
+# @kozmoai/catalog-backend-module-okta
 
 ## 0.9.10
 

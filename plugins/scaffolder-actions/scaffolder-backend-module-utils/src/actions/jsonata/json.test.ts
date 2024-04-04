@@ -18,7 +18,7 @@ import { createJsonJSONataTransformAction } from './json';
 import mock from 'mock-fs';
 import { getVoidLogger } from '@backstage/backend-common';
 
-describe('roadiehq:utils:jsonata:json:transform', () => {
+describe('kozmoai:utils:jsonata:json:transform', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},

@@ -26,7 +26,7 @@ export function createJsonJSONataTransformAction() {
     space?: string;
     as?: 'string' | 'object';
   }>({
-    id: 'roadiehq:utils:jsonata:json:transform',
+    id: 'kozmoai:utils:jsonata:json:transform',
     description:
       'Allows performing JSONata operations and transformations on a JSON file in the workspace. The result can be read from the `result` step output.',
     supportsDryRun: true,

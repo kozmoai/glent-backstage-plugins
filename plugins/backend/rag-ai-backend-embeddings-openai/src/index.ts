@@ -15,12 +15,12 @@
  */
 import { TokenManager } from '@backstage/backend-common';
 import { Logger } from 'winston';
-import { AugmentationIndexer, RoadieVectorStore } from '@roadiehq/rag-ai-node';
+import { AugmentationIndexer, RoadieVectorStore } from '@kozmoai/rag-ai-node';
 import { OpenAiConfig, RoadieOpenAiAugmenter } from './RoadieOpenAiAugmenter';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 import { Config } from '@backstage/config';
-import { SplitterOptions } from '@roadiehq/rag-ai-backend-retrieval-augmenter';
+import { SplitterOptions } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
 export interface RoadieBedrockEmbeddingsConfig {
   logger: Logger;

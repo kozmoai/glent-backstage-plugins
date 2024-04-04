@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-aws-auth
+# @kozmoai/backstage-plugin-aws-auth
 
 ## 0.4.22
 

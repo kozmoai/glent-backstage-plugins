@@ -30,11 +30,11 @@ export default class ErrorBoundary extends Component<MyProps, MyState> {
           Something went wrong. Please make sure that you installed:
           <strong>
             <a
-              href="https://github.com/RoadieHQ/backstage-plugin-aws-auth"
+              href="https://github.com/kozmoai/backstage-plugin-aws-auth"
               target="_blank"
               rel="noopener noreferrer"
             >
-              @roadiehq/backstage-plugin-aws-auth plugin
+              @kozmoai/backstage-plugin-aws-auth plugin
             </a>
           </strong>
         </Alert>

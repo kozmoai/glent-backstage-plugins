@@ -22,7 +22,7 @@ export function createSerializeYamlAction() {
     data: any;
     options?: stringifyOptions;
   }>({
-    id: 'roadiehq:utils:serialize:yaml',
+    id: 'kozmoai:utils:serialize:yaml',
     description: 'Allows performing serialization on an object',
     supportsDryRun: true,
     schema: {

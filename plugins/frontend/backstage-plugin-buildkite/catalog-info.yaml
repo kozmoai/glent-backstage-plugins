@@ -6,17 +6,17 @@ metadata:
   title: Backstage Plugin Buildkite
   description: Backstage plugin for Buildkite
   annotations:
-    github.com/project-slug: RoadieHQ/roadie-backstage-plugins
+    github.com/project-slug: kozmoai/roadie-backstage-plugins
     github.com/project-readme-path: plugins/frontend/backstage-plugin-buildkite/README.md
-    backstage.io/view-url: https://github.com/RoadieHQ/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-buildkite/catalog-info.yaml
-    backstage.io/edit-url: https://github.com/RoadieHQ/roadie-backstage-plugins/edit/main/plugins/frontend/backstage-plugin-buildkite/catalog-info.yaml
-    backstage.io/source-location: url:https://github.com/RoadieHQ/roadie-backstage-plugins/tree/main/plugins/frontend/backstage-plugin-buildkite
+    backstage.io/view-url: https://github.com/kozmoai/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-buildkite/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/kozmoai/roadie-backstage-plugins/edit/main/plugins/frontend/backstage-plugin-buildkite/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/kozmoai/roadie-backstage-plugins/tree/main/plugins/frontend/backstage-plugin-buildkite
   tags:
     - plugin
     - oss
     - frontend
   links:
-    - url: https://www.npmjs.com/package/@roadiehq/backstage-plugin-buildkite
+    - url: https://www.npmjs.com/package/@kozmoai/backstage-plugin-buildkite
       title: NPM
 spec:
   type: library

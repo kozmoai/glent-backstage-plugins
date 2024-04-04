@@ -11,7 +11,7 @@ import {
   AWSS3BucketProvider,
   AWSIAMUserProvider,
   AWSEC2Provider,
-} from '@roadiehq/catalog-backend-module-aws';
+} from '@kozmoai/catalog-backend-module-aws';
 
 export default async function createPlugin(
   env: PluginEnvironment,

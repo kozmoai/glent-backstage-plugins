@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-aws-lambda
+# @kozmoai/backstage-plugin-aws-lambda
 
 ## 2.2.8
 

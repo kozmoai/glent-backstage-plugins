@@ -21,7 +21,7 @@ export function createSerializeJsonAction() {
     replacer?: string[];
     space?: string;
   }>({
-    id: 'roadiehq:utils:serialize:json',
+    id: 'kozmoai:utils:serialize:json',
     description: 'Allows performing serialization on an object',
     supportsDryRun: true,
     schema: {

@@ -18,7 +18,7 @@ import { createParseFileAction } from './parseFile';
 import mock from 'mock-fs';
 import { getVoidLogger } from '@backstage/backend-common';
 
-describe('roadiehq:utils:fs:parse', () => {
+describe('kozmoai:utils:fs:parse', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},

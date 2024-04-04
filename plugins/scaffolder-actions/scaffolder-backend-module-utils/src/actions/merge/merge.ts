@@ -37,7 +37,7 @@ export function createMergeJSONAction({ actionId }: { actionId?: string }) {
     mergeArrays?: boolean;
     matchFileIndent?: boolean;
   }>({
-    id: actionId || 'roadiehq:utils:json:merge',
+    id: actionId || 'kozmoai:utils:json:merge',
     description: 'Merge new data into an existing JSON file.',
     supportsDryRun: true,
     schema: {
@@ -141,7 +141,7 @@ export function createMergeAction() {
     mergeArrays?: boolean;
     options?: stringifyOptions;
   }>({
-    id: 'roadiehq:utils:merge',
+    id: 'kozmoai:utils:merge',
     description: 'Merges data into an existing structured file.',
     supportsDryRun: true,
     schema: {

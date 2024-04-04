@@ -32,7 +32,7 @@ export const entityMock = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@roadie.io',
+    owner: 'david@glint.io',
     lifecycle: 'experimental',
   },
 };

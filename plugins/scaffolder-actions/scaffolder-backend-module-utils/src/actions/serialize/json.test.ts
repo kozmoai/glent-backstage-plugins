@@ -17,7 +17,7 @@ import { PassThrough } from 'stream';
 import { getVoidLogger } from '@backstage/backend-common';
 import { createSerializeJsonAction } from './json';
 
-describe('roadiehq:utils:serialize:json', () => {
+describe('kozmoai:utils:serialize:json', () => {
   const mockContext = {
     logger: getVoidLogger(),
     logStream: new PassThrough(),

@@ -17,7 +17,7 @@ import { OpenAIEmbeddings } from '@langchain/openai';
 import {
   DefaultVectorAugmentationIndexer,
   RoadieEmbeddingsConfig,
-} from '@roadiehq/rag-ai-backend-retrieval-augmenter';
+} from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
 export type OpenAiConfig = {
   modelName?: string;

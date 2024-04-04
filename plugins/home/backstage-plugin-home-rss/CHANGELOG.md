@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-home-rss
+# @kozmoai/backstage-plugin-home-rss
 
 ## 1.3.11
 

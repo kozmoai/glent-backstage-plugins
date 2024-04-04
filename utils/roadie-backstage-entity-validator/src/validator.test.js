@@ -84,16 +84,16 @@ metadata:
   description: |
     A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda, Datadog and mis-configured techdocs.
   annotations:
-    github.com/project-slug: roadiehq/sample-service
+    github.com/project-slug: kozmoai/sample-service
     sentry.io/project-slug: sample-service
     aws.com/lambda-function-name: HelloWorld
     aws.com/lambda-region: eu-west-1
-    backstage.io/techdocs-ref: url:https://github.com/RoadieHQ/sample-service/tree/main
+    backstage.io/techdocs-ref: url:https://github.com/kozmoai/sample-service/tree/main
     jira/project-key: TEST
     jira/component: COMP
     snyk.io/org-name: roadie
-    backstage.io/view-url: https://github.com/RoadieHQ/sample-service/tree/main
-    backstage.io/source-location: url:https://github.com/RoadieHQ/sample-service/tree/main/
+    backstage.io/view-url: https://github.com/kozmoai/sample-service/tree/main
+    backstage.io/source-location: url:https://github.com/kozmoai/sample-service/tree/main/
     testextraannotation: adfstea
     backstage.io/ldap-uuid: c57e8ba2-6cc4-1039-9ebc-d5f241a7ca21
 spec:
@@ -112,16 +112,16 @@ metadata:
   description: |
       A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda, Datadog and mis-configured techdocs.
   annotations:
-    github.com/project-slug: roadiehq/sample-service
+    github.com/project-slug: kozmoai/sample-service
     sentry.io/project-slug: sample-service
     aws.com/lambda-function-name: HelloWorld
     aws.com/lambda-region: eu-west-1
-    backstage.io/techdocs-ref: url:https://github.com/RoadieHQ/sample-service/tree/main
+    backstage.io/techdocs-ref: url:https://github.com/kozmoai/sample-service/tree/main
     jira/project-key: TEST
     jira/component: COMP
     snyk.io/org-name: roadie
-    backstage.io/view-url: https://github.com/RoadieHQ/sample-service/tree/main
-    backstage.io/source-location: url:https://github.com/RoadieHQ/sample-service/tree/main/
+    backstage.io/view-url: https://github.com/kozmoai/sample-service/tree/main
+    backstage.io/source-location: url:https://github.com/kozmoai/sample-service/tree/main/
     testextraannotation: adfstea
     backstage.io/ldap-uuid: c57e8ba2-6cc4-1039-9ebc-d5f241a7ca21
 spec:
@@ -153,9 +153,9 @@ spec:
       description: |
         A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda, Datadog and mis-configured techdocs.
       annotations:
-        github.com/project-slug: roadiehq/sample-service
-        backstage.io/view-url: https://github.com/RoadieHQ/sample-service/tree/main
-        backstage.io/source-location: url:https://github.com/RoadieHQ/sample-service/tree/main/
+        github.com/project-slug: kozmoai/sample-service
+        backstage.io/view-url: https://github.com/kozmoai/sample-service/tree/main
+        backstage.io/source-location: url:https://github.com/kozmoai/sample-service/tree/main/
         custom/source-location: custom-field-value:12342
     spec:
         type: service
@@ -170,9 +170,9 @@ spec:
           description: |
             A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda, Datadog and mis-configured techdocs.
           annotations:
-            github.com/project-slug: roadiehq/sample-service
-            backstage.io/view-url: https://github.com/RoadieHQ/sample-service/tree/main
-            backstage.io/source-location: url:https://github.com/RoadieHQ/sample-service/tree/main/
+            github.com/project-slug: kozmoai/sample-service
+            backstage.io/view-url: https://github.com/kozmoai/sample-service/tree/main
+            backstage.io/source-location: url:https://github.com/kozmoai/sample-service/tree/main/
             custom/source-location: custom-field-value:123error
         spec:
             type: service
@@ -189,7 +189,7 @@ spec:
   steps:
   - id: zip
     name: Zip
-    action: roadiehq:utils:zip
+    action: kozmoai:utils:zip
     input:
       path: foo.txt
       outputPath: foo.zip
@@ -204,7 +204,7 @@ spec:
   steps:
   - id: zip
     name: Zip
-    action: roadiehq:utils:zip
+    action: kozmoai:utils:zip
     input:
       path: foo.txt
       outputPath: foo.zip
@@ -262,19 +262,19 @@ spec:
           description:
             'A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda, Datadog and mis-configured techdocs.\n',
           annotations: {
-            'github.com/project-slug': 'roadiehq/sample-service',
+            'github.com/project-slug': 'kozmoai/sample-service',
             'sentry.io/project-slug': 'sample-service',
             'aws.com/lambda-function-name': 'HelloWorld',
             'aws.com/lambda-region': 'eu-west-1',
             'backstage.io/techdocs-ref':
-              'url:https://github.com/RoadieHQ/sample-service/tree/main',
+              'url:https://github.com/kozmoai/sample-service/tree/main',
             'jira/project-key': 'TEST',
             'jira/component': 'COMP',
             'snyk.io/org-name': 'roadie',
             'backstage.io/view-url':
-              'https://github.com/RoadieHQ/sample-service/tree/main',
+              'https://github.com/kozmoai/sample-service/tree/main',
             'backstage.io/source-location':
-              'url:https://github.com/RoadieHQ/sample-service/tree/main/',
+              'url:https://github.com/kozmoai/sample-service/tree/main/',
             testextraannotation: 'adfstea',
             'backstage.io/ldap-uuid': 'c57e8ba2-6cc4-1039-9ebc-d5f241a7ca21',
           },
@@ -295,19 +295,19 @@ spec:
           description:
             'A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda, Datadog and mis-configured techdocs.\n',
           annotations: {
-            'github.com/project-slug': 'roadiehq/sample-service',
+            'github.com/project-slug': 'kozmoai/sample-service',
             'sentry.io/project-slug': 'sample-service',
             'aws.com/lambda-function-name': 'HelloWorld',
             'aws.com/lambda-region': 'eu-west-1',
             'backstage.io/techdocs-ref':
-              'url:https://github.com/RoadieHQ/sample-service/tree/main',
+              'url:https://github.com/kozmoai/sample-service/tree/main',
             'jira/project-key': 'TEST',
             'jira/component': 'COMP',
             'snyk.io/org-name': 'roadie',
             'backstage.io/view-url':
-              'https://github.com/RoadieHQ/sample-service/tree/main',
+              'https://github.com/kozmoai/sample-service/tree/main',
             'backstage.io/source-location':
-              'url:https://github.com/RoadieHQ/sample-service/tree/main/',
+              'url:https://github.com/kozmoai/sample-service/tree/main/',
             testextraannotation: 'adfstea',
             'backstage.io/ldap-uuid': 'c57e8ba2-6cc4-1039-9ebc-d5f241a7ca21',
           },
@@ -575,7 +575,7 @@ spec:
             type: 'foo',
             steps: [
               {
-                action: 'roadiehq:utils:zip',
+                action: 'kozmoai:utils:zip',
                 id: 'zip',
                 input: {
                   outputPath: 'foo.zip',
@@ -604,7 +604,7 @@ spec:
             type: 'foo',
             steps: [
               {
-                action: 'roadiehq:utils:zip',
+                action: 'kozmoai:utils:zip',
                 id: 'zip',
                 input: {
                   outputPath: 'foo.zip',
@@ -638,11 +638,11 @@ spec:
               'A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda, Datadog and mis-configured techdocs.\n',
             annotations: {
               'backstage.io/source-location':
-                'url:https://github.com/RoadieHQ/sample-service/tree/main/',
+                'url:https://github.com/kozmoai/sample-service/tree/main/',
               'backstage.io/view-url':
-                'https://github.com/RoadieHQ/sample-service/tree/main',
+                'https://github.com/kozmoai/sample-service/tree/main',
               'custom/source-location': 'custom-field-value:12342',
-              'github.com/project-slug': 'roadiehq/sample-service',
+              'github.com/project-slug': 'kozmoai/sample-service',
             },
           },
           spec: {

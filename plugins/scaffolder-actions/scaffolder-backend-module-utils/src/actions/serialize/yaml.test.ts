@@ -18,7 +18,7 @@ import { createSerializeYamlAction } from './yaml';
 import YAML from 'yaml';
 import { getVoidLogger } from '@backstage/backend-common';
 
-describe('roadiehq:utils:serialize:yaml', () => {
+describe('kozmoai:utils:serialize:yaml', () => {
   const mockContext = {
     logger: getVoidLogger(),
     logStream: new PassThrough(),

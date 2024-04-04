@@ -13,7 +13,7 @@
 1. If you have standalone app (you didn't clone this repo), then do
 
 ```bash
-yarn add @roadiehq/backstage-plugin-buildkite
+yarn add @kozmoai/backstage-plugin-buildkite
 ```
 
 2. Add proxy config:
@@ -34,7 +34,7 @@ proxy:
 import {
   EntityBuildkiteContent,
   isPluginApplicableToEntity as isBuildkiteAvailable,
-} from '@roadiehq/backstage-plugin-buildkite';
+} from '@kozmoai/backstage-plugin-buildkite';
 ```
 
 4. Add plugin API to your Backstage instance:

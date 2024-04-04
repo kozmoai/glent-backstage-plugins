@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-jira
+# @kozmoai/backstage-plugin-jira
 
 ## 2.5.6
 

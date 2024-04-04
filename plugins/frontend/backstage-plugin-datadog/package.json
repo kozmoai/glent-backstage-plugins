@@ -1,5 +1,5 @@
 {
-  "name": "@roadiehq/backstage-plugin-datadog",
+  "name": "@kozmoai/backstage-plugin-datadog",
   "version": "2.2.7",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -13,12 +13,12 @@
     "role": "frontend-plugin"
   },
   "bugs": {
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
-    "email": "support@roadie.io"
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:RoadieHQ/roadie-backstage-plugins",
+    "url": "github:kozmoai/roadie-backstage-plugins",
     "directory": "plugins/frontend/backstage-plugin-datadog"
   },
   "scripts": {

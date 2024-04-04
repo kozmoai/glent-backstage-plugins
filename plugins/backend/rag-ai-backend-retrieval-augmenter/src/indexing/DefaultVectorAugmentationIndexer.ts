@@ -27,7 +27,7 @@ import {
   EmbeddingsSource,
   EntityFilterShape,
   RoadieVectorStore,
-} from '@roadiehq/rag-ai-node';
+} from '@kozmoai/rag-ai-node';
 
 export class DefaultVectorAugmentationIndexer implements AugmentationIndexer {
   private readonly _vectorStore: RoadieVectorStore;

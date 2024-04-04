@@ -24,7 +24,7 @@ If you have your own backstage application without this plugin, here it's how to
 
 ```bash
 cd packages/app
-yarn add @roadiehq/backstage-plugin-shortcut
+yarn add @kozmoai/backstage-plugin-shortcut
 ```
 
 2. In the `app-config.yaml` file in the root directory, add shortcut to the proxy object:
@@ -44,7 +44,7 @@ In order to add the Shortcut stories card in your Home page, follow the instruct
 
 ```ts
 // packages/app/src/components/home/HomePage.tsx
-import { HomepageStoriesCard } from '@roadiehq/backstage-plugin-shortcut';
+import { HomepageStoriesCard } from '@kozmoai/backstage-plugin-shortcut';
 ...
 
 export const HomePage = () => {

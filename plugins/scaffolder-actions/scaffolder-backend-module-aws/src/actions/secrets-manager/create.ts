@@ -34,7 +34,7 @@ export function createAwsSecretsManagerCreateAction(options?: {
     profile: string;
     region: string;
   }>({
-    id: 'roadiehq:aws:secrets-manager:create',
+    id: 'kozmoai:aws:secrets-manager:create',
     description: 'Creates a new secret in AWS Secrets Manager',
     schema: {
       input: {

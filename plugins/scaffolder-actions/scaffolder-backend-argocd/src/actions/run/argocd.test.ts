@@ -21,7 +21,7 @@ import { createArgoCdResources } from './argocd';
 
 const mockCreateArgoResources = jest.fn();
 
-jest.mock('@roadiehq/backstage-plugin-argo-cd-backend', () => {
+jest.mock('@kozmoai/backstage-plugin-argo-cd-backend', () => {
   return {
     ArgoService: jest.fn().mockImplementation(() => {
       return {

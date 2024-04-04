@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
-import { EmbeddingDoc, EmbeddingsSource } from '@roadiehq/rag-ai-node';
+import { EmbeddingDoc, EmbeddingsSource } from '@kozmoai/rag-ai-node';
 import { SearchResultSet } from '@backstage/plugin-search-common';
 import { Logger } from 'winston';
 

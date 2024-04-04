@@ -13,7 +13,7 @@ metadata:
     datadoghq.com/dashboard-url: https://p.datadoghq.eu/sb/test-datadog-link
     datadoghq.com/graph-token: qwertytoken1234
     argocd/app-name: test-app
-    bugsnag.com/project-key: RoadieHQTest/Test bugsnag application
+    bugsnag.com/project-key: kozmoaiTest/Test bugsnag application
     prometheus.io/rule: prometheus_http_requests_total,sum by (handler) (prometheus_http_requests_total),prometheus_http_requests_total|component
     prometheus.io/alert: all
 spec:
@@ -30,7 +30,7 @@ metadata:
   description: |
     A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda.
   annotations:
-    github.com/project-slug: RoadieHQ/roadie-backstage-plugins
+    github.com/project-slug: kozmoai/roadie-backstage-plugins
     aws.com/lambda-function-name: HelloWorld
     aws.com/lambda-region: eu-west-1
     jira/project-key: TEST
@@ -38,7 +38,7 @@ metadata:
     datadoghq.com/dashboard-url: https://p.datadoghq.eu/sb/test-datadog-link
     datadoghq.com/graph-token: qwertytoken1234
     argocd/app-name: test-app
-    bugsnag.com/project-key: RoadieHQTest/qwerty12345
+    bugsnag.com/project-key: kozmoaiTest/qwerty12345
 spec:
   type: service
   owner: roadie
@@ -54,7 +54,7 @@ metadata:
   description: |
     A service for testing Travis CI plugin
   annotations:
-    travis-ci.com/repo-slug: RoadieHQ/sample-service
+    travis-ci.com/repo-slug: kozmoai/sample-service
 spec:
   type: service
   owner: roadie

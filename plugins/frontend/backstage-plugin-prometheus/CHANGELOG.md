@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-prometheus
+# @kozmoai/backstage-plugin-prometheus
 
 ## 2.8.7
 

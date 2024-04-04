@@ -9,7 +9,7 @@ Make sure you use `raw` in the url instad of `blob` if you copy and paste from t
 
 ```diff
 - ![](./docs/home-page-markdown.png)
-+ ![](https://github.com/RoadieHQ/roadie-backstage-plugins/raw/SC-7064-add-markdown-home-plugin/plugins/home/backstage-plugin-home-markdown/docs/home-page-markdown.png)
++ ![](https://github.com/kozmoai/roadie-backstage-plugins/raw/SC-7064-add-markdown-home-plugin/plugins/home/backstage-plugin-home-markdown/docs/home-page-markdown.png)
 ```
 
 NB: Images hosted in private repositories in GitHub will not render as the [`react-markdown`](https://github.com/remarkjs/react-markdown) library used under the hood does not support authenticated requests.
@@ -24,7 +24,7 @@ If you didn't set up the HomePage plugin you can see the official documentation 
 Add the following componenet to your HomePage.tsx file. The `HomePageMarkdown` props are the following type.
 
 ```bash
-yarn add @roadiehq/backstage-plugin-home-markdown
+yarn add @kozmoai/backstage-plugin-home-markdown
 ```
 
 ```ts
@@ -38,7 +38,7 @@ export type MarkdownContentProps = {
 
 ```tsx
 // packages/app/src/components/home/HomePage.tsx
-import { HomePageMarkdown } from '@roadiehq/backstage-plugin-home-markdown';
+import { HomePageMarkdown } from '@kozmoai/backstage-plugin-home-markdown';
 
 export const HomePage = () => {
     return (
@@ -46,7 +46,7 @@ export const HomePage = () => {
     <Grid item xs={12} md={6}>
         <HomePageMarkdown
             title="Neeews!"
-            owner="RoadieHQ"
+            owner="kozmoai"
             repo="roadie-backstage-plugins"
             path=".backstage/README.md"
         />

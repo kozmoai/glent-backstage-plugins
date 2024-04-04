@@ -1,6 +1,6 @@
 {
-  "name": "@roadiehq/rag-ai-backend-embeddings-openai",
-  "description": "The OpenAI backend module for the @roadiehq/rag-ai plugin.",
+  "name": "@kozmoai/rag-ai-backend-embeddings-openai",
+  "description": "The OpenAI backend module for the @kozmoai/rag-ai plugin.",
   "version": "0.2.1",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -14,12 +14,12 @@
     "role": "backend-plugin-module"
   },
   "bugs": {
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
-    "email": "support@roadie.io"
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:RoadieHQ/roadie-backstage-plugins",
+    "url": "github:kozmoai/roadie-backstage-plugins",
     "directory": "plugins/backend/rag-ai-backend-embeddings-openai"
   },
   "scripts": {
@@ -37,8 +37,8 @@
     "@backstage/config": "^1.2.0",
     "@langchain/core": "^0.1.2",
     "@langchain/openai": "^0.0.14",
-    "@roadiehq/rag-ai-backend-retrieval-augmenter": "^0.2.1",
-    "@roadiehq/rag-ai-node": "^0.1.1",
+    "@kozmoai/rag-ai-backend-retrieval-augmenter": "^0.2.1",
+    "@kozmoai/rag-ai-node": "^0.1.1",
     "langchain": "^0.0.209",
     "winston": "^3.11.0"
   },

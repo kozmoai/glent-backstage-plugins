@@ -19,7 +19,7 @@ import mock from 'mock-fs';
 import YAML from 'yaml';
 import { getVoidLogger } from '@backstage/backend-common';
 
-describe('roadiehq:utils:jsonata:yaml:transform', () => {
+describe('kozmoai:utils:jsonata:yaml:transform', () => {
   const mockContext = {
     logger: getVoidLogger(),
     logStream: new PassThrough(),

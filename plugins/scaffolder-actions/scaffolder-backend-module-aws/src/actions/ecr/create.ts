@@ -35,7 +35,7 @@ export function createEcrAction(options?: {
     scanOnPush: boolean;
     region: string;
   }>({
-    id: 'roadiehq:aws:ecr:create',
+    id: 'kozmoai:aws:ecr:create',
     schema: {
       input: {
         required: ['repoName', 'region'],

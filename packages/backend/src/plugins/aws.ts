@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { createRouter } from '@roadiehq/backstage-plugin-aws-backend';
+import { createRouter } from '@kozmoai/backstage-plugin-aws-backend';
 import type { PluginEnvironment } from '../types';
 
 export default async function createPlugin({

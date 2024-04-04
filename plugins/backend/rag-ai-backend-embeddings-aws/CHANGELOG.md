@@ -1,4 +1,4 @@
-# @roadiehq/rag-ai-backend-embeddings-aws
+# @kozmoai/rag-ai-backend-embeddings-aws
 
 ## 0.2.1
 
@@ -6,9 +6,9 @@
 
 - 7cd4bdf: version upgrade to 1.25.0
 - Updated dependencies [7cd4bdf]
-  - @roadiehq/rag-ai-backend-retrieval-augmenter@0.2.1
-  - @roadiehq/rag-ai-backend@0.2.2
-  - @roadiehq/rag-ai-node@0.1.1
+  - @kozmoai/rag-ai-backend-retrieval-augmenter@0.2.1
+  - @kozmoai/rag-ai-backend@0.2.2
+  - @kozmoai/rag-ai-node@0.1.1
 
 ## 0.2.0
 
@@ -19,8 +19,8 @@
 ### Patch Changes
 
 - Updated dependencies [7fa2871]
-  - @roadiehq/rag-ai-backend-retrieval-augmenter@0.2.0
-  - @roadiehq/rag-ai-backend@0.2.0
+  - @kozmoai/rag-ai-backend-retrieval-augmenter@0.2.0
+  - @kozmoai/rag-ai-backend@0.2.0
 
 ## 0.1.0
 
@@ -40,6 +40,6 @@
 ### Patch Changes
 
 - Updated dependencies [7b468fa]
-  - @roadiehq/rag-ai-backend@0.1.0
-  - @roadiehq/rag-ai-backend-retrieval-augmenter@0.1.0
-  - @roadiehq/rag-ai-node@0.1.0
+  - @kozmoai/rag-ai-backend@0.1.0
+  - @kozmoai/rag-ai-backend-retrieval-augmenter@0.1.0
+  - @kozmoai/rag-ai-node@0.1.0

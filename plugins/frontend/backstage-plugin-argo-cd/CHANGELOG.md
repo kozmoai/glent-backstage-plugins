@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-argo-cd
+# @kozmoai/backstage-plugin-argo-cd
 
 ## 2.6.4
 
@@ -176,8 +176,8 @@
 
 - 8ae4bbc7: ---
 
-  '@roadiehq/backstage-plugin-argo-cd-backend': patch
-  '@roadiehq/backstage-plugin-argo-cd': patch
+  '@kozmoai/backstage-plugin-argo-cd-backend': patch
+  '@kozmoai/backstage-plugin-argo-cd': patch
 
   ***
 

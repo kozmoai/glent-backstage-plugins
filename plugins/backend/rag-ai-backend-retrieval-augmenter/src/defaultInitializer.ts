@@ -20,7 +20,7 @@ import {
   SourceBasedRetrievalRouter,
   VectorEmbeddingsRetriever,
 } from './retrieval';
-import { RoadieVectorStore } from '@roadiehq/rag-ai-node';
+import { RoadieVectorStore } from '@kozmoai/rag-ai-node';
 import { Logger } from 'winston';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 

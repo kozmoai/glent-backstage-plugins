@@ -22,7 +22,7 @@ import fs from 'fs-extra';
 import YAML from 'yaml';
 import detectIndent from 'detect-indent';
 
-describe('roadiehq:utils:json:merge', () => {
+describe('kozmoai:utils:json:merge', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},
@@ -276,7 +276,7 @@ describe('roadiehq:utils:json:merge', () => {
   });
 });
 
-describe('roadiehq:utils:merge', () => {
+describe('kozmoai:utils:merge', () => {
   beforeEach(() => {
     mock({
       'fake-tmp-dir': {},

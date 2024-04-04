@@ -16,7 +16,7 @@ integrations:
 Create a file in `packages/backend/src/plugins/aws.ts`
 
 ```typescript
-import { createRouter } from '@roadiehq/backstage-plugin-aws-backend';
+import { createRouter } from '@kozmoai/backstage-plugin-aws-backend';
 import type { PluginEnvironment } from '../types';
 
 export default async function createPlugin({

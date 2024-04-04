@@ -22,7 +22,7 @@ describe('Travis CI', () => {
     cy.saveGithubToken();
     cy.intercept(
       'GET',
-      'http://localhost:7007/api/proxy/travisci/api/repo/RoadieHQ%2Fsample-service/builds?offset=0&limit=5',
+      'http://localhost:7007/api/proxy/travisci/api/repo/kozmoai%2Fsample-service/builds?offset=0&limit=5',
       { fixture: 'travisCi/builds.json' },
     ).as('getBuilds');
   });

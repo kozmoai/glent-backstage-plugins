@@ -173,12 +173,12 @@ See more information from the [module package](/plugins/backend/rag-ai-backend-e
 6. Finally, initialize the AI Backend, 'ragAi', using `initializeRagAiBackend` with the just configured Embeddings module as well as the configured LLM.
 
 ```typescript
-import { createApiRoutes as initializeRagAiBackend } from '@roadiehq/rag-ai-backend';
+import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
 import { PluginEnvironment } from '../types';
-import { createRoadiePgVectorStore } from '@roadiehq/rag-ai-storage-pgvector';
+import { createRoadiePgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
 import { CatalogClient } from '@backstage/catalog-client';
-import { createDefaultRetrievalPipeline } from '@roadiehq/rag-ai-backend-retrieval-augmenter';
-import { initializeBedrockEmbeddings } from '@roadiehq/rag-ai-backend-embeddings-aws';
+import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
+import { initializeBedrockEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-aws';
 import { DefaultAwsCredentialsManager } from '@backstage/integration-aws-node';
 import { Bedrock } from '@langchain/community/llms/bedrock';
 
@@ -257,10 +257,10 @@ See more information from the [module package](/plugins/backend/rag-ai-backend-e
 ```typescript
 // './plugins/ai'
 
-import { createApiRoutes as initializeRagAiBackend } from '@roadiehq/rag-ai-backend';
-import { initializeOpenAiEmbeddings } from '@roadiehq/rag-ai-backend-embeddings-openai';
-import { createRoadiePgVectorStore } from '@roadiehq/rag-ai-storage-pgvector';
-import { createDefaultRetrievalPipeline } from '@roadiehq/rag-ai-backend-retrieval-augmenter';
+import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
+import { initializeOpenAiEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-openai';
+import { createRoadiePgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
+import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 import { OpenAI } from '@langchain/openai';
 import { CatalogClient } from '@backstage/catalog-client';
 import { DefaultAwsCredentialsManager } from '@backstage/integration-aws-node';
@@ -305,7 +305,7 @@ export default async function createPlugin({
 
 ## Router Endpoint configuration
 
-The `@roadiehq/rag-ai-backend` exposes a router function that can be registered directly into a standard Backstage application.
+The `@kozmoai/rag-ai-backend` exposes a router function that can be registered directly into a standard Backstage application.
 
 ```typescript
 import ai from './plugins/ai';
@@ -321,7 +321,7 @@ async function main() {
 
 ## Embeddings creation
 
-The `@roadiehq/rag-ai-backend` plugin does not automatically generate Embeddings or index contexts of catalog items, instead it exposes an endpoint that allows you to configure either a periodical or event based embedding generation. This approach is taken to minimize the financial impact when calling potentially expensive third party LLM endpoints. Creating embeddings from large catalog items or tech docs maybe produce large amounts of data and make multiple calls to generate embeddings.
+The `@kozmoai/rag-ai-backend` plugin does not automatically generate Embeddings or index contexts of catalog items, instead it exposes an endpoint that allows you to configure either a periodical or event based embedding generation. This approach is taken to minimize the financial impact when calling potentially expensive third party LLM endpoints. Creating embeddings from large catalog items or tech docs maybe produce large amounts of data and make multiple calls to generate embeddings.
 
 The ideal option to manage embeddings creation is to make them event based. They should be triggered when new information has been added into the system.
 
@@ -329,7 +329,7 @@ The ideal option to manage embeddings creation is to make them event based. They
 
 ### Calling the endpoint
 
-The endpoint exposed from the plugin lives under a path `/embeddings/:source`. Assuming the application is running on localhost port 7007 and the `@roadiehq/rag-ai-backend` is mounted on path `rag-ai` the call to construct embeddings for Catalog entries of kind `component` would be the following:
+The endpoint exposed from the plugin lives under a path `/embeddings/:source`. Assuming the application is running on localhost port 7007 and the `@kozmoai/rag-ai-backend` is mounted on path `rag-ai` the call to construct embeddings for Catalog entries of kind `component` would be the following:
 
 ```bash
 curl --request POST \

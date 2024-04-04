@@ -28,7 +28,7 @@ import {
   identityApiRef,
 } from '@backstage/core-plugin-api';
 import fetch from 'cross-fetch';
-import { ragAiApiRef, RoadieRagAiClient } from '@roadiehq/rag-ai';
+import { ragAiApiRef, RoadieRagAiClient } from '@kozmoai/rag-ai';
 
 export const apis: AnyApiFactory[] = [
   createApiFactory({

@@ -19,7 +19,7 @@ You need to configure the action in your backend:
 
 ```
 cd packages/backend
-yarn add @roadiehq/scaffolder-backend-module-http-request
+yarn add @kozmoai/scaffolder-backend-module-http-request
 ```
 
 Configure the action:

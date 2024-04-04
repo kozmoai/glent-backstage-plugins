@@ -1,4 +1,4 @@
-# @roadiehq/backstage-plugin-security-insights
+# @kozmoai/backstage-plugin-security-insights
 
 ## 2.3.16
 

@@ -1,5 +1,5 @@
 {
-  "name": "@roadiehq/plugin-scaffolder-frontend-module-http-request-field",
+  "name": "@kozmoai/plugin-scaffolder-frontend-module-http-request-field",
   "version": "1.6.10",
   "main": "src/index.ts",
   "types": "src/index.ts",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:RoadieHQ/roadie-backstage-plugins",
+    "url": "github:kozmoai/roadie-backstage-plugins",
     "directory": "plugins/scaffolder-field-extensions/scaffolder-frontend-module-http-request-field"
   },
   "bugs": {
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
-    "email": "support@roadie.io"
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "scripts": {
     "start": "backstage-cli package start",

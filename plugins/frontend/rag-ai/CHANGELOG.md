@@ -1,4 +1,4 @@
-# @roadiehq/rag-ai
+# @kozmoai/rag-ai
 
 ## 0.2.1
 

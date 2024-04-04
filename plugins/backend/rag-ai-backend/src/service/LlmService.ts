@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import { BaseLLM } from '@langchain/core/language_models/llms';
-import { EmbeddingDoc } from '@roadiehq/rag-ai-node';
+import { EmbeddingDoc } from '@kozmoai/rag-ai-node';
 import { Logger } from 'winston';
 import { createPromptTemplates } from './prompts';
 

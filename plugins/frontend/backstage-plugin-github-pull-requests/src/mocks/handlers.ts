@@ -40,7 +40,7 @@ export const handlers = [
         return res(ctx.json(yourOpenPullRequests));
       case 'is:open is:pr author@me archived: false is:draft':
         return res(ctx.json(yourOpenDraftPullRequests));
-      case 'state:closed in:title type:pr repo:RoadieHQ/backstage-plugin-argo-cd':
+      case 'state:closed in:title type:pr repo:kozmoai/backstage-plugin-argo-cd':
         return res(ctx.json(closedPullsRequestMock));
       case 'is:open is:pr team-review-requested:rroadie-backstage-admin archived:false':
         return res(ctx.json(groupAssignedReviewsMock));
@@ -49,19 +49,19 @@ export const handlers = [
     }
   }),
   rest.get(
-    'https://api.github.com/repos/RoadieHQ/roadie-backstage-plugins',
+    'https://api.github.com/repos/kozmoai/roadie-backstage-plugins',
     (_, res, ctx) => {
       return res(ctx.json(repoMock));
     },
   ),
   rest.get(
-    'https://api.github.com/repos/RoadieHQ/marketing-site',
+    'https://api.github.com/repos/kozmoai/marketing-site',
     (_, res, ctx) => {
       return res(ctx.json(marketingSiteMock));
     },
   ),
   rest.get(
-    'https://api.github.com/repos/RoadieHQ/backstage-plugin-argo-cd/pulls/:pullRequestId',
+    'https://api.github.com/repos/kozmoai/backstage-plugin-argo-cd/pulls/:pullRequestId',
     (req, res, ctx) => {
       const { pullRequestId } = req.params as { pullRequestId: string };
       return res(ctx.json(backstagePluginArgoCdMocks[pullRequestId]));

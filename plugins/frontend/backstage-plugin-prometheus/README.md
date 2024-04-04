@@ -19,7 +19,7 @@ This plugin expects you to have Prometheus running with its API available to be 
 
 ```bash
 cd packages/app
-yarn add @roadiehq/backstage-plugin-prometheus
+yarn add @kozmoai/backstage-plugin-prometheus
 ```
 
 ## Configure proxy for Prometheus
@@ -48,7 +48,7 @@ prometheus:
 // packages/app/src/components/catalog/EntityPage.tsx
 import {
   EntityPrometheusContent,
-} from '@roadiehq/backstage-plugin-prometheus';
+} from '@kozmoai/backstage-plugin-prometheus';
 ...
 
 const serviceEntityPage = (
@@ -73,7 +73,7 @@ import {
   EntityPrometheusAlertCard,
   EntityPrometheusGraphCard,
   isPrometheusAvailable
-} from '@roadiehq/backstage-plugin-prometheus';
+} from '@kozmoai/backstage-plugin-prometheus';
 
 ...
 

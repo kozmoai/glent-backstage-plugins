@@ -1,5 +1,5 @@
 {
-  "name": "@roadiehq/catalog-backend-module-aws",
+  "name": "@kozmoai/catalog-backend-module-aws",
   "description": "A set of Backstage catalog providers for AWS",
   "version": "2.2.1",
   "main": "src/index.ts",
@@ -16,7 +16,7 @@
   "homepage": "https://roadie.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins",
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins",
     "directory": "plugins/catalog-backend-module-aws"
   },
   "keywords": [

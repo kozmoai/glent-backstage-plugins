@@ -1,5 +1,5 @@
 {
-  "name": "@roadiehq/rag-ai",
+  "name": "@kozmoai/rag-ai",
   "version": "0.2.1",
   "main": "src/index.ts",
   "types": "src/index.ts",

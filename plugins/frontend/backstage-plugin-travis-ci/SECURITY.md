@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-Please report security issues via security@roadie.io
+Please report security issues via security@glint.io

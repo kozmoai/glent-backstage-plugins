@@ -1,17 +1,17 @@
 {
-  "name": "@roadiehq/roadie-backstage-entity-validator",
+  "name": "@kozmoai/roadie-backstage-entity-validator",
   "version": "2.4.9",
-  "author": "RoadieHQ",
+  "author": "kozmoai",
   "description": "Backstage entity validator library",
   "main": "src/index.js",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/RoadieHQ/roadie-backstage-plugins/issues",
-    "email": "support@roadie.io"
+    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:RoadieHQ/roadie-backstage-plugins",
+    "url": "github:kozmoai/roadie-backstage-plugins",
     "directory": "utils/roadie-backstage-entity-validator"
   },
   "publishConfig": {
