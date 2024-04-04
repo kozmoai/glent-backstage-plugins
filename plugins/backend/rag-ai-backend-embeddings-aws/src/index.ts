@@ -48,7 +48,7 @@ export async function initializeBedrockEmbeddings({
   config,
   options,
 }: RoadieBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
-  logger.info('Initializing Roadie AWS Bedrock Embeddings');
+  logger.info('Initializing Glint AWS Bedrock Embeddings');
   const bedrockConfig = config.get<BedrockConfig>('ai.embeddings.bedrock');
   const embeddingsOptions = config.getOptionalConfig('ai.embeddings');
   const splitterOptions: SplitterOptions = {};
@@ -62,7 +62,7 @@ export async function initializeBedrockEmbeddings({
     vectorStore,
     catalogApi,
     discovery,
-    logger: logger.child({ label: 'roadie-bedrock-embedder' }),
+    logger: logger.child({ label: 'glint-bedrock-embedder' }),
     tokenManager,
     options,
     bedrockConfig,

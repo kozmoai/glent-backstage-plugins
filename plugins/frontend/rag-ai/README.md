@@ -1,4 +1,4 @@
-# Roadie RAG AI Frontend plugin for Backstage
+# Glint RAG AI Frontend plugin for Backstage
 
 This plugin is the frontend for RAG AI Backstage plugin. You can see the corresponding backend plugin in [here](/plugins/backend/rag-ai-backend/README.md).
 

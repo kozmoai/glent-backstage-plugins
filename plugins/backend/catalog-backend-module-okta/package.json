@@ -16,7 +16,7 @@
   "homepage": "https://glint.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kozmoai/roadie-backstage-plugins",
+    "url": "https://github.com/kozmoai/glint-backstage-plugins",
     "directory": "plugins/catalog-backend-module-okta"
   },
   "keywords": [

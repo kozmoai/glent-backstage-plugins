@@ -46,7 +46,7 @@ export const HomePage = () => {
             />
           </Grid>
           <Grid item xs={12} md={6}>
-            <CloudsmithStatsCard repo="roadie-npm" owner="roadie" />
+            <CloudsmithStatsCard repo="glint-npm" owner="glint" />
           </Grid>
           <Grid item md={6} xs={12}>
             <HomepageStoriesCard />
@@ -61,7 +61,7 @@ export const HomePage = () => {
             <HomePageMarkdown
               title="Neeews!"
               owner="kozmoai"
-              repo="roadie-backstage-plugins"
+              repo="glint-backstage-plugins"
               path=".backstage/home-page.md"
             />
           </Grid>
@@ -69,7 +69,7 @@ export const HomePage = () => {
             <HomePageMarkdown
               title="History"
               owner="kozmoai"
-              repo="roadie-backstage-plugins"
+              repo="glint-backstage-plugins"
               path=".backstage/home-page-test.md"
               branch="test-two-mdown"
             />

@@ -70,7 +70,7 @@ metadata:
   title: Http testing for post/get
   description: Testing get functionality with get
 spec:
-  owner: roadie
+  owner: glint
   type: service
 
   parameters:

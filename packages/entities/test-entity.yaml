@@ -18,7 +18,7 @@ metadata:
     prometheus.io/alert: all
 spec:
   type: service
-  owner: roadie
+  owner: glint
   lifecycle: experimental
   providesApis:
     - sample-service
@@ -30,7 +30,7 @@ metadata:
   description: |
     A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda.
   annotations:
-    github.com/project-slug: kozmoai/roadie-backstage-plugins
+    github.com/project-slug: kozmoai/glint-backstage-plugins
     aws.com/lambda-function-name: HelloWorld
     aws.com/lambda-region: eu-west-1
     jira/project-key: TEST
@@ -41,7 +41,7 @@ metadata:
     bugsnag.com/project-key: kozmoaiTest/qwerty12345
 spec:
   type: service
-  owner: roadie
+  owner: glint
   lifecycle: experimental
   providesApis:
     - sample-service
@@ -57,7 +57,7 @@ metadata:
     travis-ci.com/repo-slug: kozmoai/sample-service
 spec:
   type: service
-  owner: roadie
+  owner: glint
   lifecycle: experimental
   providesApis:
     - sample-service-2
@@ -76,7 +76,7 @@ metadata:
 
 spec:
   type: service
-  owner: roadie
+  owner: glint
   lifecycle: experimental
   providesApis:
     - sample-service-3

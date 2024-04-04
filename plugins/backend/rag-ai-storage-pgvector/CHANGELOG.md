@@ -12,9 +12,9 @@
 
 ### Minor Changes
 
-- 7b468fa: Open source and release Roadie RAG AI Backstage Plugin
+- 7b468fa: Open source and release Glint RAG AI Backstage Plugin
 
-  This commit introduces the Roadie RAG AI plugin to Backstage. It adds constructs, types and interfaces to enable additional enhancement of RAG AI functionality of Backstage entities, tech-docs, API docs and Tech Insights fact data.
+  This commit introduces the Glint RAG AI plugin to Backstage. It adds constructs, types and interfaces to enable additional enhancement of RAG AI functionality of Backstage entities, tech-docs, API docs and Tech Insights fact data.
 
   - Includes the initial end-to-end configuration
   - Adds frontend modal display to handle query UI

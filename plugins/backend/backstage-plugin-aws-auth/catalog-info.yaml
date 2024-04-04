@@ -12,5 +12,5 @@ metadata:
     - oss
 spec:
   type: library
-  owner: group:roadie
+  owner: group:glint
   lifecycle: experimental

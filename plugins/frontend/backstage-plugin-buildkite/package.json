@@ -6,12 +6,12 @@
   "license": "Apache-2.0",
   "homepage": "https://glint.io/backstage/plugins/buildkite/",
   "bugs": {
-    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
     "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/roadie-backstage-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/frontend/backstage-plugin-buildkite"
   },
   "publishConfig": {

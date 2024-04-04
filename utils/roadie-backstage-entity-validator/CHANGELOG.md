@@ -1,4 +1,4 @@
-# @kozmoai/roadie-backstage-entity-validator
+# @kozmoai/glint-backstage-entity-validator
 
 ## 2.4.9
 

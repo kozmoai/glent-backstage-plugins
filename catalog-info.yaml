@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: roadie-backstage-plugins
+  name: glint-backstage-plugins
   description: An example of a Backstage application.
-  title: Roadie Backstage Plugins
+  title: Glint Backstage Plugins
 spec:
   type: website
   owner: group:open-source
@@ -13,7 +13,7 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: roadie-backstage-plugins
+  name: glint-backstage-plugins
 spec:
   targets:
     - ./plugins/**/catalog-info.yaml

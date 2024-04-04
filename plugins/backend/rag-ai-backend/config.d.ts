@@ -16,7 +16,7 @@
 
 export interface Config {
   /**
-   * Roadie RAG AI configuration
+   * Glint RAG AI configuration
    */
   ai?: {
     /**

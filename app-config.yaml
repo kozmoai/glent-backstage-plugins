@@ -53,14 +53,14 @@ proxy:
     target: 'https://www.reutersagency.com/feed'
 
   '/jira/api':
-    target: 'https://roadie-dev.atlassian.net'
+    target: 'https://glint-dev.atlassian.net'
     headers:
       Authorization:
         $env: JIRA_TOKEN
       Accept: 'application/json'
       Content-Type: 'application/json'
       X-Atlassian-Token: 'no-check'
-      User-Agent: 'Roadie-Backstage'
+      User-Agent: 'Glint-Backstage'
 
   '/travisci/api':
     target: https://api.travis-ci.com
@@ -131,7 +131,7 @@ catalog:
       target: ../entities/test-template.yaml
       rules:
         - allow: [Template]
-    # Roadie example AWS ECR repo creation
+    # Glint example AWS ECR repo creation
     - type: file
       target: ../entities/ecr-repo-create-template.yaml
       rules:

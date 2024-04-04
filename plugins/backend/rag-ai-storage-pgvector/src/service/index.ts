@@ -37,7 +37,7 @@ export async function createRoadiePgVectorStore({
   database,
   config,
 }: PgVectorStoreInitConfig): Promise<RoadieVectorStore> {
-  logger.info('Starting Roadie PgVectorStore');
+  logger.info('Starting Glint PgVectorStore');
 
   const dbClient = await database.getClient();
   await applyDatabaseMigrations(dbClient);

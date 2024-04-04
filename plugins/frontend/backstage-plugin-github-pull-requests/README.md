@@ -18,7 +18,7 @@
 
 This plugin relies on the [GitHub Authentication Provider](https://backstage.io/docs/auth/github/provider) for its access to GitHub.
 
-Search filter works the same way it works in GitHub, but `roadie-backstage-pull-requests/default-filter` annotation needs to be provided in component configuration. Adding a filter will result in applying that filter per default.
+Search filter works the same way it works in GitHub, but `glint-backstage-pull-requests/default-filter` annotation needs to be provided in component configuration. Adding a filter will result in applying that filter per default.
 
 If this annotation is left out, no default filter will be applied when running the app.
 

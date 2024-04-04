@@ -39,7 +39,7 @@ export async function initializeOpenAiEmbeddings({
   discovery,
   config,
 }: RoadieBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
-  logger.info('Initializing Roadie OpenAI Embeddings');
+  logger.info('Initializing Glint OpenAI Embeddings');
   const openAiConfig = config.get<OpenAiConfig>('ai.embeddings.openai');
 
   const embeddingsOptions = config.getOptionalConfig('ai.embeddings');
@@ -55,7 +55,7 @@ export async function initializeOpenAiEmbeddings({
     catalogApi,
     discovery,
     splitterOptions,
-    logger: logger.child({ label: 'roadie-openai-embeddings' }),
+    logger: logger.child({ label: 'glint-openai-embeddings' }),
     tokenManager,
     config: openAiConfig,
   });

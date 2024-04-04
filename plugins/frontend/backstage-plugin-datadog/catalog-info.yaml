@@ -5,11 +5,11 @@ metadata:
   name: backstage-plugin-datadog
   title: Backstage Plugin Datadog
   annotations:
-    github.com/project-slug: kozmoai/roadie-backstage-plugins
+    github.com/project-slug: kozmoai/glint-backstage-plugins
     github.com/project-readme-path: plugins/frontend/backstage-plugin-datadog/README.md
-    backstage.io/view-url: https://github.com/kozmoai/roadie-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-datadog/catalog-info.yaml
-    backstage.io/edit-url: https://github.com/kozmoai/roadie-backstage-plugins/edit/main/plugins/frontend/backstage-plugin-datadog/catalog-info.yaml
-    backstage.io/source-location: url:https://github.com/kozmoai/roadie-backstage-plugins/tree/main/plugins/frontend/backstage-plugin-datadog
+    backstage.io/view-url: https://github.com/kozmoai/glint-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-datadog/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/kozmoai/glint-backstage-plugins/edit/main/plugins/frontend/backstage-plugin-datadog/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/kozmoai/glint-backstage-plugins/tree/main/plugins/frontend/backstage-plugin-datadog
   tags:
     - plugin
     - oss

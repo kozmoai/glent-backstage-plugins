@@ -1,4 +1,4 @@
-# Roadie Backstage entity validator
+# Glint Backstage entity validator
 
 This is a library package used to validate entity files.
 

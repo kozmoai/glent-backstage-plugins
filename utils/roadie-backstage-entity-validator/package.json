@@ -1,18 +1,18 @@
 {
-  "name": "@kozmoai/roadie-backstage-entity-validator",
+  "name": "@kozmoai/glint-backstage-entity-validator",
   "version": "2.4.9",
   "author": "kozmoai",
   "description": "Backstage entity validator library",
   "main": "src/index.js",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/kozmoai/roadie-backstage-plugins/issues",
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
     "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/roadie-backstage-plugins",
-    "directory": "utils/roadie-backstage-entity-validator"
+    "url": "github:kozmoai/glint-backstage-plugins",
+    "directory": "utils/glint-backstage-entity-validator"
   },
   "publishConfig": {
     "access": "public",
@@ -51,6 +51,6 @@
     "backstage",
     "validation",
     "linting",
-    "roadie"
+    "glint"
   ]
 }

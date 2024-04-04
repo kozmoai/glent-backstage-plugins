@@ -12483,9 +12483,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@kozmoai/roadie-backstage-entity-validator@workspace:utils/roadie-backstage-entity-validator":
+"@kozmoai/glint-backstage-entity-validator@workspace:utils/glint-backstage-entity-validator":
   version: 0.0.0-use.local
-  resolution: "@kozmoai/roadie-backstage-entity-validator@workspace:utils/roadie-backstage-entity-validator"
+  resolution: "@kozmoai/glint-backstage-entity-validator@workspace:utils/glint-backstage-entity-validator"
   dependencies:
     "@actions/core": ^1.10.0
     "@backstage/catalog-model": ^1.4.5
