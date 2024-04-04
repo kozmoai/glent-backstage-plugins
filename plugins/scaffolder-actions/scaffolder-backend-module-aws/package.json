@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-backstage-plugins",
+    "url": "github:kozmoai/glint-plugins",
     "directory": "plugins/scaffolder-actions/scaffolder-backend-module-aws"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "url": "https://github.com/kozmoai/glint-plugins/issues",
     "email": "support@glint.io"
   },
   "scripts": {

@@ -39,8 +39,8 @@ Backstage is an open platform for creating developer portals. To learn more abou
 To get up and running with this repository, you will need to clone it off of GitHub and run an initial build.
 
 ```bash
-git clone https://github.com/kozmoai/glint-backstage-plugins.git
-cd glint-backstage-plugins
+git clone https://github.com/kozmoai/glint-plugins.git
+cd glint-plugins
 ```
 
 ## Fetch dependencies and run an initial build from root directory
@@ -124,7 +124,7 @@ folder.
 ## Community
 
 - [Discord chatroom](https://discord.gg/d9SJrQR5uH) - Get support
-- [Contributing](https://github.com/kozmoai/glint-backstage-plugins/blob/master/CONTRIBUTING.md) - Start here if you want to contribute
+- [Contributing](https://github.com/kozmoai/glint-plugins/blob/master/CONTRIBUTING.md) - Start here if you want to contribute
 - Give us a star ⭐️ - If you are using Backstage or think it is an interesting project, we would love a star ❤️
 
 ## License

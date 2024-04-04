@@ -12,7 +12,7 @@ This repository will gather the plugins we have worked on, so contribution is mo
 
 ### Report bugs
 
-No one likes bugs. Report bugs as an issue [here](https://github.com/kozmoai/glint-backstage-plugins/issues/new?assignees=&labels=bug&template=bug_template.md).
+No one likes bugs. Report bugs as an issue [here](https://github.com/kozmoai/glint-plugins/issues/new?assignees=&labels=bug&template=bug_template.md).
 
 ### Fix bugs or build new features
 
@@ -20,7 +20,7 @@ Look through the GitHub issues for bugs or problems that other users are having.
 
 ### Submit feedback
 
-The best way to send feedback is to file [an issue](https://github.com/kozmoai/glint-backstage-plugins/issues/new).
+The best way to send feedback is to file [an issue](https://github.com/kozmoai/glint-plugins/issues/new).
 
 If you are proposing a feature:
 
@@ -37,7 +37,7 @@ E2E tests are integrated under `/packages/app/cypress` folder where you will fin
 
 ### Add your company to ADOPTERS
 
-Have you started using any/some/all of our plugins? Adding your company to [ADOPTERS](https://github.com/kozmoai/glint-backstage-plugins/blob/main/ADOPTERS.md) really helps the project.
+Have you started using any/some/all of our plugins? Adding your company to [ADOPTERS](https://github.com/kozmoai/glint-plugins/blob/main/ADOPTERS.md) really helps the project.
 
 ## Get Started!
 
@@ -85,4 +85,4 @@ If you experience or witness unacceptable behaviorâ€”or have any other concernsâ
 
 ## Security Issues?
 
-See [SECURITY.md](https://github.com/kozmoai/glint-backstage-plugins/blob/main/SECURITY.md)
+See [SECURITY.md](https://github.com/kozmoai/glint-plugins/blob/main/SECURITY.md)

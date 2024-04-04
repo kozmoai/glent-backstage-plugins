@@ -13,12 +13,12 @@
     "role": "frontend-plugin"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
+    "url": "https://github.com/kozmoai/glint-plugins/issues",
     "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-backstage-plugins",
+    "url": "github:kozmoai/glint-plugins",
     "directory": "plugins/frontend/backstage-plugin-datadog"
   },
   "scripts": {

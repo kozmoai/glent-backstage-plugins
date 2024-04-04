@@ -61,7 +61,7 @@ export const HomePage = () => {
             <HomePageMarkdown
               title="Neeews!"
               owner="kozmoai"
-              repo="glint-backstage-plugins"
+              repo="glint-plugins"
               path=".backstage/home-page.md"
             />
           </Grid>
@@ -69,7 +69,7 @@ export const HomePage = () => {
             <HomePageMarkdown
               title="History"
               owner="kozmoai"
-              repo="glint-backstage-plugins"
+              repo="glint-plugins"
               path=".backstage/home-page-test.md"
               branch="test-two-mdown"
             />

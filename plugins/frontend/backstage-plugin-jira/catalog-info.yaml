@@ -6,12 +6,12 @@ metadata:
   description: |
     Backstage plugin to view and interact with Jira
   annotations:
-    github.com/project-slug: kozmoai/glint-backstage-plugins
+    github.com/project-slug: kozmoai/glint-plugins
     github.com/project-readme-path: plugins/frontend/backstage-plugin-jira/README.md
     backstage.io/techdocs-ref: url:https://github.com/kozmoai/backstage-plugin-jira/tree/main
-    backstage.io/view-url: https://github.com/kozmoai/glint-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-jira/catalog-info.yaml
-    backstage.io/edit-url: https://github.com/kozmoai/glint-backstage-plugins/edit/main/plugins/frontend/backstage-plugin-jira/catalog-info.yaml
-    backstage.io/source-location: url:https://github.com/kozmoai/glint-backstage-plugins/tree/main/plugins/frontend/backstage-plugin-jira
+    backstage.io/view-url: https://github.com/kozmoai/glint-plugins/blob/main/plugins/frontend/backstage-plugin-jira/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/kozmoai/glint-plugins/edit/main/plugins/frontend/backstage-plugin-jira/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/kozmoai/glint-plugins/tree/main/plugins/frontend/backstage-plugin-jira
   tags:
     - plugin
     - oss
