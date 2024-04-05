@@ -30,7 +30,7 @@ metadata:
   description: |
     A service for testing Backstage functionality. Configured for GitHub Actions, Sentry, AWS Lambda.
   annotations:
-    github.com/project-slug: kozmoai/glint-plugins
+    github.com/project-slug: kozmoai/glint-backstage-plugins
     aws.com/lambda-function-name: HelloWorld
     aws.com/lambda-region: eu-west-1
     jira/project-key: TEST

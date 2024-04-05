@@ -20,7 +20,7 @@ export const PROMETHEUS_ALERT_ANNOTATION = 'prometheus.io/alert';
 export const PROMETHEUS_SERVICE_NAME_ANNOTATION = 'prometheus.io/service-name';
 export const PROMETHEUS_ALERT_LABEL_ANNOTATION = 'prometheus.io/labels';
 export const PROMETHEUS_PLUGIN_DOCUMENTATION =
-  'https://github.com/kozmoai/glint-plugins/blob/main/plugins/frontend/backstage-plugin-prometheus/README.md#entity-annotations';
+  'https://github.com/kozmoai/glint-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-prometheus/README.md#entity-annotations';
 
 export const isPrometheusGraphAvailable = (entity: Entity) =>
   Boolean(entity?.metadata.annotations?.[PROMETHEUS_RULE_ANNOTATION]);

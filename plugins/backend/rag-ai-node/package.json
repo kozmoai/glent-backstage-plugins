@@ -13,12 +13,12 @@
     "role": "node-library"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-plugins/issues",
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
     "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/backend/rag-ai-node"
   },
   "scripts": {

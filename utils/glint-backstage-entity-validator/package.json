@@ -6,12 +6,12 @@
   "main": "src/index.js",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-plugins/issues",
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
     "email": "support@glint.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "utils/glint-backstage-entity-validator"
   },
   "publishConfig": {

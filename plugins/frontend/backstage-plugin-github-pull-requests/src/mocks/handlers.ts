@@ -49,7 +49,7 @@ export const handlers = [
     }
   }),
   rest.get(
-    'https://api.github.com/repos/kozmoai/glint-plugins',
+    'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
     (_, res, ctx) => {
       return res(ctx.json(repoMock));
     },

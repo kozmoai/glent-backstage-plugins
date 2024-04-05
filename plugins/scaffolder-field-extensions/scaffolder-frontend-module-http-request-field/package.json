@@ -14,11 +14,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-plugins",
+    "url": "github:kozmoai/glint-backstage-plugins",
     "directory": "plugins/scaffolder-field-extensions/scaffolder-frontend-module-http-request-field"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-plugins/issues",
+    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
     "email": "support@glint.io"
   },
   "scripts": {
