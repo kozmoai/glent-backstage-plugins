@@ -1,9 +1,9 @@
 name: Publish Build
 
 on:
-  workflow_dispatch:
-#  push:
-#    branches: [main]
+#  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   build:
@@ -24,14 +24,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
-#      - run: yarn install --frozen-lockfile
-#      - name: Fetch previous commit for release check
-#        run: git fetch origin '${{ github.event.before }}'
-#      - name: Check if release
-#        id: release_check
-#        run: node scripts/check-if-release.js
-#        env:
-#          COMMIT_SHA_BEFORE: '${{ github.event.before }}'
+      - run: yarn install --frozen-lockfile
+      - name: Fetch previous commit for release check
+        run: git fetch origin '${{ github.event.before }}'
+      - name: Check if release
+        id: release_check
+        run: node scripts/check-if-release.js
+        env:
+          COMMIT_SHA_BEFORE: '${{ github.event.before }}'
       - name: build type declarations
         run: yarn tsc
       - name: build packages
@@ -61,8 +61,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install
-#      - run: yarn install --frozen-lockfile
+      - run: yarn install --frozen-lockfile
       - name: build type declarations
         run: yarn tsc
       - name: build packages
@@ -78,8 +77,7 @@ jobs:
         run: |
           git config --global user.email "bot@glint.io"
           git config --global user.name "glint-bot"
-          lerna publish from-package --yes
-#          lerna publish from-package --yes --no-verify-access
+          lerna publish from-package --yes --no-verify-access
       # Creates the next available tag with format "release-<year>-<month>-<day>[.<n>]"
       - name: Create a release tag
         id: create_tag
