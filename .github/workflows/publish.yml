@@ -25,13 +25,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install
 #      - run: yarn install --frozen-lockfile
-      - name: Fetch previous commit for release check
-        run: git fetch origin '${{ github.event.before }}'
-      - name: Check if release
-        id: release_check
-        run: node scripts/check-if-release.js
-        env:
-          COMMIT_SHA_BEFORE: '${{ github.event.before }}'
+#      - name: Fetch previous commit for release check
+#        run: git fetch origin '${{ github.event.before }}'
+#      - name: Check if release
+#        id: release_check
+#        run: node scripts/check-if-release.js
+#        env:
+#          COMMIT_SHA_BEFORE: '${{ github.event.before }}'
       - name: build type declarations
         run: yarn tsc
       - name: build packages
@@ -46,7 +46,7 @@ jobs:
 
   release:
     needs: build
-    if: needs.build.outputs.needs_release == 'true'
+#    if: needs.build.outputs.needs_release == 'true'
     runs-on: ubuntu-latest
     strategy:
       matrix:
