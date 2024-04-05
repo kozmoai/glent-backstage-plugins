@@ -78,6 +78,7 @@ jobs:
         run: |
           git config --global user.email "bot@glint.io"
           git config --global user.name "glint-bot"
+          rm -rf yarn.lock
           lerna publish from-package --yes --no-verify-access
       # Creates the next available tag with format "release-<year>-<month>-<day>[.<n>]"
       - name: Create a release tag
