@@ -35,10 +35,10 @@
     "@backstage/backend-common": "^0.21.6",
     "@backstage/catalog-client": "^1.6.3",
     "@backstage/config": "^1.2.0",
-    "@langchain/core": "^0.1.2",
-    "@langchain/openai": "^0.0.14",
     "@kozmoai/rag-ai-backend-retrieval-augmenter": "^0.2.1",
     "@kozmoai/rag-ai-node": "^0.1.1",
+    "@langchain/core": "^0.1.2",
+    "@langchain/openai": "^0.0.14",
     "langchain": "^0.0.209",
     "winston": "^3.11.0"
   },

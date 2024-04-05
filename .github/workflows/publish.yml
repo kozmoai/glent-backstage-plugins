@@ -85,7 +85,6 @@ jobs:
         run: node scripts/create-release-tag.js
         env:
           GITHUB_TOKEN: ${{ secrets.API_GITHUB_TOKEN }}
-
       # Convert the newly created tag into a release with changelog information
       - name: Create release on GitHub
         run: node scripts/create-github-release.js ${{ steps.create_tag.outputs.tag_name }} 1
