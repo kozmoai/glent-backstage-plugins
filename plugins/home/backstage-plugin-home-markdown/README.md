@@ -9,7 +9,7 @@ Make sure you use `raw` in the url instad of `blob` if you copy and paste from t
 
 ```diff
 - ![](./docs/home-page-markdown.png)
-+ ![](https://github.com/kozmoai/glint-backstage-plugins/raw/SC-7064-add-markdown-home-plugin/plugins/home/backstage-plugin-home-markdown/docs/home-page-markdown.png)
++ ![](https://github.com/kozmoai/kozmo-backstage-plugins/raw/SC-7064-add-markdown-home-plugin/plugins/home/backstage-plugin-home-markdown/docs/home-page-markdown.png)
 ```
 
 NB: Images hosted in private repositories in GitHub will not render as the [`react-markdown`](https://github.com/remarkjs/react-markdown) library used under the hood does not support authenticated requests.
@@ -47,7 +47,7 @@ export const HomePage = () => {
         <HomePageMarkdown
             title="Neeews!"
             owner="kozmoai"
-            repo="glint-backstage-plugins"
+            repo="kozmo-backstage-plugins"
             path=".backstage/README.md"
         />
     </Grid>

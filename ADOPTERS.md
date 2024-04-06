@@ -1,3 +1,3 @@
 | Organization                             | Contact                                      | Description of Use            |
 |------------------------------------------|----------------------------------------------| ----------------------------- |
-| [Glint](https://glint.io)                | [@glint](https://github.com/glint)           | Development                   |
+| [Kozmo](https://kozmo.io)                | [@kozmo](https://github.com/kozmo)           | Development                   |

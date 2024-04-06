@@ -1,4 +1,4 @@
-This repo contains the Backstage plugins created and maintained by [Glint](https://glint.io). Glint is a SaaS Backstage solution.
+This repo contains the Backstage plugins created and maintained by [Kozmo](https://kozmo.io). Kozmo is a SaaS Backstage solution.
 
 Amongst others, the following plugins can be found within this repo:
 
@@ -30,7 +30,7 @@ Amongst others, the following plugins can be found within this repo:
 
 Installation instructions for each plugin can be found in their individual README files.
 
-Backstage is an open platform for creating developer portals. To learn more about the problems it can help solve, please check out our [Ultimate Guide to Backstage by Spotify](https://glint.io/backstage-spotify/).
+Backstage is an open platform for creating developer portals. To learn more about the problems it can help solve, please check out our [Ultimate Guide to Backstage by Spotify](https://kozmo.io/backstage-spotify/).
 
 ##
 
@@ -39,8 +39,8 @@ Backstage is an open platform for creating developer portals. To learn more abou
 To get up and running with this repository, you will need to clone it off of GitHub and run an initial build.
 
 ```bash
-git clone https://github.com/kozmoai/glint-backstage-plugins.git
-cd glint-backstage-plugins
+git clone https://github.com/kozmoai/kozmo-backstage-plugins.git
+cd kozmo-backstage-plugins
 ```
 
 ## Fetch dependencies and run an initial build from root directory
@@ -90,7 +90,7 @@ This repository is a place where all of the kozmoai plugins we are developed are
 Navigate to
 
 ```bash
-cd glint-backstage-plugins/plugins
+cd kozmo-backstage-plugins/plugins
 cd backend/frontend
 cd selected-plugin
 ```
@@ -98,7 +98,7 @@ cd selected-plugin
 Plugin folders consist separate unit tests per every plugin, while general e2e tests are written under
 
 ```bash
-cd glint-backstage-plugins/packages/app/cypress/integration
+cd kozmo-backstage-plugins/packages/app/cypress/integration
 ```
 
 folder.
@@ -108,7 +108,7 @@ folder.
 In order to make E2E testing isolated from real entities, we have created `test-entity.yaml` under `packages/entitites`, which will be shown as sample-service entity when you start the app. This is used only for testing purposes and can be modified accordingly.
 
 ```bash
-cd glint-backstage-plugins/plugins
+cd kozmo-backstage-plugins/plugins
 cd backend or cd frontend
 cd selected-plugin
 ```
@@ -116,5 +116,5 @@ cd selected-plugin
 Plugin folders consist of separate unit tests for each plugin, while general E2E tests are written under
 
 ```bash
-cd glint-backstage-plugins/packages/app/cypress/integration
+cd kozmo-backstage-plugins/packages/app/cypress/integration
 ```

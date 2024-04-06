@@ -76,8 +76,8 @@ jobs:
       # Publishes current version of packages that are not already present in the registry.
       - name: Run publish
         run: |
-          git config --global user.email "bot@glint.io"
-          git config --global user.name "glint-bot"
+          git config --global user.email "bot@kozmo.io"
+          git config --global user.name "kozmo-bot"
           git stash
           lerna publish from-package --yes --no-verify-access
       # Creates the next available tag with format "release-<year>-<month>-<day>[.<n>]"

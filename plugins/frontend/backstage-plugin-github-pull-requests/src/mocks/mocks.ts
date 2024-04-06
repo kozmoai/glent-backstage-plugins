@@ -17,7 +17,7 @@ export const entityMock = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@glint.io',
+    owner: 'david@kozmo.io',
     lifecycle: 'experimental',
   },
 };
@@ -29,7 +29,7 @@ export const groupEntityMock = {
       'backstage.io/managed-by-location':
         'url:https://raw.githubusercontent.com/kozmoai/sample-service/main/admin-group.yaml',
     },
-    name: 'glint-backstage-admin',
+    name: 'kozmo-backstage-admin',
     description: 'The Backstage Admins',
     uid: '9a2bb4d3-db09-48c1-86fe-0b060e762484',
     etag: 'ZTVmZThhZDctN2VkYi00OTI5LTlkZDMtZEDFNDA4ODg3ABC4',
@@ -40,8 +40,8 @@ export const groupEntityMock = {
   spec: {
     type: 'team',
     profile: {
-      displayName: 'glint-backstage-admin',
-      email: 'glint-backstage-admin@example.com',
+      displayName: 'kozmo-backstage-admin',
+      email: 'kozmo-backstage-admin@example.com',
       picture:
         'https://avatars.dicebear.com/api/identicon/backstage@example.com.svg?background=%23fff&margin=25',
     },
@@ -56,9 +56,9 @@ export const groupEntityMockWithSlug = {
     annotations: {
       'backstage.io/managed-by-location':
         'url:https://raw.githubusercontent.com/kozmoai/sample-service/main/admin-group.yaml',
-      'github.com/team-slug': 'glint-backstage-admin',
+      'github.com/team-slug': 'kozmo-backstage-admin',
     },
-    name: 'glint-backstage-admin',
+    name: 'kozmo-backstage-admin',
     description: 'The Backstage Admins',
     uid: '9a2bb4d3-db09-48c1-86fe-0b060e762484',
     etag: 'ZTVmZThhZDctN2VkYi00OTI5LTlkZDMtZEDFNDA4ODg3ABC4',
@@ -69,8 +69,8 @@ export const groupEntityMockWithSlug = {
   spec: {
     type: 'team',
     profile: {
-      displayName: 'glint-backstage-admin',
-      email: 'glint-backstage-admin@example.com',
+      displayName: 'kozmo-backstage-admin',
+      email: 'kozmo-backstage-admin@example.com',
       picture:
         'https://avatars.dicebear.com/api/identicon/backstage@example.com.svg?background=%23fff&margin=25',
     },
@@ -318,7 +318,7 @@ export const openPullsRequestMock = {
           'https://github.com/kozmoai/backstage-plugin-argo-cd/pull/86.patch',
         merged_at: null,
       },
-      body: 'https://github.com/kozmoai/glint-backstage-plugins',
+      body: 'https://github.com/kozmoai/kozmo-backstage-plugins',
       reactions: {
         url: 'https://api.github.com/repos/kozmoai/backstage-plugin-argo-cd/issues/86/reactions',
         total_count: 0,
@@ -626,7 +626,7 @@ export const closedPullsRequestMock = {
           'https://github.com/kozmoai/backstage-plugin-argo-cd/pull/83.patch',
         merged_at: '2021-11-23T13:43:50Z',
       },
-      body: '<h3>Snyk has created this PR to upgrade @material-ui/core from 4.11.3 to 4.12.1.</h3>\n\n![merge advice](https://app.snyk.io/badges/merge-advice/?package_manager=yarn&package_name=@material-ui/core&from_version=4.11.3&to_version=4.12.1&pr_id=e03e6155-660a-454a-b976-e35a5162f1c2&visibility=true&has_feature_flag=false)\n:information_source: Keep your dependencies up-to-date. This makes it easier to fix existing vulnerabilities and to more quickly identify and fix newly disclosed vulnerabilities when they affect your project.\n<hr/>\n\n- The recommended version is **3 versions** ahead of your current version.\n- The recommended version was released **a month ago**, on 2021-07-07.\n\n\n<hr/>\n\n**Note:** *You are seeing this because you or someone else with access to this repository has authorized Snyk to open upgrade PRs.*\n\nFor more information:  <img src="https://api.segment.io/v1/pixel/track?data=eyJ3cml0ZUtleSI6InJyWmxZcEdHY2RyTHZsb0lYd0dUcVg4WkFRTnNCOUEwIiwiYW5vbnltb3VzSWQiOiJlMDNlNjE1NS02NjBhLTQ1NGEtYjk3Ni1lMzVhNTE2MmYxYzIiLCJldmVudCI6IlBSIHZpZXdlZCIsInByb3BlcnRpZXMiOnsicHJJZCI6ImUwM2U2MTU1LTY2MGEtNDU0YS1iOTc2LWUzNWE1MTYyZjFjMiJ9fQ==" width="0" height="0"/>\n\n🧐 [View latest project report](https://app.snyk.io/org/glint/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc?utm_source&#x3D;github&amp;utm_medium&#x3D;upgrade-pr)\n\n🛠 [Adjust upgrade PR settings](https://app.snyk.io/org/glint/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc/settings/integration?utm_source&#x3D;github&amp;utm_medium&#x3D;upgrade-pr)\n\n🔕 [Ignore this dependency or unsubscribe from future upgrade PRs](https://app.snyk.io/org/glint/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc/settings/integration?pkg&#x3D;@material-ui/core&amp;utm_source&#x3D;github&amp;utm_medium&#x3D;upgrade-pr#auto-dep-upgrades)\n\n<!--- (snyk:metadata:{"prId":"e03e6155-660a-454a-b976-e35a5162f1c2","prPublicId":"e03e6155-660a-454a-b976-e35a5162f1c2","dependencies":[{"name":"@material-ui/core","from":"4.11.3","to":"4.12.1"}],"packageManager":"yarn","type":"auto","projectUrl":"https://app.snyk.io/org/glint/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc?utm_source=github&utm_medium=upgrade-pr","projectPublicId":"5e6d83e1-ad28-4599-802e-aeb1f30950bc","env":"prod","prType":"upgrade","vulns":[],"issuesToFix":[],"upgrade":[],"upgradeInfo":{"versionsDiff":3,"publishedDate":"2021-07-07T13:06:32.449Z"},"templateVariants":["merge-advice-badge-shown"],"hasFixes":false,"isMajorUpgrade":false,"isBreakingChange":false,"priorityScoreList":[]}) --->\n',
+      body: '<h3>Snyk has created this PR to upgrade @material-ui/core from 4.11.3 to 4.12.1.</h3>\n\n![merge advice](https://app.snyk.io/badges/merge-advice/?package_manager=yarn&package_name=@material-ui/core&from_version=4.11.3&to_version=4.12.1&pr_id=e03e6155-660a-454a-b976-e35a5162f1c2&visibility=true&has_feature_flag=false)\n:information_source: Keep your dependencies up-to-date. This makes it easier to fix existing vulnerabilities and to more quickly identify and fix newly disclosed vulnerabilities when they affect your project.\n<hr/>\n\n- The recommended version is **3 versions** ahead of your current version.\n- The recommended version was released **a month ago**, on 2021-07-07.\n\n\n<hr/>\n\n**Note:** *You are seeing this because you or someone else with access to this repository has authorized Snyk to open upgrade PRs.*\n\nFor more information:  <img src="https://api.segment.io/v1/pixel/track?data=eyJ3cml0ZUtleSI6InJyWmxZcEdHY2RyTHZsb0lYd0dUcVg4WkFRTnNCOUEwIiwiYW5vbnltb3VzSWQiOiJlMDNlNjE1NS02NjBhLTQ1NGEtYjk3Ni1lMzVhNTE2MmYxYzIiLCJldmVudCI6IlBSIHZpZXdlZCIsInByb3BlcnRpZXMiOnsicHJJZCI6ImUwM2U2MTU1LTY2MGEtNDU0YS1iOTc2LWUzNWE1MTYyZjFjMiJ9fQ==" width="0" height="0"/>\n\n🧐 [View latest project report](https://app.snyk.io/org/kozmo/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc?utm_source&#x3D;github&amp;utm_medium&#x3D;upgrade-pr)\n\n🛠 [Adjust upgrade PR settings](https://app.snyk.io/org/kozmo/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc/settings/integration?utm_source&#x3D;github&amp;utm_medium&#x3D;upgrade-pr)\n\n🔕 [Ignore this dependency or unsubscribe from future upgrade PRs](https://app.snyk.io/org/kozmo/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc/settings/integration?pkg&#x3D;@material-ui/core&amp;utm_source&#x3D;github&amp;utm_medium&#x3D;upgrade-pr#auto-dep-upgrades)\n\n<!--- (snyk:metadata:{"prId":"e03e6155-660a-454a-b976-e35a5162f1c2","prPublicId":"e03e6155-660a-454a-b976-e35a5162f1c2","dependencies":[{"name":"@material-ui/core","from":"4.11.3","to":"4.12.1"}],"packageManager":"yarn","type":"auto","projectUrl":"https://app.snyk.io/org/kozmo/project/5e6d83e1-ad28-4599-802e-aeb1f30950bc?utm_source=github&utm_medium=upgrade-pr","projectPublicId":"5e6d83e1-ad28-4599-802e-aeb1f30950bc","env":"prod","prType":"upgrade","vulns":[],"issuesToFix":[],"upgrade":[],"upgradeInfo":{"versionsDiff":3,"publishedDate":"2021-07-07T13:06:32.449Z"},"templateVariants":["merge-advice-badge-shown"],"hasFixes":false,"isMajorUpgrade":false,"isBreakingChange":false,"priorityScoreList":[]}) --->\n',
       reactions: {
         url: 'https://api.github.com/repos/kozmoai/backstage-plugin-argo-cd/issues/83/reactions',
         total_count: 0,
@@ -727,16 +727,16 @@ export const requestedReviewsMock = {
       score: 1,
     },
     {
-      url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462',
+      url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462',
       repository_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins',
       labels_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/labels{/name}',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/labels{/name}',
       comments_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/comments',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/comments',
       events_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/events',
-      html_url: 'https://github.com/kozmoai/glint-backstage-plugins/pull/462',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/events',
+      html_url: 'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462',
       id: 1178106595,
       node_id: 'PR_kwDOFl4HeM404aPw',
       number: 462,
@@ -778,18 +778,18 @@ export const requestedReviewsMock = {
       active_lock_reason: null,
       draft: false,
       pull_request: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/462',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/462',
         html_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/462',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462',
         diff_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/462.diff',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462.diff',
         patch_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/462.patch',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462.patch',
         merged_at: null,
       },
       body: '<!-- Please describe what these changes achieve -->\r\n\r\n#### :heavy_check_mark: Checklist\r\n\r\n- [ ] Added tests for new functionality and regression tests for bug fixes\r\n- [ ] Screenshots of before and after attached (for UI changes)\r\n- [ ] Added or updated documentation (if applicable)\r\n',
       reactions: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/reactions',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/reactions',
         total_count: 0,
         '+1': 0,
         '-1': 0,
@@ -801,7 +801,7 @@ export const requestedReviewsMock = {
         eyes: 0,
       },
       timeline_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/timeline',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/timeline',
       performed_via_github_app: null,
       score: 1,
     },
@@ -891,8 +891,8 @@ export const requestedReviewsCustomQueryMock = {
 export const repoMock = {
   id: 375261048,
   node_id: 'MDEwOlJlcG9zaXRvcnkzNzUyNjEwNDg=',
-  name: 'glint-backstage-plugins',
-  full_name: 'kozmoai/glint-backstage-plugins',
+  name: 'kozmo-backstage-plugins',
+  full_name: 'kozmoai/kozmo-backstage-plugins',
   private: false,
   owner: {
     login: 'kozmoai',
@@ -916,90 +916,90 @@ export const repoMock = {
     type: 'Organization',
     site_admin: false,
   },
-  html_url: 'https://github.com/kozmoai/glint-backstage-plugins',
-  description: 'All Backstage plugins created by Glint.',
+  html_url: 'https://github.com/kozmoai/kozmo-backstage-plugins',
+  description: 'All Backstage plugins created by Kozmo.',
   fork: false,
-  url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
+  url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins',
   forks_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/forks',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/forks',
   keys_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/keys{/key_id}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/keys{/key_id}',
   collaborators_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/collaborators{/collaborator}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/collaborators{/collaborator}',
   teams_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/teams',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/teams',
   hooks_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/hooks',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/hooks',
   issue_events_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/events{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/events{/number}',
   events_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/events',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/events',
   assignees_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/assignees{/user}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/assignees{/user}',
   branches_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/branches{/branch}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/branches{/branch}',
   tags_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/tags',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/tags',
   blobs_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/blobs{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/blobs{/sha}',
   git_tags_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/tags{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/tags{/sha}',
   git_refs_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/refs{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/refs{/sha}',
   trees_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/trees{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/trees{/sha}',
   statuses_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/statuses/{sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/statuses/{sha}',
   languages_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/languages',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/languages',
   stargazers_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/stargazers',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/stargazers',
   contributors_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/contributors',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/contributors',
   subscribers_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/subscribers',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/subscribers',
   subscription_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/subscription',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/subscription',
   commits_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/commits{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/commits{/sha}',
   git_commits_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/commits{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/commits{/sha}',
   comments_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/comments{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/comments{/number}',
   issue_comment_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/comments{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/comments{/number}',
   contents_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/contents/{+path}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/contents/{+path}',
   compare_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/compare/{base}...{head}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/compare/{base}...{head}',
   merges_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/merges',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/merges',
   archive_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/{archive_format}{/ref}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/{archive_format}{/ref}',
   downloads_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/downloads',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/downloads',
   issues_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues{/number}',
   pulls_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls{/number}',
   milestones_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/milestones{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/milestones{/number}',
   notifications_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/notifications{?since,all,participating}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/notifications{?since,all,participating}',
   labels_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/labels{/name}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/labels{/name}',
   releases_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/releases{/id}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/releases{/id}',
   deployments_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/deployments',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/deployments',
   created_at: '2021-06-09T07:12:18Z',
   updated_at: '2022-03-28T10:58:52Z',
   pushed_at: '2022-03-28T08:46:06Z',
-  git_url: 'git://github.com/kozmoai/glint-backstage-plugins.git',
-  ssh_url: 'git@github.com:kozmoai/glint-backstage-plugins.git',
-  clone_url: 'https://github.com/kozmoai/glint-backstage-plugins.git',
-  svn_url: 'https://github.com/kozmoai/glint-backstage-plugins',
-  homepage: 'https://glint.io',
+  git_url: 'git://github.com/kozmoai/kozmo-backstage-plugins.git',
+  ssh_url: 'git@github.com:kozmoai/kozmo-backstage-plugins.git',
+  clone_url: 'https://github.com/kozmoai/kozmo-backstage-plugins.git',
+  svn_url: 'https://github.com/kozmoai/kozmo-backstage-plugins',
+  homepage: 'https://kozmo.io',
   size: 18236,
   stargazers_count: 53,
   watchers_count: 53,
@@ -1072,8 +1072,8 @@ export const repoMock = {
 export const marketingSiteMock = {
   id: 375261048,
   node_id: 'MDEwOlJlcG9zaXRvcnkzNzUyNjEwNDg=',
-  name: 'glint-backstage-plugins',
-  full_name: 'kozmoai/glint-backstage-plugins',
+  name: 'kozmo-backstage-plugins',
+  full_name: 'kozmoai/kozmo-backstage-plugins',
   private: false,
   owner: {
     login: 'kozmoai',
@@ -1097,90 +1097,90 @@ export const marketingSiteMock = {
     type: 'Organization',
     site_admin: false,
   },
-  html_url: 'https://github.com/kozmoai/glint-backstage-plugins',
-  description: 'All Backstage plugins created by Glint.',
+  html_url: 'https://github.com/kozmoai/kozmo-backstage-plugins',
+  description: 'All Backstage plugins created by Kozmo.',
   fork: false,
-  url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
+  url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins',
   forks_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/forks',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/forks',
   keys_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/keys{/key_id}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/keys{/key_id}',
   collaborators_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/collaborators{/collaborator}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/collaborators{/collaborator}',
   teams_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/teams',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/teams',
   hooks_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/hooks',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/hooks',
   issue_events_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/events{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/events{/number}',
   events_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/events',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/events',
   assignees_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/assignees{/user}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/assignees{/user}',
   branches_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/branches{/branch}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/branches{/branch}',
   tags_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/tags',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/tags',
   blobs_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/blobs{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/blobs{/sha}',
   git_tags_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/tags{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/tags{/sha}',
   git_refs_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/refs{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/refs{/sha}',
   trees_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/trees{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/trees{/sha}',
   statuses_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/statuses/{sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/statuses/{sha}',
   languages_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/languages',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/languages',
   stargazers_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/stargazers',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/stargazers',
   contributors_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/contributors',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/contributors',
   subscribers_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/subscribers',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/subscribers',
   subscription_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/subscription',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/subscription',
   commits_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/commits{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/commits{/sha}',
   git_commits_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/git/commits{/sha}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/git/commits{/sha}',
   comments_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/comments{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/comments{/number}',
   issue_comment_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/comments{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/comments{/number}',
   contents_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/contents/{+path}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/contents/{+path}',
   compare_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/compare/{base}...{head}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/compare/{base}...{head}',
   merges_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/merges',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/merges',
   archive_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/{archive_format}{/ref}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/{archive_format}{/ref}',
   downloads_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/downloads',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/downloads',
   issues_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues{/number}',
   pulls_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls{/number}',
   milestones_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/milestones{/number}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/milestones{/number}',
   notifications_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/notifications{?since,all,participating}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/notifications{?since,all,participating}',
   labels_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/labels{/name}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/labels{/name}',
   releases_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/releases{/id}',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/releases{/id}',
   deployments_url:
-    'https://api.github.com/repos/kozmoai/glint-backstage-plugins/deployments',
+    'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/deployments',
   created_at: '2021-06-09T07:12:18Z',
   updated_at: '2022-03-28T10:58:52Z',
   pushed_at: '2022-03-28T08:46:06Z',
-  git_url: 'git://github.com/kozmoai/glint-backstage-plugins.git',
-  ssh_url: 'git@github.com:kozmoai/glint-backstage-plugins.git',
-  clone_url: 'https://github.com/kozmoai/glint-backstage-plugins.git',
-  svn_url: 'https://github.com/kozmoai/glint-backstage-plugins',
-  homepage: 'https://glint.io',
+  git_url: 'git://github.com/kozmoai/kozmo-backstage-plugins.git',
+  ssh_url: 'git@github.com:kozmoai/kozmo-backstage-plugins.git',
+  clone_url: 'https://github.com/kozmoai/kozmo-backstage-plugins.git',
+  svn_url: 'https://github.com/kozmoai/kozmo-backstage-plugins',
+  homepage: 'https://kozmo.io',
   size: 18236,
   stargazers_count: 53,
   watchers_count: 53,
@@ -1255,16 +1255,16 @@ export const yourOpenPullRequests = {
   incomplete_results: false,
   items: [
     {
-      url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/457',
+      url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/457',
       repository_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins',
       labels_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/457/labels{/name}',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/457/labels{/name}',
       comments_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/457/comments',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/457/comments',
       events_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/457/events',
-      html_url: 'https://github.com/kozmoai/glint-backstage-plugins/pull/457',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/457/events',
+      html_url: 'https://github.com/kozmoai/kozmo-backstage-plugins/pull/457',
       id: 1175720871,
       node_id: 'PR_kwDOFl4HeM40wePA',
       number: 457,
@@ -1307,18 +1307,18 @@ export const yourOpenPullRequests = {
       active_lock_reason: null,
       draft: false,
       pull_request: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/457',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/457',
         html_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/457',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/457',
         diff_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/457.diff',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/457.diff',
         patch_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/457.patch',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/457.patch',
         merged_at: null,
       },
       body: '<!-- Please describe what these changes achieve -->\r\n\r\n![image](https://user-images.githubusercontent.com/24729496/160092420-aa408dce-445c-4f7b-96e2-8d4bae0944a1.png)\r\n\r\n\r\n\r\n#### :heavy_check_mark: Checklist\r\n\r\n- [ ] Added tests for new functionality and regression tests for bug fixes\r\n- [ ] Screenshots of before and after attached (for UI changes)\r\n- [ ] Added or updated documentation (if applicable)\r\n',
       reactions: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/457/reactions',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/457/reactions',
         total_count: 0,
         '+1': 0,
         '-1': 0,
@@ -1330,21 +1330,21 @@ export const yourOpenPullRequests = {
         eyes: 0,
       },
       timeline_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/457/timeline',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/457/timeline',
       performed_via_github_app: null,
       score: 1,
     },
     {
-      url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450',
+      url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450',
       repository_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins',
       labels_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/labels{/name}',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/labels{/name}',
       comments_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/comments',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/comments',
       events_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/events',
-      html_url: 'https://github.com/kozmoai/glint-backstage-plugins/pull/450',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/events',
+      html_url: 'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450',
       id: 1166632752,
       node_id: 'PR_kwDOFl4HeM40T37p',
       number: 450,
@@ -1387,18 +1387,18 @@ export const yourOpenPullRequests = {
       active_lock_reason: null,
       draft: true,
       pull_request: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/450',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/450',
         html_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/450',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450',
         diff_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/450.diff',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450.diff',
         patch_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/450.patch',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450.patch',
         merged_at: null,
       },
       body: '<!-- Please describe what these changes achieve -->\r\nA POC to drive plugin behaviour based on UserEntity annotations.',
       reactions: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/reactions',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/reactions',
         total_count: 0,
         '+1': 0,
         '-1': 0,
@@ -1410,7 +1410,7 @@ export const yourOpenPullRequests = {
         eyes: 0,
       },
       timeline_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/timeline',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/timeline',
       performed_via_github_app: null,
       score: 1,
     },
@@ -1421,16 +1421,16 @@ export const yourOpenDraftPullRequests = {
   incomplete_results: false,
   items: [
     {
-      url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450',
+      url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450',
       repository_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins',
       labels_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/labels{/name}',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/labels{/name}',
       comments_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/comments',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/comments',
       events_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/events',
-      html_url: 'https://github.com/kozmoai/glint-backstage-plugins/pull/450',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/events',
+      html_url: 'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450',
       id: 1166632752,
       node_id: 'PR_kwDOFl4HeM40T37p',
       number: 450,
@@ -1473,18 +1473,18 @@ export const yourOpenDraftPullRequests = {
       active_lock_reason: null,
       draft: true,
       pull_request: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/450',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/450',
         html_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/450',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450',
         diff_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/450.diff',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450.diff',
         patch_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/450.patch',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/450.patch',
         merged_at: null,
       },
       body: '<!-- Please describe what these changes achieve -->\r\nA POC to drive plugin behaviour based on UserEntity annotations.',
       reactions: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/reactions',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/reactions',
         total_count: 0,
         '+1': 0,
         '-1': 0,
@@ -1496,7 +1496,7 @@ export const yourOpenDraftPullRequests = {
         eyes: 0,
       },
       timeline_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/450/timeline',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/450/timeline',
       performed_via_github_app: null,
       score: 1,
     },
@@ -1504,7 +1504,7 @@ export const yourOpenDraftPullRequests = {
 };
 export const backstagePluginArgoCdMocks: Record<string, object> = {
   '85': {
-    url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/467',
+    url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/467',
     id: 894318735,
     number: 467,
     state: 'closed',
@@ -1521,7 +1521,7 @@ export const backstagePluginArgoCdMocks: Record<string, object> = {
     changed_files: 19,
   },
   '84': {
-    url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/467',
+    url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/467',
     id: 894318735,
     number: 467,
     state: 'closed',
@@ -1538,7 +1538,7 @@ export const backstagePluginArgoCdMocks: Record<string, object> = {
     changed_files: 19,
   },
   '83': {
-    url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/467',
+    url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/467',
     id: 894318735,
     number: 467,
     state: 'closed',
@@ -1607,9 +1607,9 @@ export const groupAssignedReviewsMock = {
           node_id: 'MDQ6VGVhbTE=',
           url: 'https://api.github.com/teams/2',
           html_url:
-            'https://github.com/orgs/github/teams/glint-backstage-admin',
-          name: 'Glint Backstage Admins',
-          slug: 'glint-backstage-admin',
+            'https://github.com/orgs/github/teams/kozmo-backstage-admin',
+          name: 'Kozmo Backstage Admins',
+          slug: 'kozmo-backstage-admin',
           description: 'A great team of Admins.',
           privacy: 'closed',
           permission: 'admin',
@@ -1652,16 +1652,16 @@ export const groupAssignedReviewsMock = {
       score: 1,
     },
     {
-      url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462',
+      url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462',
       repository_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins',
       labels_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/labels{/name}',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/labels{/name}',
       comments_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/comments',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/comments',
       events_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/events',
-      html_url: 'https://github.com/kozmoai/glint-backstage-plugins/pull/462',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/events',
+      html_url: 'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462',
       id: 1178106595,
       node_id: 'PR_kwDOFl4HeM404aPw',
       number: 462,
@@ -1700,9 +1700,9 @@ export const groupAssignedReviewsMock = {
           node_id: 'MDQ6VGVhbTE=',
           url: 'https://api.github.com/teams/2',
           html_url:
-            'https://github.com/orgs/github/teams/glint-backstage-admin',
-          name: 'Glint Backstage Admins',
-          slug: 'glint-backstage-admin',
+            'https://github.com/orgs/github/teams/kozmo-backstage-admin',
+          name: 'Kozmo Backstage Admins',
+          slug: 'kozmo-backstage-admin',
           description: 'A great team of Admins.',
           privacy: 'closed',
           permission: 'admin',
@@ -1720,18 +1720,18 @@ export const groupAssignedReviewsMock = {
       active_lock_reason: null,
       draft: false,
       pull_request: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/pulls/462',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/pulls/462',
         html_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/462',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462',
         diff_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/462.diff',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462.diff',
         patch_url:
-          'https://github.com/kozmoai/glint-backstage-plugins/pull/462.patch',
+          'https://github.com/kozmoai/kozmo-backstage-plugins/pull/462.patch',
         merged_at: null,
       },
       body: '<!-- Please describe what these changes achieve -->\r\n\r\n#### :heavy_check_mark: Checklist\r\n\r\n- [ ] Added tests for new functionality and regression tests for bug fixes\r\n- [ ] Screenshots of before and after attached (for UI changes)\r\n- [ ] Added or updated documentation (if applicable)\r\n',
       reactions: {
-        url: 'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/reactions',
+        url: 'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/reactions',
         total_count: 0,
         '+1': 0,
         '-1': 0,
@@ -1743,7 +1743,7 @@ export const groupAssignedReviewsMock = {
         eyes: 0,
       },
       timeline_url:
-        'https://api.github.com/repos/kozmoai/glint-backstage-plugins/issues/462/timeline',
+        'https://api.github.com/repos/kozmoai/kozmo-backstage-plugins/issues/462/timeline',
       performed_via_github_app: null,
       score: 1,
     },

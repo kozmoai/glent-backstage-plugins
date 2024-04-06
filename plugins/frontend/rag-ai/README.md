@@ -1,4 +1,4 @@
-# Glint RAG AI Frontend plugin for Backstage
+# Kozmo RAG AI Frontend plugin for Backstage
 
 This plugin is the frontend for RAG AI Backstage plugin. You can see the corresponding backend plugin in [here](/plugins/backend/rag-ai-backend/README.md).
 
@@ -40,7 +40,7 @@ import {
   identityApiRef,
 } from '@backstage/core-plugin-api';
 import fetch from 'cross-fetch';
-import { ragAiApiRef, GlintRagAiClient } from '@kozmoai/rag-ai';
+import { ragAiApiRef, KozmoRagAiClient } from '@kozmoai/rag-ai';
 
 export const apis: AnyApiFactory[] = [
   // ... Other APIs
@@ -53,7 +53,7 @@ export const apis: AnyApiFactory[] = [
       identityApi: identityApiRef,
     },
     factory: ({ discoveryApi, fetchApi, configApi, identityApi }) => {
-      return new GlintRagAiClient({
+      return new KozmoRagAiClient({
         discoveryApi,
         fetchApi,
         configApi,

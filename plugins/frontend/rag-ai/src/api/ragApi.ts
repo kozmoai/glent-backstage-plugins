@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 import { createApiRef } from '@backstage/core-plugin-api';
-import { GlintLlmResponse } from '../types';
+import { KozmoLlmResponse } from '../types';
 
 export interface RagAiApi {
-  ask(question: string): Promise<GlintLlmResponse>;
+  ask(question: string): Promise<KozmoLlmResponse>;
 }
 
 export const ragAiApiRef = createApiRef<RagAiApi>({

@@ -21,7 +21,7 @@ export type ResponseEmbedding = {
   };
 };
 
-export type GlintLlmResponse = {
+export type KozmoLlmResponse = {
   response: string;
   embeddings: ResponseEmbedding[];
 };

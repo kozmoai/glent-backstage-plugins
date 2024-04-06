@@ -38,7 +38,7 @@ import {
   isGithubSlugSet,
   GITHUB_PULL_REQUESTS_ANNOTATION,
 } from '../../utils/isGithubSlugSet';
-import { isGlintBackstageDefaultFilterSet } from '../../utils/isGlintBackstageDefaultFilterSet';
+import { isKozmoBackstageDefaultFilterSet } from '../../utils/isKozmoBackstageDefaultFilterSet';
 import { usePullRequests, PullRequest } from '../usePullRequests';
 import { PullRequestState } from '../../types';
 import { Entity } from '@backstage/catalog-model';
@@ -199,7 +199,7 @@ type TableProps = {
 const PullRequests = (__props: TableProps) => {
   const { entity } = useEntity();
   const projectName = isGithubSlugSet(entity);
-  const defaultFilter = isGlintBackstageDefaultFilterSet(entity);
+  const defaultFilter = isKozmoBackstageDefaultFilterSet(entity);
   const [owner, repo] = (projectName ?? '/').split('/');
   const [search, setSearch] = useState(`state:open ${defaultFilter}`);
   const setSearchValueDebounced = useRef(debounce(setSearch, 500));

@@ -21,7 +21,7 @@ export const getEntityStub = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@glint.io',
+    owner: 'david@kozmo.io',
     lifecycle: 'experimental',
   },
 };
@@ -46,7 +46,7 @@ export const getEntityStubWithAppNamespace = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@glint.io',
+    owner: 'david@kozmo.io',
     lifecycle: 'experimental',
   },
 };
@@ -70,7 +70,7 @@ export const getEntityStubWithAppSelector = {
   kind: 'Component',
   spec: {
     type: 'service',
-    owner: 'david@glint.io',
+    owner: 'david@kozmo.io',
     lifecycle: 'experimental',
   },
 };

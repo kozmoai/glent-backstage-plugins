@@ -16,7 +16,7 @@
 
 export interface Config {
   /**
-   * Glint RAG AI configuration
+   * Kozmo RAG AI configuration
    */
   ai?: {
     /**

@@ -1,4 +1,4 @@
-# Contributing to the Glint plugins for Backstage
+# Contributing to the Kozmo plugins for Backstage
 
 We want to create strong community of contributors -- all working together to create the kind of delightful experience that Backstage deserves.
 

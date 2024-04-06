@@ -13,10 +13,10 @@
   "backstage": {
     "role": "backend-plugin-module"
   },
-  "homepage": "https://glint.io",
+  "homepage": "https://kozmo.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kozmoai/glint-backstage-plugins",
+    "url": "https://github.com/kozmoai/kozmo-backstage-plugins",
     "directory": "plugins/catalog-backend-module-okta"
   },
   "keywords": [

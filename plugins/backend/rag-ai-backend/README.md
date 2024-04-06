@@ -1,4 +1,4 @@
-# Glint RAG AI Backend plugin for Backstage
+# Kozmo RAG AI Backend plugin for Backstage
 
 This plugin is the backend for RAG AI Backstage plugin. You can see the corresponding frontend plugin in [here](/plugins/frontend/rag-ai/README.md).
 
@@ -30,7 +30,7 @@ The configuration examples for each embedding and vector storage are listed belo
 Below is the full configuration schema. For individual LLM provider, choose one of the options (currently between OpenAI and AWS Bedrock).
 
 ```yaml
-# Glint RAG AI configuration
+# Kozmo RAG AI configuration
 ai:
   # (Optional) Supported sources to query information from using RAG. This can be used to omit unnecessary sources from being retrievable. Defaults to [catalog]
   supportedSources: ['catalog']
@@ -105,7 +105,7 @@ To store embeddings vectors in the same database as the rest of your Backstage a
 
 ### How to initialize
 
-You can use the exported `createGlintPgVectorStore` function to initialize the GlintPGVectorStore. This initialization function expects an instance of logger and a Knex DB connection.
+You can use the exported `createKozmoPgVectorStore` function to initialize the KozmoPGVectorStore. This initialization function expects an instance of logger and a Knex DB connection.
 
 Here is a TypeScript example:
 
@@ -119,7 +119,7 @@ const config = {
   },
 };
 
-const vectorStore = await createGlintPgVectorStore({
+const vectorStore = await createKozmoPgVectorStore({
   logger,
   database,
   options: { chunkSize, tableName },
@@ -130,13 +130,13 @@ const vectorStore = await createGlintPgVectorStore({
 
 See more information from the [module package](/plugins/backend/rag-ai-backend-retrieval-augmenter/README.md).
 
-The Glint RAG AI backend expects a retrieval pipeline that is used to retrieve augmentation context when querying information from the LLM. This retrieval pipeline retrieves, processes and sorts information based on queries and other information, providing data that can be used to augment the query sent to the LLM.
+The Kozmo RAG AI backend expects a retrieval pipeline that is used to retrieve augmentation context when querying information from the LLM. This retrieval pipeline retrieves, processes and sorts information based on queries and other information, providing data that can be used to augment the query sent to the LLM.
 
 This repository provides default retrieval pipeline implementations that can be configured to retrieve as much (or as little ) data as is needed. The pipeline can also be run in a pass-through mode where additional context is not added to the queries and users can interact with the configured LLMs directly.
 
 A bare-bones implementation of the pipeline can be initialized by calling the `DefaultRetrievalPipeline` constructor with an empty configuration object (`{}`).
 
-To start appending important functionality to the RAG pipeline, it is recommended to start implementing and using routers to define correct augmentation information retrievers and to use post processor with enough logic to rerank, sort, and manipulate the retrieved information. The initial starting point, to use a vector store with optional search functionality, is provided by Glint within this repository. You can get a naive RAG pipeline running this way and start tweaking and configuring the optimal embeddings configuration to provide relevant context for your queries.
+To start appending important functionality to the RAG pipeline, it is recommended to start implementing and using routers to define correct augmentation information retrievers and to use post processor with enough logic to rerank, sort, and manipulate the retrieved information. The initial starting point, to use a vector store with optional search functionality, is provided by Kozmo within this repository. You can get a naive RAG pipeline running this way and start tweaking and configuring the optimal embeddings configuration to provide relevant context for your queries.
 
 ```typescript
 const retrievalPipeline = createDefaultRetrievalPipeline({
@@ -175,7 +175,7 @@ See more information from the [module package](/plugins/backend/rag-ai-backend-e
 ```typescript
 import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
 import { PluginEnvironment } from '../types';
-import { createGlintPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
+import { createKozmoPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
 import { CatalogClient } from '@backstage/catalog-client';
 import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 import { initializeBedrockEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-aws';
@@ -193,7 +193,7 @@ export default async function createPlugin({
     discoveryApi: discovery,
   });
 
-  const vectorStore = await createGlintPgVectorStore({
+  const vectorStore = await createKozmoPgVectorStore({
     logger,
     database,
     config,
@@ -259,7 +259,7 @@ See more information from the [module package](/plugins/backend/rag-ai-backend-e
 
 import { createApiRoutes as initializeRagAiBackend } from '@kozmoai/rag-ai-backend';
 import { initializeOpenAiEmbeddings } from '@kozmoai/rag-ai-backend-embeddings-openai';
-import { createGlintPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
+import { createKozmoPgVectorStore } from '@kozmoai/rag-ai-storage-pgvector';
 import { createDefaultRetrievalPipeline } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 import { OpenAI } from '@langchain/openai';
 import { CatalogClient } from '@backstage/catalog-client';
@@ -275,7 +275,7 @@ export default async function createPlugin({
     discoveryApi: discovery,
   });
 
-  const vectorStore = await createGlintPgVectorStore({ logger, database });
+  const vectorStore = await createKozmoPgVectorStore({ logger, database });
 
   const augmentationIndexer = await initializeOpenAiEmbeddings({
     logger,

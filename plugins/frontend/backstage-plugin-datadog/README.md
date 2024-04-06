@@ -206,4 +206,4 @@ Everyone is welcome to contribute to this repository. Feel free to raise [issues
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://kozmo.io

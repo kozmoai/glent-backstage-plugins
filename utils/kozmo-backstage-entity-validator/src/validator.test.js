@@ -91,7 +91,7 @@ metadata:
     backstage.io/techdocs-ref: url:https://github.com/kozmoai/sample-service/tree/main
     jira/project-key: TEST
     jira/component: COMP
-    snyk.io/org-name: glint
+    snyk.io/org-name: kozmo
     backstage.io/view-url: https://github.com/kozmoai/sample-service/tree/main
     backstage.io/source-location: url:https://github.com/kozmoai/sample-service/tree/main/
     testextraannotation: adfstea
@@ -119,7 +119,7 @@ metadata:
     backstage.io/techdocs-ref: url:https://github.com/kozmoai/sample-service/tree/main
     jira/project-key: TEST
     jira/component: COMP
-    snyk.io/org-name: glint
+    snyk.io/org-name: kozmo
     backstage.io/view-url: https://github.com/kozmoai/sample-service/tree/main
     backstage.io/source-location: url:https://github.com/kozmoai/sample-service/tree/main/
     testextraannotation: adfstea
@@ -270,7 +270,7 @@ spec:
               'url:https://github.com/kozmoai/sample-service/tree/main',
             'jira/project-key': 'TEST',
             'jira/component': 'COMP',
-            'snyk.io/org-name': 'glint',
+            'snyk.io/org-name': 'kozmo',
             'backstage.io/view-url':
               'https://github.com/kozmoai/sample-service/tree/main',
             'backstage.io/source-location':
@@ -303,7 +303,7 @@ spec:
               'url:https://github.com/kozmoai/sample-service/tree/main',
             'jira/project-key': 'TEST',
             'jira/component': 'COMP',
-            'snyk.io/org-name': 'glint',
+            'snyk.io/org-name': 'kozmo',
             'backstage.io/view-url':
               'https://github.com/kozmoai/sample-service/tree/main',
             'backstage.io/source-location':

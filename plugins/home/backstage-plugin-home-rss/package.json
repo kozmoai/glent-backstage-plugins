@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-backstage-plugins",
+    "url": "github:kozmoai/kozmo-backstage-plugins",
     "directory": "plugins/home/backstage-plugin-home-rss"
   },
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
-    "email": "support@glint.io"
+    "url": "https://github.com/kozmoai/kozmo-backstage-plugins/issues",
+    "email": "support@kozmo.io"
   },
   "scripts": {
     "start": "backstage-cli package start",

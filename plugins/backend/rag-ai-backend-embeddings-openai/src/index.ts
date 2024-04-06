@@ -15,17 +15,17 @@
  */
 import { TokenManager } from '@backstage/backend-common';
 import { Logger } from 'winston';
-import { AugmentationIndexer, GlintVectorStore } from '@kozmoai/rag-ai-node';
-import { OpenAiConfig, GlintOpenAiAugmenter } from './GlintOpenAiAugmenter';
+import { AugmentationIndexer, KozmoVectorStore } from '@kozmoai/rag-ai-node';
+import { OpenAiConfig, KozmoOpenAiAugmenter } from './KozmoOpenAiAugmenter';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
 import { Config } from '@backstage/config';
 import { SplitterOptions } from '@kozmoai/rag-ai-backend-retrieval-augmenter';
 
-export interface GlintBedrockEmbeddingsConfig {
+export interface KozmoBedrockEmbeddingsConfig {
   logger: Logger;
   tokenManager: TokenManager;
-  vectorStore: GlintVectorStore;
+  vectorStore: KozmoVectorStore;
   catalogApi: CatalogApi;
   discovery: PluginEndpointDiscovery;
   config: Config;
@@ -38,8 +38,8 @@ export async function initializeOpenAiEmbeddings({
   catalogApi,
   discovery,
   config,
-}: GlintBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
-  logger.info('Initializing Glint OpenAI Embeddings');
+}: KozmoBedrockEmbeddingsConfig): Promise<AugmentationIndexer> {
+  logger.info('Initializing Kozmo OpenAI Embeddings');
   const openAiConfig = config.get<OpenAiConfig>('ai.embeddings.openai');
 
   const embeddingsOptions = config.getOptionalConfig('ai.embeddings');
@@ -50,12 +50,12 @@ export async function initializeOpenAiEmbeddings({
     splitterOptions.chunkOverlap =
       embeddingsOptions.getOptionalNumber('chunkOverlap');
   }
-  return new GlintOpenAiAugmenter({
+  return new KozmoOpenAiAugmenter({
     vectorStore,
     catalogApi,
     discovery,
     splitterOptions,
-    logger: logger.child({ label: 'glint-openai-embeddings' }),
+    logger: logger.child({ label: 'kozmo-openai-embeddings' }),
     tokenManager,
     config: openAiConfig,
   });

@@ -92,4 +92,4 @@ iframe:
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://kozmo.io

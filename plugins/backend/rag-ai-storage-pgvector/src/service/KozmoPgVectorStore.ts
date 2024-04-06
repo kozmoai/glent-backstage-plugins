@@ -16,13 +16,13 @@
 import {
   EmbeddingDocMetadata,
   EmbeddingDoc,
-  GlintVectorStore,
+  KozmoVectorStore,
 } from '@kozmoai/rag-ai-node';
 import { Embeddings } from '@langchain/core/embeddings';
 import { Knex } from 'knex';
 import { Logger } from 'winston';
 
-export interface GlintPgVectorStoreConfig {
+export interface KozmoPgVectorStoreConfig {
   logger: Logger;
   db: Knex;
   /**
@@ -41,7 +41,7 @@ export interface GlintPgVectorStoreConfig {
 /**
  * A class representing a vector store that uses PostgreSQL as the backend.
  */
-export class GlintPgVectorStore implements GlintVectorStore {
+export class KozmoPgVectorStore implements KozmoVectorStore {
   private readonly tableName: string = 'embeddings';
   private readonly client: Knex;
   private readonly chunkSize;
@@ -50,27 +50,27 @@ export class GlintPgVectorStore implements GlintVectorStore {
   private readonly logger: Logger;
 
   /**
-   * Initializes the GlintPgVectorStore.
+   * Initializes the KozmoPgVectorStore.
    *
-   * @param {GlintPgVectorStoreConfig} config - The configuration for GlintPgVectorStore.
+   * @param {KozmoPgVectorStoreConfig} config - The configuration for KozmoPgVectorStore.
    *
-   * @return {Promise<GlintPgVectorStore>} A Promise that resolves to an instance of GlintPgVectorStore.
+   * @return {Promise<KozmoPgVectorStore>} A Promise that resolves to an instance of KozmoPgVectorStore.
    */
   static async initialize(
-    config: GlintPgVectorStoreConfig,
-  ): Promise<GlintPgVectorStore> {
-    return new GlintPgVectorStore(config);
+    config: KozmoPgVectorStoreConfig,
+  ): Promise<KozmoPgVectorStore> {
+    return new KozmoPgVectorStore(config);
   }
 
   /**
-   * Constructor for GlintPgVectorStore class.
+   * Constructor for KozmoPgVectorStore class.
    *
-   * @param {GlintPgVectorStoreConfig} config - The configuration object for GlintPgVectorStore.
+   * @param {KozmoPgVectorStoreConfig} config - The configuration object for KozmoPgVectorStore.
    * @param {string} config.db - The database client to connect.
    * @param {Object} config.logger - The logger object for logging.
    * @param {number} [config.chunkSize=500] - The size of chunks for processing.
    */
-  private constructor(config: GlintPgVectorStoreConfig) {
+  private constructor(config: KozmoPgVectorStoreConfig) {
     this.client = config.db;
     this.logger = config.logger;
     this.chunkSize = config.chunkSize ?? 500;
@@ -247,7 +247,7 @@ export class GlintPgVectorStore implements GlintVectorStore {
    * @param {string} query - The query to perform the similarity search on.
    * @param {EmbeddingDocMetadata} filter - The filter to apply to the search results.
    * @param {number} [amount=4] - The number of results to return.
-   * @return {Promise<EmbeddingDoc[]>} - A promise that resolves to an array of GlintEmbeddingDoc objects representing the search results.
+   * @return {Promise<EmbeddingDoc[]>} - A promise that resolves to an array of KozmoEmbeddingDoc objects representing the search results.
    * @throws {Error} - Throws an error if there are no embeddings configured for the vector store.
    */
   async similaritySearch(

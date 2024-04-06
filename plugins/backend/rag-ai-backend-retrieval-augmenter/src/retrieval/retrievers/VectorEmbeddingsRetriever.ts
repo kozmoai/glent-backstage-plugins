@@ -19,19 +19,19 @@ import {
   EmbeddingDoc,
   EmbeddingsSource,
   EntityFilterShape,
-  GlintVectorStore,
+  KozmoVectorStore,
 } from '@kozmoai/rag-ai-node';
 import { Logger } from 'winston';
 
 export class VectorEmbeddingsRetriever implements AugmentationRetriever {
   private readonly logger: Logger;
-  private readonly vectorStore: GlintVectorStore;
+  private readonly vectorStore: KozmoVectorStore;
 
   constructor({
     vectorStore,
     logger,
   }: {
-    vectorStore: GlintVectorStore;
+    vectorStore: KozmoVectorStore;
     logger: Logger;
   }) {
     this.vectorStore = vectorStore;

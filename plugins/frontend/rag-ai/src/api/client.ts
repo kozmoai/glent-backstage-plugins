@@ -20,9 +20,9 @@ import {
   IdentityApi,
 } from '@backstage/core-plugin-api';
 import { RagAiApi } from './ragApi';
-import { GlintLlmResponse } from '../types';
+import { KozmoLlmResponse } from '../types';
 
-export class GlintRagAiClient implements RagAiApi {
+export class KozmoRagAiClient implements RagAiApi {
   private readonly discoveryApi: DiscoveryApi;
   private readonly fetchApi: FetchApi;
   private readonly configApi: ConfigApi;
@@ -60,7 +60,7 @@ export class GlintRagAiClient implements RagAiApi {
     throw new Error(`Failed to retrieved data from path ${path}`);
   }
 
-  async ask(question: string): Promise<GlintLlmResponse> {
+  async ask(question: string): Promise<KozmoLlmResponse> {
     const { token } = await this.identityApi.getCredentials();
 
     const response = await this.fetch(`query/catalog`, {

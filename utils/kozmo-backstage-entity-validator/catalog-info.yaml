@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: kozmo-backstage-entity-validator
+  title: Backstage Entity Validator
+  description: |
+    Backstage entity validator library
+  annotations:
+    github.com/project-slug: kozmoai/kozmo-backstage-plugins
+    github.com/project-readme-path: utils/kozmo-backstage-entity-validator/README.md
+    backstage.io/view-url: https://github.com/kozmoai/kozmo-backstage-plugins/blob/main/utils/kozmo-backstage-entity-validator/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/kozmoai/kozmo-backstage-plugins/edit/main/utils/kozmo-backstage-entity-validator/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/kozmoai/kozmo-backstage-plugins/tree/main/plugins/utils/kozmo-backstage-entity-validator
+  tags:
+    - oss
+    - utils
+  links:
+    - url: https://www.npmjs.com/package/@kozmoai/kozmo-backstage-entity-validator
+      title: NPM
+spec:
+  type: library
+  owner: group:open-source
+  lifecycle: production

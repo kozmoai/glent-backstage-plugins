@@ -6,11 +6,11 @@ metadata:
   description: |
     Backstage plugin bugsnag
   annotations:
-    github.com/project-slug: kozmoai/glint-backstage-plugins
+    github.com/project-slug: kozmoai/kozmo-backstage-plugins
     github.com/project-readme-path: plugins/frontend/backstage-plugin-bugsnag/README.md
-    backstage.io/view-url: https://github.com/kozmoai/glint-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-bugsnag/catalog-info.yaml
-    backstage.io/edit-url: https://github.com/kozmoai/glint-backstage-plugins/edit/main/plugins/frontend/backstage-plugin-bugsnag/catalog-info.yaml
-    backstage.io/source-location: url:https://github.com/kozmoai/glint-backstage-plugins/tree/main/plugins/frontend/backstage-plugin-bugsnag
+    backstage.io/view-url: https://github.com/kozmoai/kozmo-backstage-plugins/blob/main/plugins/frontend/backstage-plugin-bugsnag/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/kozmoai/kozmo-backstage-plugins/edit/main/plugins/frontend/backstage-plugin-bugsnag/catalog-info.yaml
+    backstage.io/source-location: url:https://github.com/kozmoai/kozmo-backstage-plugins/tree/main/plugins/frontend/backstage-plugin-bugsnag
   tags:
     - plugin
     - oss

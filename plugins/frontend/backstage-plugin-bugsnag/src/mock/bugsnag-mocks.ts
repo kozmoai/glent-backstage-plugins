@@ -64,13 +64,13 @@ export const ErrorsMock = [
 export const OrganisationsMock = [
   {
     id: '129876sdfgh',
-    name: 'Glint test Organization',
-    slug: 'glint-test-organisation',
+    name: 'Kozmo test Organization',
+    slug: 'kozmo-test-organisation',
   },
   {
     id: '1119876sdfgh',
-    name: 'Glint test2 Organization',
-    slug: 'glint-test2-organisation',
+    name: 'Kozmo test2 Organization',
+    slug: 'kozmo-test2-organisation',
   },
 ];
 

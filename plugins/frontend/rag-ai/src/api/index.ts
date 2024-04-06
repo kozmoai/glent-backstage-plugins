@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 export { ragAiApiRef } from './ragApi';
-export { GlintRagAiClient } from './client';
+export { KozmoRagAiClient } from './client';

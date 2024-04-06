@@ -1,6 +1,6 @@
 # scaffolder-backend-module-aws actions package
 
-Welcome to the glint `aws` actions for the `scaffolder-backend`.
+Welcome to the kozmo `aws` actions for the `scaffolder-backend`.
 
 This contains a collection of actions:
 
@@ -107,7 +107,7 @@ metadata:
   title: Upload
   description: Uploads the workspace context to the given S3 bucket
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -139,7 +139,7 @@ metadata:
   title: Create ECR Repository
   description: Create ECR repository using scaffolder custom action
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -205,7 +205,7 @@ metadata:
   title: Create Secret
   description: Create secret in Secrets Manager using scaffolder custom action
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:

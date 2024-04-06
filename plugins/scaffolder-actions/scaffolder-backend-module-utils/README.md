@@ -2,7 +2,7 @@
 
 ## Intro
 
-Welcome to the glint `utils` actions for the `scaffolder-backend`.
+Welcome to the kozmo `utils` actions for the `scaffolder-backend`.
 
 This contains a collection of actions to use in scaffolder templates:
 
@@ -115,7 +115,7 @@ metadata:
   title: My custom zip action
   description: scaffolder action to zip the current context?
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -161,7 +161,7 @@ metadata:
   title: Sleep template
   description: A template with only one sleep example action that will ask for a user input for the amount of seconds it should sleep
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -200,7 +200,7 @@ metadata:
   title: Parse From File
   description: Example template to parse from a file with on the given path with the given content in the workspace.
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -246,7 +246,7 @@ metadata:
   title: serialize
   description: Example template to serialize data to the YAML format
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters: []
@@ -287,7 +287,7 @@ metadata:
   title: Jsonata
   description: Example template to serialize data to the JSON format
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters: []
@@ -331,7 +331,7 @@ metadata:
   title: Jsonata
   description: Example template to perform a jsonata expression on input data
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters: []
@@ -359,7 +359,7 @@ metadata:
   title: Jsonata
   description: Example template to perform a jsonata expression on input data
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters: []
@@ -385,7 +385,7 @@ metadata:
   title: Jsonata
   description: Example template to perform a jsonata expression on input data
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters: []
@@ -425,7 +425,7 @@ metadata:
   title: Add Node Engine constraints to package.json
   description: Merge in some JSON to an existing file and open a pull request for it.
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -491,7 +491,7 @@ metadata:
   title: Merge in JSON
   description: Merge in some JSON to an existing file and open a pull request for it.
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -568,7 +568,7 @@ metadata:
   title: Append To File template
   description: Example template to append to a file with on the given path with the given content in the workspace.
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:
@@ -647,7 +647,7 @@ metadata:
   title: Write content to a file
   description: Write a file with the given content.
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:

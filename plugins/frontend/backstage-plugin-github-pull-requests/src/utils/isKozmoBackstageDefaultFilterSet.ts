@@ -16,13 +16,13 @@
 
 import { Entity } from '@backstage/catalog-model';
 
-export const GLINT_BACKSTAGE_PULL_REQUESTS_DEFAULT_FILTER_ANNOTATION =
-  'glint-backstage-pull-requests/default-filter';
+export const KOZMO_BACKSTAGE_PULL_REQUESTS_DEFAULT_FILTER_ANNOTATION =
+  'kozmo-backstage-pull-requests/default-filter';
 
-export const isGlintBackstageDefaultFilterSet = (entity: Entity) => {
+export const isKozmoBackstageDefaultFilterSet = (entity: Entity) => {
   return (
     entity?.metadata.annotations?.[
-      GLINT_BACKSTAGE_PULL_REQUESTS_DEFAULT_FILTER_ANNOTATION
+      KOZMO_BACKSTAGE_PULL_REQUESTS_DEFAULT_FILTER_ANNOTATION
     ] ?? ''
   );
 };

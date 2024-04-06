@@ -27,7 +27,7 @@ export type EntityFilterShape =
   | Record<string, string | symbol | (string | symbol)[]>
   | undefined;
 
-export type GlintEmbedding = {
+export type KozmoEmbedding = {
   metadata: EmbeddingDocMetadata;
   content: string;
   vector: number[];
@@ -40,7 +40,7 @@ export type EmbeddingDoc = {
 };
 
 export interface AugmentationIndexer {
-  vectorStore: GlintVectorStore;
+  vectorStore: KozmoVectorStore;
   createEmbeddings(
     source: EmbeddingsSource,
     filter?: EntityFilterShape,
@@ -88,7 +88,7 @@ type DeletionParams = {
   filter?: EmbeddingDocMetadata;
 };
 
-export interface GlintVectorStore {
+export interface KozmoVectorStore {
   connectEmbeddings(embeddings: Embeddings): void;
   addDocuments(docs: EmbeddingDoc[]): Promise<void>;
   deleteDocuments(deletionParams: DeletionParams): Promise<void>;

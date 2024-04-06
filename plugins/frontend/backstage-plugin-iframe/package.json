@@ -4,14 +4,14 @@
   "main": "src/index.ts",
   "types": "src/index.ts",
   "license": "Apache-2.0",
-  "homepage": "https://glint.io/backstage/plugins/iframe/",
+  "homepage": "https://kozmo.io/backstage/plugins/iframe/",
   "bugs": {
-    "url": "https://github.com/kozmoai/glint-backstage-plugins/issues",
-    "email": "support@glint.io"
+    "url": "https://github.com/kozmoai/kozmo-backstage-plugins/issues",
+    "email": "support@kozmo.io"
   },
   "repository": {
     "type": "git",
-    "url": "github:kozmoai/glint-backstage-plugins",
+    "url": "github:kozmoai/kozmo-backstage-plugins",
     "directory": "plugins/frontend/backstage-plugin-iframe"
   },
   "publishConfig": {

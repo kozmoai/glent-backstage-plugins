@@ -17,17 +17,17 @@ import { TokenManager } from '@backstage/backend-common';
 import { Logger } from 'winston';
 import { CatalogApi } from '@backstage/catalog-client';
 import { PluginEndpointDiscovery } from '@backstage/backend-common';
-import { GlintVectorStore } from '@kozmoai/rag-ai-node';
+import { KozmoVectorStore } from '@kozmoai/rag-ai-node';
 
 export type SplitterOptions = {
   chunkSize?: number;
   chunkOverlap?: number;
 };
 
-export interface GlintEmbeddingsConfig {
+export interface KozmoEmbeddingsConfig {
   logger: Logger;
   tokenManager: TokenManager;
-  vectorStore: GlintVectorStore;
+  vectorStore: KozmoVectorStore;
   catalogApi: CatalogApi;
   discovery: PluginEndpointDiscovery;
   splitterOptions?: SplitterOptions;

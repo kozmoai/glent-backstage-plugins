@@ -5,7 +5,7 @@ metadata:
   title: Create ECR Repository
   description: Create ECR repository using scaffolder custom action
 spec:
-  owner: glint
+  owner: kozmo
   type: service
 
   parameters:

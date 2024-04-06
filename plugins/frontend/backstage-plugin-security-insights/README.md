@@ -1,8 +1,8 @@
 # GitHub Security Insights Plugin for Backstage
 
-![a list of security alerts](./docs/glint-backstage-security-plugin.jpg)
+![a list of security alerts](./docs/kozmo-backstage-security-plugin.jpg)
 
-![a list of dependabot alerts](./docs/glint-backstage-dependabot-alerts.png)
+![a list of dependabot alerts](./docs/kozmo-backstage-dependabot-alerts.png)
 
 ## Features
 
@@ -71,7 +71,7 @@ const serviceEntityPage = (
 
 ![security insights widget](./docs/backstage-plugin-security-widget-1.png)
 
-![dependabot alerts widget](./docs/glint-backstage-dependabot-widget.png)
+![dependabot alerts widget](./docs/kozmo-backstage-dependabot-widget.png)
 
 1. You must install plugin by following the steps above to add widgets to your Overview.
 
@@ -138,4 +138,4 @@ dependabotAlertsConfiguration:
 ## Links
 
 - [Backstage](https://backstage.io)
-- Get hosted, managed Backstage for your company: https://glint.io
+- Get hosted, managed Backstage for your company: https://kozmo.io

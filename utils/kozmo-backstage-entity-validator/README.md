@@ -1,4 +1,4 @@
-# Glint Backstage entity validator
+# Kozmo Backstage entity validator
 
 This is a library package used to validate entity files.
 

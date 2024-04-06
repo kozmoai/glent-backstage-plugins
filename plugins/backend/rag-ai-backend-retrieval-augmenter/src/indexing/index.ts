@@ -15,4 +15,4 @@
  */
 
 export { DefaultVectorAugmentationIndexer } from './DefaultVectorAugmentationIndexer';
-export type { GlintEmbeddingsConfig, SplitterOptions } from './types';
+export type { KozmoEmbeddingsConfig, SplitterOptions } from './types';
